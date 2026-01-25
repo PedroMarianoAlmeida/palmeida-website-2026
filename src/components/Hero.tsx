@@ -27,7 +27,7 @@ export function Hero() {
 
       {/* Primary CTA */}
       <a
-        href="https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/"
+        href="https://www.linkedin.com/in/palmeida-dev/recent-activity/all/"
         target="_blank"
         rel="noopener noreferrer"
         className="px-8 py-4 bg-primary text-background font-bold rounded-lg

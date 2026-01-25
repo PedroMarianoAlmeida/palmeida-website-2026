@@ -49,15 +49,26 @@ export function Hero() {
           Explore the Lab
         </a>
       </div>
-      {/* Build in Public Indicator - Active Signal */}
+      {/* Build in Public Indicator - Interactive Link */}
       <div className="mt-12 flex items-center gap-3">
+        {/* The Pulse */}
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
         </span>
-        <span className="text-xs text-gray-300 uppercase tracking-[0.3em] font-bold">
-          Currently Building in Public
-        </span>
+
+        {/* The Link */}
+        <a
+          href="https://usd-latam-jobs.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-gray-500 uppercase tracking-[0.3em] font-bold group transition-all"
+        >
+          Currently Scaling
+          <span className="text-secondary/60 group-hover:text-secondary ml-2 transition-colors duration-300 underline decoration-secondary/20 underline-offset-4">
+            USD Latam Jobs
+          </span>
+        </a>
       </div>
     </section>
   );

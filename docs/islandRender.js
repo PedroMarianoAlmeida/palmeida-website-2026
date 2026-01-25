@@ -21908,7 +21908,19 @@ function Hero() {
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "relative inline-flex rounded-full h-2 w-2 bg-secondary" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-xs text-gray-300 uppercase tracking-[0.3em] font-bold", children: "Currently Building in Public" })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+        "a",
+        {
+          href: "https://usd-latam-jobs.vercel.app/",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "text-xs text-gray-500 uppercase tracking-[0.3em] font-bold group transition-all",
+          children: [
+            "Currently Scaling",
+            /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-secondary/60 group-hover:text-secondary ml-2 transition-colors duration-300 underline decoration-secondary/20 underline-offset-4", children: "USD Latam Jobs" })
+          ]
+        }
+      )
     ] })
   ] });
 }

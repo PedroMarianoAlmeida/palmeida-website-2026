@@ -21762,22 +21762,15 @@ function BentoGrid() {
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Leadership" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Engineering Leadership" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2 text-sm", children: [
-          "Mentoring ",
+          "Guiding ",
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "20+" }),
-          " ",
-          "devs"
+          " engineers through the complexities of the full-stack ecosystem."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-xs text-gray-500 mb-3", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "-50%" }),
-          " ",
-          "resolution time"
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "flex items-center gap-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "w-2 h-2 bg-emerald-500 rounded-full animate-pulse" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-xs text-gray-500", children: "Active" })
-        ] })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-500 mb-3", children: "Fostering technical growth through live debugging and 1:1 guidance." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs italic text-gray-400 mb-3", children: '"Translating complex architecture into actionable knowledge."' }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs font-mono text-gray-500", children: "Public Speaking \u2022 Code Review \u2022 Mentorship" })
       ] }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-4 text-white", children: "The Lab & Ventures" }),

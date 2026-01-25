@@ -53,22 +53,22 @@ export function BentoGrid() {
             </div>
           </article>
 
-          {/* Box 3: Leadership (2x1 - Square) */}
+          {/* Box 3: Engineering Leadership (2x1 - Square) */}
           <article className="lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3">
             <div className="relative z-10">
-              <h3 className="text-lg font-bold mb-3 text-white">Leadership</h3>
+              <h3 className="text-lg font-bold mb-3 text-white">Engineering Leadership</h3>
               <p className="text-gray-400 mb-2 text-sm">
-                Mentoring <span className="text-[#FFBF00] font-bold">20+</span>{" "}
-                devs
+                Guiding <span className="text-[#FFBF00] font-bold">20+</span> engineers through the complexities of the full-stack ecosystem.
               </p>
               <p className="text-xs text-gray-500 mb-3">
-                <span className="text-[#FFBF00] font-bold">-50%</span>{" "}
-                resolution time
+                Fostering technical growth through live debugging and 1:1 guidance.
               </p>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                <span className="text-xs text-gray-500">Active</span>
-              </div>
+              <p className="text-xs italic text-gray-400 mb-3">
+                "Translating complex architecture into actionable knowledge."
+              </p>
+              <p className="text-xs font-mono text-gray-500">
+                Public Speaking • Code Review • Mentorship
+              </p>
             </div>
           </article>
 

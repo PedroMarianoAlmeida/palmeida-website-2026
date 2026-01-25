@@ -21959,7 +21959,7 @@ function Header() {
 // src/components/Hero.tsx
 var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center py-20 px-6 min-h-[75vh]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center md:py-20 py-4 px-6 min-h-[75vh]", children: [
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h1", { className: "text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4", children: [
       "Building Products.",
       " ",

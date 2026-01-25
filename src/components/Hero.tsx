@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-20 px-6 min-h-[75vh]">
+    <section className="flex flex-col items-center justify-center text-center md:py-20 py-4 px-6 min-h-[75vh]">
       {/* Brand Identity - Focused on Mission */}
       <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">
         Building Products.{" "}

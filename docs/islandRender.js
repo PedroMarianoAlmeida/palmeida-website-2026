@@ -21816,7 +21816,8 @@ function BentoGrid() {
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Open Source Contributor" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Contributing to high-impact projects used by thousands of developers worldwide." }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-xs text-gray-500 mb-4", children: [
-          "Enhancing the ecosystem across repositories with ",
+          "Enhancing the ecosystem across repositories with",
+          " ",
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "30k+" }),
           " combined stars."
         ] }),
@@ -21831,54 +21832,11 @@ function BentoGrid() {
           }
         )
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-2 bg-[#0B0B0B] border border-[#FFBF00] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(255,191,0,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", { className: "w-full h-full", xmlns: "http://www.w3.org/2000/svg", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-            "line",
-            {
-              x1: "0",
-              y1: "50%",
-              x2: "100%",
-              y2: "50%",
-              stroke: "#FFBF00",
-              strokeWidth: "1",
-              opacity: "0.3"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-            "line",
-            {
-              x1: "50%",
-              y1: "0",
-              x2: "50%",
-              y2: "100%",
-              stroke: "#FFBF00",
-              strokeWidth: "1",
-              opacity: "0.3"
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-            "circle",
-            {
-              cx: "50%",
-              cy: "50%",
-              r: "20",
-              stroke: "#FFBF00",
-              fill: "none",
-              strokeWidth: "1",
-              opacity: "0.3"
-            }
-          )
-        ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2 text-sm", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "$1M+" }),
-            " budgets / CEDAE"
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs font-mono text-[#FFBF00]", children: "PLC \u2022 C/C++ \u2022 Leadership" })
-        ] })
-      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-[#0B0B0B] border border-[#FFBF00] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(255,191,0,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Former electrical Engineer" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Led a team of 6 electricians" })
+      ] }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Insights" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [

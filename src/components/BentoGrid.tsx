@@ -140,12 +140,17 @@ export function BentoGrid() {
           {/* Box 6: Open Source Contributor (2x2 - Tall) */}
           <article className="lg:col-span-2 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6">
             <div className="relative z-10">
-              <h3 className="text-lg font-bold mb-3 text-white">Open Source Contributor</h3>
+              <h3 className="text-lg font-bold mb-3 text-white">
+                Open Source Contributor
+              </h3>
               <p className="text-gray-400 mb-3 text-sm">
-                Contributing to high-impact projects used by thousands of developers worldwide.
+                Contributing to high-impact projects used by thousands of
+                developers worldwide.
               </p>
               <p className="text-xs text-gray-500 mb-4">
-                Enhancing the ecosystem across repositories with <span className="text-[#FFBF00] font-bold">30k+</span> combined stars.
+                Enhancing the ecosystem across repositories with{" "}
+                <span className="text-[#FFBF00] font-bold">30k+</span> combined
+                stars.
               </p>
               <a
                 href="https://github.com/pedroalpacheco"
@@ -160,45 +165,15 @@ export function BentoGrid() {
 
           {/* Box 7: Foundational (2x1 - Square) */}
           <article className="lg:col-span-2 bg-[#0B0B0B] border border-[#FFBF00] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(255,191,0,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <line
-                  x1="0"
-                  y1="50%"
-                  x2="100%"
-                  y2="50%"
-                  stroke="#FFBF00"
-                  strokeWidth="1"
-                  opacity="0.3"
-                />
-                <line
-                  x1="50%"
-                  y1="0"
-                  x2="50%"
-                  y2="100%"
-                  stroke="#FFBF00"
-                  strokeWidth="1"
-                  opacity="0.3"
-                />
-                <circle
-                  cx="50%"
-                  cy="50%"
-                  r="20"
-                  stroke="#FFBF00"
-                  fill="none"
-                  strokeWidth="1"
-                  opacity="0.3"
-                />
-              </svg>
-            </div>
             <div className="relative z-10">
-              <h3 className="text-lg font-bold mb-3 text-white">Industrial</h3>
-              <p className="text-gray-400 mb-2 text-sm">
-                <span className="text-[#FFBF00] font-bold">$1M+</span> budgets /
-                CEDAE
+              <h3 className="text-lg font-bold mb-3 text-white">
+                Industrial Roots & Leadership
+              </h3>
+              <p className="text-gray-400 mb-3 text-sm">
+                Former electrical Engineer
               </p>
-              <p className="text-xs font-mono text-[#FFBF00]">
-                PLC • C/C++ • Leadership
+              <p className="text-gray-400 mb-3 text-sm">
+                Led a team of 6 electricians
               </p>
             </div>
           </article>

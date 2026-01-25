@@ -27,9 +27,15 @@ export function BentoGrid() {
               <p className="text-sm text-gray-400 mb-4">
                 Building in public and scaling through AI-powered automation.
               </p>
-              <p className="text-sm font-mono text-secondary">
+              <p className="text-sm font-mono text-secondary mb-4">
                 MERN Stack • Playwright • Vercel • Automation
               </p>
+              <a
+                href="#"
+                className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
+              >
+                See the Journey →
+              </a>
             </div>
           </article>
 

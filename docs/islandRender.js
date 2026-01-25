@@ -21742,7 +21742,15 @@ function BentoGrid() {
             " onboarding first paid subscribers."
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400 mb-4", children: "Building in public and scaling through AI-powered automation." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-secondary", children: "MERN Stack \u2022 Playwright \u2022 Vercel \u2022 Automation" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-secondary mb-4", children: "MERN Stack \u2022 Playwright \u2022 Vercel \u2022 Automation" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+            "a",
+            {
+              href: "#",
+              className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+              children: "See the Journey \u2192"
+            }
+          )
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2", children: [

@@ -137,8 +137,8 @@ export function BentoGrid() {
             </div>
           </article>
 
-          {/* Box 6: OSS (2x1 - Square) */}
-          <article className="lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4">
+          {/* Box 6: OSS (2x2 - Tall) */}
+          <article className="lg:col-span-2 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6">
             <div className="relative z-10">
               <h3 className="text-lg font-bold mb-3 text-white">OSS</h3>
               <p className="text-gray-400 mb-2 text-sm">
@@ -156,7 +156,7 @@ export function BentoGrid() {
           </article>
 
           {/* Box 7: Foundational (2x1 - Square) */}
-          <article className="lg:col-span-2 bg-[#0B0B0B] border border-[#FFBF00] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(255,191,0,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6">
+          <article className="lg:col-span-2 bg-[#0B0B0B] border border-[#FFBF00] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(255,191,0,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                 <line

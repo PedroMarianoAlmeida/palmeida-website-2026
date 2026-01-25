@@ -4,9 +4,10 @@
 
 ### Box 1: Growth & Design Systems (Large 2x2 - The Anchor)
 - **Title**: Growth & Design Systems
-- **Main Copy**: Currently architecting high-conversion acquisition flows for the US solar market at NovaComp.
+- **Main Copy**: **MERN Developer** at **NovaComp**, architecting high-conversion acquisition flows for a leading **US solar provider**.
 - **The Flex**: Bridging the gap between brand vision and engineering reality by maintaining scalable Design Systems and MongoDB-backed architectures.
-- **Tech Tags**: Next.js • TypeScript • MongoDB • Tailwind
+- **Tech Tags**: Next.js • MongoDB • LaunchDarkly • Storybook
+- **Action**: Download CV (PDF)
 
 ### Box 2: Agentic Media & AI (Wide 2x1 - The Innovation)
 - **Title**: Agentic Media Infrastructure

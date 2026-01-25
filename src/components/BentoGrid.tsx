@@ -8,23 +8,29 @@ export function BentoGrid() {
 
         {/* Desktop: 12-column grid, Mobile: single column stack */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]">
-          {/* Box 1: Growth Engineering (6x2 - Large) */}
+          {/* Box 1: Growth & Design Systems (6x2 - Large) */}
           <article className="lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1">
             <div className="absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">
-                Growth Engineering
+                Growth & Design Systems
               </h3>
               <p className="text-gray-400 mb-3">
-                NovaComp Solar / High-conversion acquisition flows.
+                <strong>MERN Developer</strong> at <strong>NovaComp</strong>, architecting high-conversion acquisition flows for a leading <strong>US solar provider</strong>.
               </p>
               <p className="text-gray-300 mb-4">
-                Leveraging MongoDB and Next.js to build high-conversion
-                acquisition flows and scalable Design Systems.
+                Bridging the gap between brand vision and engineering reality by maintaining scalable Design Systems and MongoDB-backed architectures.
               </p>
-              <p className="text-sm font-mono text-[#00A86B]">
-                Next.js • TypeScript • MongoDB • Tailwind
+              <p className="text-sm font-mono text-[#00A86B] mb-4">
+                Next.js • MongoDB • LaunchDarkly • Storybook
               </p>
+              <a
+                href="./assets/pedro-almeida-cv.docx"
+                download
+                className="inline-block px-4 py-2 bg-[#00A86B] text-white rounded-lg hover:bg-[#00A86B]/80 transition-colors duration-200 text-sm font-medium"
+              >
+                Download CV
+              </a>
             </div>
           </article>
 

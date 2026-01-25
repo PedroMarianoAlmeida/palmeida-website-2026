@@ -21730,10 +21730,26 @@ function BentoGrid() {
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth Engineering" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3", children: "NovaComp Solar / High-conversion acquisition flows." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4", children: "Leveraging MongoDB and Next.js to build high-conversion acquisition flows and scalable Design Systems." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00A86B]", children: "Next.js \u2022 TypeScript \u2022 MongoDB \u2022 Tailwind" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth & Design Systems" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MERN Developer" }),
+            " at ",
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "NovaComp" }),
+            ", architecting high-conversion acquisition flows for a leading ",
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "US solar provider" }),
+            "."
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4", children: "Bridging the gap between brand vision and engineering reality by maintaining scalable Design Systems and MongoDB-backed architectures." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00A86B] mb-4", children: "Next.js \u2022 MongoDB \u2022 LaunchDarkly \u2022 Storybook" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+            "a",
+            {
+              href: "./assets/pedro-almeida-cv.docx",
+              download: true,
+              className: "inline-block px-4 py-2 bg-[#00A86B] text-white rounded-lg hover:bg-[#00A86B]/80 transition-colors duration-200 text-sm font-medium",
+              children: "Download CV"
+            }
+          )
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-[#0B0B0B] border border-[#00F5FF] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(0,245,255,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2", children: [

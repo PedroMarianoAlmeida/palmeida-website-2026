@@ -62,7 +62,7 @@ export function Hero() {
           href="https://usd-latam-jobs.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-gray-500 uppercase tracking-[0.3em] font-bold group transition-all"
+          className="text-xs text-gray-300 uppercase tracking-[0.3em] font-bold group transition-all"
         >
           Currently Scaling
           <span className="text-secondary/60 group-hover:text-secondary ml-2 transition-colors duration-300 underline decoration-secondary/20 underline-offset-4">

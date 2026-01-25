@@ -81,9 +81,39 @@
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white">
           Focus Areas
         </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
           <article
-            class="lg:col-span-4 lg:row-span-2 bg-background border border-primary rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_168_107/0.45)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1"
+            class="lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1"
+          >
+            <div
+              class="absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full"
+            >
+              <span class="text-xs font-bold text-secondary">Live Product</span>
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="relative z-10">
+              <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">USD Latam Jobs</h3>
+              <p class="text-gray-400 mb-3">
+                Subscription-based SaaS connecting Latin American developers with
+                <strong>US remote opportunities</strong>
+                .
+              </p>
+              <p class="text-gray-300 mb-3">
+                <span class="text-secondary font-bold">18 active users</span>
+                onboarding first paid subscribers.
+              </p>
+              <p class="text-sm text-gray-400 mb-4">
+                Building in public and scaling through AI-powered automation.
+              </p>
+              <p class="text-sm font-mono text-secondary">
+                MERN Stack • Playwright • Vercel • Automation
+              </p>
+            </div>
+          </article>
+          <article
+            class="lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2"
           >
             <div
               class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -93,7 +123,7 @@
                 Growth &amp; Design Systems
               </h3>
               <p class="text-gray-400 mb-3">
-                <strong>MERN Developer</strong>
+                <strong>Senior Software Engineer</strong>
                 at
                 <strong>NovaComp</strong>
                 , architecting high-conversion acquisition flows for a leading
@@ -106,50 +136,31 @@
                 MongoDB-backed architectures.
               </p>
               <p class="text-sm font-mono text-primary">
-                Next.js • MongoDB • LaunchDarkly • Storybook
+                Next.js • Storybook • LaunchDarkly • MongoDB
               </p>
             </div>
           </article>
           <article
-            class="lg:col-span-4 bg-background border border-secondary/70 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_24px_rgb(0_245_255/0.35)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative z-10">
-              <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">AI Orchestrator</h3>
-              <p class="text-gray-400 mb-3 text-sm">
-                Creating and integrating AI-native tooling across the modern development lifecycle.
-              </p>
-              <p class="text-gray-300 mb-4 text-sm">
-                Accelerating daily workflows with Claude Code, MCPs, and automation.
-              </p>
-              <p class="text-sm font-mono text-secondary">
-                MCP • Playwright • Claude Code • Automation
-              </p>
-            </div>
-          </article>
-          <article
-            class="lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3"
+            class="lg:col-span-4 bg-background border border-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-3"
           >
             <div
               class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></div>
             <div class="relative z-10">
-              <h3 class="text-lg font-bold mb-3 text-white">
-                Technical Leadership &amp; Mentorship
-              </h3>
+              <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">Engineering Mentorship</h3>
               <p class="text-gray-400 mb-2 text-sm">
                 Guiding
                 <span class="text-accent font-bold">20+</span>
                 <!-- -->
-                developers via weekly live sessions.
+                developers via weekly live sessions at
+                <strong>TripleTen</strong>
+                .
               </p>
-              <p class="text-xs text-gray-400 mb-2">
-                Career coaching, live debugging, and technical guidance.
+              <p class="text-sm text-gray-400 mb-3">
+                Code reviews, live debugging, and career coaching.
               </p>
               <p class="text-sm font-mono text-accent mb-3">
-                Public Speaking • Live Debugging • Mentorship
+                Live Debugging • Career Coaching • Code Reviews
               </p>
               <a
                 href="https://www.linkedin.com/in/pedro-fullstack/details/recommendations/"
@@ -162,41 +173,39 @@
             </div>
           </article>
           <article
-            class="lg:col-span-4 lg:row-span-2 bg-background border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5"
+            class="lg:col-span-4 bg-background border border-secondary/70 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_24px_rgb(0_245_255/0.35)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4"
           >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
             <div class="relative z-10">
-              <h3 class="text-xl lg:text-2xl font-bold mb-4 text-white">The Lab</h3>
-              <p class="text-gray-400 mb-4">
-                Designing and launching full-stack products with real clients and active NPM users.
+              <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">AI Orchestration</h3>
+              <p class="text-gray-400 mb-3 text-sm">
+                Automating development workflows with Claude Code and MCPs to scale
+                <strong>USD Latam Jobs</strong>
+                .
               </p>
-              <p class="text-sm text-gray-400 mb-6">
-                From Micro-SaaS experiments to internal tooling, I build systems that optimize my
-                own workflow.
+              <p class="text-gray-300 mb-4 text-sm">
+                Building AI-native tooling across the modern development lifecycle.
               </p>
-              <p class="text-sm font-mono text-gray-400 mb-4">
-                Product Strategy • NPM Publishing • Micro-SaaS
+              <p class="text-sm font-mono text-secondary">
+                MCP • Claude Code • Playwright • Automation
               </p>
-              <a
-                href="#"
-                class="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
-              >
-                Check the Project List →
-              </a>
             </div>
           </article>
           <article
-            class="lg:col-span-2 lg:row-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6"
+            class="lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5"
           >
             <div class="relative z-10">
-              <h3 class="text-lg font-bold mb-3 text-white">Open Source Contributor</h3>
+              <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">Open Source &amp; NPM</h3>
               <p class="text-gray-400 mb-3 text-sm">
-                Contributing to high-impact tools used by thousands.
-              </p>
-              <p class="text-xs text-gray-400 mb-4">
-                Across repositories with
+                Contributing to high-impact repositories with
                 <!-- -->
                 <span class="text-accent font-bold">30k+</span>
                 combined stars.
+              </p>
+              <p class="text-gray-300 mb-4 text-sm">
+                Building reusable components and internal tools for the community.
               </p>
               <a
                 href="https://github.com/pedroalpacheco"
@@ -209,28 +218,36 @@
             </div>
           </article>
           <article
-            class="lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4"
+            class="lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6"
           >
             <div class="relative z-10">
-              <h3 class="text-lg font-bold mb-3 text-white">Industrial Roots &amp; Leadership</h3>
-              <p class="text-gray-400 text-sm">Former Electrical Engineer</p>
-              <p class="text-gray-400 text-sm">Led a team of 6 electricians</p>
+              <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">
+                Industrial Roots &amp; Leadership
+              </h3>
+              <p class="text-gray-400 mb-2">
+                Former
+                <strong>Electrical Engineer</strong>
+                who led a team of 6 electricians in industrial settings.
+              </p>
+              <p class="text-sm text-gray-400">
+                This foundation explains my seniority mindset and leadership origins.
+              </p>
             </div>
           </article>
           <article
-            class="lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] transition-all duration-300 relative overflow-hidden group order-7"
+            class="lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7"
           >
             <div class="relative z-10">
               <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">Engineering Insights</h3>
               <p class="text-gray-400 mb-4">
-                Weekly writing on careers, modern code, and AI workflows for
+                Building in public and sharing technical strategy with
                 <!-- -->
                 <span class="text-accent font-bold">3,500+</span>
                 <!-- -->
-                developers.
+                LinkedIn followers.
               </p>
               <p class="text-sm font-mono text-gray-400 mb-3">
-                Career Strategy • Technical Writing
+                Building in Public • Technical Writing • Career Strategy
               </p>
               <a
                 href="#"

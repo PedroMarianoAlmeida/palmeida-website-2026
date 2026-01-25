@@ -73,9 +73,17 @@ export function BentoGrid() {
                 Providing career coaching and technical guidance to help
                 engineers navigate the industry.
               </p>
-              <p className="text-sm font-mono text-[#FFBF00]">
+              <p className="text-sm font-mono text-[#FFBF00] mb-3">
                 Public Speaking • Live Debugging • Mentorship
               </p>
+              <a
+                href="https://www.linkedin.com/in/pedro-fullstack/details/recommendations/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
+              >
+                See testimonials on LinkedIn →
+              </a>
             </div>
           </article>
 

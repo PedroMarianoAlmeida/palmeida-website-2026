@@ -21771,7 +21771,17 @@ function BentoGrid() {
           "developers via weekly live webinars and workshops."
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-500 mb-2", children: "Providing career coaching and technical guidance to help engineers navigate the industry." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#FFBF00]", children: "Public Speaking \u2022 Live Debugging \u2022 Mentorship" })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#FFBF00] mb-3", children: "Public Speaking \u2022 Live Debugging \u2022 Mentorship" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+          "a",
+          {
+            href: "https://www.linkedin.com/in/pedro-fullstack/details/recommendations/",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+            children: "See testimonials on LinkedIn \u2192"
+          }
+        )
       ] }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-4 text-white", children: "The Lab & Ventures" }),

@@ -52,7 +52,7 @@ export function Hero() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
         </span>
-        <span className="text-xs text-gray-500 uppercase tracking-[0.3em] font-bold">
+        <span className="text-xs text-gray-300 uppercase tracking-[0.3em] font-bold">
           Currently Building in Public
         </span>
       </div>

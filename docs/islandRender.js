@@ -21763,7 +21763,7 @@ function BentoGrid() {
             " ",
             "developers via weekly live sessions."
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-500 mb-2", children: "Career coaching, live debugging, and technical guidance." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-400 mb-2", children: "Career coaching, live debugging, and technical guidance." }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-accent mb-3", children: "Public Speaking \u2022 Live Debugging \u2022 Mentorship" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
             "a",
@@ -21780,8 +21780,8 @@ function BentoGrid() {
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 lg:row-span-2 bg-background border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-4 text-white", children: "The Lab" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-4", children: "Designing and launching full-stack products with real clients and active NPM users." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-500 mb-6", children: "From Micro-SaaS experiments to internal tooling, I build systems that optimize my own workflow." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-500 mb-4", children: "Product Strategy \u2022 NPM Publishing \u2022 Micro-SaaS" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400 mb-6", children: "From Micro-SaaS experiments to internal tooling, I build systems that optimize my own workflow." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400 mb-4", children: "Product Strategy \u2022 NPM Publishing \u2022 Micro-SaaS" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "a",
           {
@@ -21794,7 +21794,7 @@ function BentoGrid() {
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 lg:row-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Open Source Contributor" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Contributing to high-impact tools used by thousands." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-xs text-gray-500 mb-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-xs text-gray-400 mb-4", children: [
           "Across repositories with",
           " ",
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "30k+" }),
@@ -21825,7 +21825,7 @@ function BentoGrid() {
           " ",
           "developers."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-500 mb-3", children: "Career Strategy \u2022 Technical Writing" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400 mb-3", children: "Career Strategy \u2022 Technical Writing" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "a",
           {
@@ -21909,7 +21909,7 @@ function Hero() {
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "relative inline-flex rounded-full h-2 w-2 bg-secondary" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-xs text-gray-500 uppercase tracking-[0.3em] font-bold", children: "Currently Building in Public" })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-xs text-gray-300 uppercase tracking-[0.3em] font-bold", children: "Currently Building in Public" })
     ] })
   ] });
 }

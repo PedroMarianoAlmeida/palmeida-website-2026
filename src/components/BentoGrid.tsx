@@ -61,7 +61,7 @@ export function BentoGrid() {
                 Guiding <span className="text-accent font-bold">20+</span>{" "}
                 developers via weekly live sessions.
               </p>
-              <p className="text-xs text-gray-500 mb-2">
+              <p className="text-xs text-gray-400 mb-2">
                 Career coaching, live debugging, and technical guidance.
               </p>
               <p className="text-sm font-mono text-accent mb-3">
@@ -88,11 +88,11 @@ export function BentoGrid() {
                 Designing and launching full-stack products with real clients
                 and active NPM users.
               </p>
-              <p className="text-sm text-gray-500 mb-6">
+              <p className="text-sm text-gray-400 mb-6">
                 From Micro-SaaS experiments to internal tooling, I build systems
                 that optimize my own workflow.
               </p>
-              <p className="text-sm font-mono text-gray-500 mb-4">
+              <p className="text-sm font-mono text-gray-400 mb-4">
                 Product Strategy • NPM Publishing • Micro-SaaS
               </p>
               <a
@@ -113,7 +113,7 @@ export function BentoGrid() {
               <p className="text-gray-400 mb-3 text-sm">
                 Contributing to high-impact tools used by thousands.
               </p>
-              <p className="text-xs text-gray-500 mb-4">
+              <p className="text-xs text-gray-400 mb-4">
                 Across repositories with{" "}
                 <span className="text-accent font-bold">30k+</span> combined
                 stars.
@@ -155,7 +155,7 @@ export function BentoGrid() {
                 <span className="text-accent font-bold">3,500+</span>{" "}
                 developers.
               </p>
-              <p className="text-sm font-mono text-gray-500 mb-3">
+              <p className="text-sm font-mono text-gray-400 mb-3">
                 Career Strategy • Technical Writing
               </p>
               <a

@@ -21727,7 +21727,7 @@ function BentoGrid() {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-[#0B0B0B] px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative max-w-7xl mx-auto", children: [
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white", children: "What I Do" }),
     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth Engineering" }),
@@ -21853,7 +21853,7 @@ function BentoGrid() {
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs font-mono text-[#FFBF00]", children: "PLC \u2022 C/C++ \u2022 Leadership" })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Insights" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
           "Cutting lead times by",

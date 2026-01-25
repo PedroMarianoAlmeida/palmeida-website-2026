@@ -9,7 +9,7 @@ export function BentoGrid() {
         {/* Desktop: 12-column grid, Mobile: single column stack */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]">
           {/* Box 1: Growth Engineering (6x2 - Large) */}
-          <article className="lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-1">
+          <article className="lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1">
             <div className="absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">
@@ -177,7 +177,7 @@ export function BentoGrid() {
           </article>
 
           {/* Box 8: Insights (6x1 - Wide) */}
-          <article className="lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-7">
+          <article className="lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-7">
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
                 Insights

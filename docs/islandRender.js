@@ -21724,11 +21724,11 @@ var import_client = __toESM(require_client(), 1);
 // src/components/BentoGrid.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
 function BentoGrid() {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-[#0B0B0B] px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative max-w-7xl mx-auto", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative max-w-7xl mx-auto", children: [
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white", children: "Focus Areas" }),
     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.45)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-background border border-primary rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_168_107/0.45)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth & Design Systems" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
@@ -21741,30 +21741,30 @@ function BentoGrid() {
             "."
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4", children: "Bridging brand vision and engineering reality through scalable design systems and MongoDB-backed architectures." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00A86B]", children: "Next.js \u2022 MongoDB \u2022 LaunchDarkly \u2022 Storybook" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-primary", children: "Next.js \u2022 MongoDB \u2022 LaunchDarkly \u2022 Storybook" })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-[#0B0B0B] border border-[#00F5FF]/70 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_24px_rgba(0,245,255,0.35)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00F5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-background border border-secondary/70 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_24px_rgb(0_245_255/0.35)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestrator" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Creating and integrating AI-native tooling across the modern development lifecycle." }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Accelerating daily workflows with Claude Code, MCPs, and automation." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00F5FF]", children: "MCP \u2022 Playwright \u2022 Claude Code \u2022 Automation" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-secondary", children: "MCP \u2022 Playwright \u2022 Claude Code \u2022 Automation" })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(0,168,107,0.25)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00A86B]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Technical Leadership & Mentorship" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2 text-sm", children: [
             "Guiding ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "20+" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "20+" }),
             " ",
             "developers via weekly live sessions."
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-500 mb-2", children: "Career coaching, live debugging, and technical guidance." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#FFBF00] mb-3", children: "Public Speaking \u2022 Live Debugging \u2022 Mentorship" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-accent mb-3", children: "Public Speaking \u2022 Live Debugging \u2022 Mentorship" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
             "a",
             {
@@ -21777,7 +21777,7 @@ function BentoGrid() {
           )
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 lg:row-span-2 bg-background border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-4 text-white", children: "The Lab" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-4", children: "Designing and launching full-stack products with real clients and active NPM users." }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-500 mb-6", children: "From Micro-SaaS experiments to internal tooling, I build systems that optimize my own workflow." }),
@@ -21791,13 +21791,13 @@ function BentoGrid() {
           }
         )
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 lg:row-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Open Source Contributor" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Contributing to high-impact tools used by thousands." }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-xs text-gray-500 mb-4", children: [
           "Across repositories with",
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "30k+" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "30k+" }),
           " combined stars."
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
@@ -21811,17 +21811,17 @@ function BentoGrid() {
           }
         )
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,191,0,0.25)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Former Electrical Engineer" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Led a team of 6 electricians" })
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Insights" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-4", children: [
           "Weekly writing on careers, modern code, and AI workflows for",
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "3,500+" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "3,500+" }),
           " ",
           "developers."
         ] }),

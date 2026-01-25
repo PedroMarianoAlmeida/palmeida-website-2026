@@ -165,7 +165,7 @@ export function BentoGrid() {
                 Building in Public • Technical Writing • Career Strategy
               </p>
               <a
-                href="#"
+                href="./insights.html"
                 className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
               >
                 Explore by Topic →

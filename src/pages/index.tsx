@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { ImpactBar } from "@/components/ImpactBar";
 import { BentoGrid } from "@/components/BentoGrid";
 import { Footer } from "@/components/Footer";
 
@@ -10,7 +9,9 @@ const HomePage = () => {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pedro Almeida - Senior Software Engineer & AI Infrastructure Architect</title>
+        <title>
+          Pedro Almeida - Senior Software Engineer & AI Infrastructure Architect
+        </title>
         <meta
           name="description"
           content="7+ years of engineering resilient systems using TypeScript and React. Senior Software Engineer specializing in Growth Engineering and AI Infrastructure."
@@ -20,7 +21,6 @@ const HomePage = () => {
       <body className="">
         <Header />
         <Hero />
-        <ImpactBar />
         <BentoGrid />
         <Footer />
       </body>

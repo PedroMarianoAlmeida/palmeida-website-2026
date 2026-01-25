@@ -23,16 +23,9 @@ export function BentoGrid() {
                 Bridging brand vision and engineering reality through scalable
                 design systems and MongoDB-backed architectures.
               </p>
-              <p className="text-sm font-mono text-[#00A86B] mb-4">
+              <p className="text-sm font-mono text-[#00A86B]">
                 Next.js • MongoDB • LaunchDarkly • Storybook
               </p>
-              <a
-                href="./assets/pedro-almeida-cv.docx"
-                download
-                className="inline-block px-4 py-2 bg-[#00A86B] text-white rounded-lg hover:bg-[#00A86B]/80 transition-colors duration-200 text-sm font-medium"
-              >
-                Download CV
-              </a>
             </div>
           </article>
 

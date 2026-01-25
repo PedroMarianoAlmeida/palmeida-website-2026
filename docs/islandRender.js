@@ -21741,16 +21741,7 @@ function BentoGrid() {
             "."
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4", children: "Bridging brand vision and engineering reality through scalable design systems and MongoDB-backed architectures." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00A86B] mb-4", children: "Next.js \u2022 MongoDB \u2022 LaunchDarkly \u2022 Storybook" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-            "a",
-            {
-              href: "./assets/pedro-almeida-cv.docx",
-              download: true,
-              className: "inline-block px-4 py-2 bg-[#00A86B] text-white rounded-lg hover:bg-[#00A86B]/80 transition-colors duration-200 text-sm font-medium",
-              children: "Download CV"
-            }
-          )
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00A86B]", children: "Next.js \u2022 MongoDB \u2022 LaunchDarkly \u2022 Storybook" })
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-[#0B0B0B] border border-[#00F5FF]/70 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_24px_rgba(0,245,255,0.35)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2", children: [
@@ -21853,6 +21844,7 @@ var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 function Footer() {
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("footer", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { children: "Pedro Almeida \u2014 Senior Software Engineer. Based in Rio de Janeiro, Brazil." }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "./assets/pedro-almeida-cv.docx", download: true, children: "Download CV" }),
     /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { children: [
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "https://www.linkedin.com/in/pedro-mariano-almeida/", target: "_blank", rel: "noopener noreferrer", children: "LinkedIn" }),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "https://github.com/PedroMarianoAlmeida", target: "_blank", rel: "noopener noreferrer", children: "GitHub" }),
@@ -21880,31 +21872,8 @@ function Hero() {
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h2", { children: "Senior Software Engineer & AI Infrastructure Architect" }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "7+ years of engineering resilient systems using TypeScript and React." }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", { href: "./open-source.html", children: "View My Work" }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", { href: "#", children: "Download CV" })
-    ] })
-  ] });
-}
-
-// src/components/ImpactBar.tsx
-var import_jsx_runtime5 = __toESM(require_jsx_runtime(), 1);
-function ImpactBar() {
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("section", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h3", { children: "Experience" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: "7+ Years building complex web applications." })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h3", { children: "Leadership" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: "Mentoring 20+ developers at Triple Ten." })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h3", { children: "OSS" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: "Contributor to React-Email and PayPal." })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h3", { children: "Main Tools" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: "TypeScript \u2022 React \u2022 Next.js \u2022 Node.js \u2022 MongoDB." })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", { href: "https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/", children: "Read Latest Insights" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", { href: "https://www.linkedin.com/in/pedro-mariano-almeida/", children: "Connect on LinkedIn" })
     ] })
   ] });
 }
@@ -21914,8 +21883,7 @@ var componentRegistry = {
   "BentoGrid": BentoGrid,
   "Footer": Footer,
   "Header": Header,
-  "Hero": Hero,
-  "ImpactBar": ImpactBar
+  "Hero": Hero
 };
 var hydrateIslands = () => {
   const islands = document.querySelectorAll("[data-island]");

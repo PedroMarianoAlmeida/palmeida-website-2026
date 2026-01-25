@@ -73,7 +73,7 @@ export function BentoGrid() {
                 Providing career coaching and technical guidance to help
                 engineers navigate the industry.
               </p>
-              <p className="text-xs font-mono text-gray-500">
+              <p className="text-sm font-mono text-[#FFBF00]">
                 Public Speaking • Live Debugging • Mentorship
               </p>
             </div>

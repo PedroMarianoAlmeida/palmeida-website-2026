@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="">
+  <body>
     <header
       class="fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4 flex justify-between items-center backdrop-blur-md bg-background/10"
     >
@@ -49,9 +49,7 @@
       </button>
     </header>
     <div class="h-24 bg-black"></div>
-    <section
-      class="flex flex-col items-center justify-center text-center py-20 px-6 bg-background min-h-[75vh]"
-    >
+    <section class="flex flex-col items-center justify-center text-center py-20 px-6 min-h-[75vh]">
       <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">
         Building Products.
         <!-- -->
@@ -98,12 +96,10 @@
         </a>
       </div>
     </section>
-    <section class="relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section class="relative section-padding">
       <div class="relative max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
-          <article
-            class="lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1"
-          >
+          <article class="bento-card-secondary lg:col-span-4 lg:row-span-2 group order-1">
             <div
               class="absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full"
             >
@@ -138,9 +134,7 @@
               </a>
             </div>
           </article>
-          <article
-            class="lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2"
-          >
+          <article class="bento-card-primary lg:col-span-8 hover:scale-[1.015] group order-2">
             <div
               class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></div>
@@ -167,9 +161,7 @@
               </p>
             </div>
           </article>
-          <article
-            class="lg:col-span-4 bg-background border border-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-3"
-          >
+          <article class="bento-card-accent lg:col-span-4 group order-3">
             <div
               class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></div>
@@ -200,9 +192,7 @@
               </a>
             </div>
           </article>
-          <article
-            class="lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4"
-          >
+          <article class="bento-card-neutral lg:col-span-4 hover:scale-105 group order-4">
             <div class="relative z-10">
               <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">AI Orchestration</h3>
               <p class="text-gray-400 mb-3 text-sm">
@@ -218,9 +208,7 @@
               </p>
             </div>
           </article>
-          <article
-            class="lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5"
-          >
+          <article class="bento-card-neutral lg:col-span-4 hover:scale-105 group order-5">
             <div class="relative z-10">
               <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">Tools &amp; Products</h3>
               <p class="text-gray-400 mb-3 text-sm">
@@ -240,18 +228,14 @@
               </a>
             </div>
           </article>
-          <article
-            class="lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6"
-          >
+          <article class="bento-card-accent lg:col-span-2 group order-6">
             <div class="relative z-10">
               <h3 class="text-lg font-bold mb-3 text-white">Industrial Roots &amp; Leadership</h3>
               <p class="text-gray-400 text-sm">Former Electrical Engineer</p>
               <p class="text-gray-400 text-sm">Led a team of 6 electricians</p>
             </div>
           </article>
-          <article
-            class="lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7"
-          >
+          <article class="bento-card-neutral lg:col-span-6 hover:scale-[1.02] group order-7">
             <div class="relative z-10">
               <h3 class="text-xl lg:text-2xl font-bold mb-3 text-white">Engineering Insights</h3>
               <p class="text-gray-400 mb-4">
@@ -274,7 +258,7 @@
         </div>
       </div>
     </section>
-    <footer class="bg-background border-t border-gray-800 px-6 py-12">
+    <footer class="border-t border-gray-800 px-6 py-12">
       <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
         <p class="text-gray-400 text-sm text-center">
           Pedro Almeida — Senior Software Engineer. Based in Rio de Janeiro, Brazil.

@@ -1,10 +1,10 @@
 export function BentoGrid() {
   return (
-    <section className="relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section className="relative section-padding">
       <div className="relative max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
           {/* USD Latam Jobs — NEW PRIMARY */}
-          <article className="lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1">
+          <article className="bento-card-secondary lg:col-span-4 lg:row-span-2 group order-1">
             <div className="absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full">
               <span className="text-xs font-bold text-secondary">
                 Live Product
@@ -41,7 +41,7 @@ export function BentoGrid() {
           </article>
 
           {/* Growth & Design Systems — CORPORATE PRIMARY */}
-          <article className="lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2">
+          <article className="bento-card-primary lg:col-span-8 hover:scale-[1.015] group order-2">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">
@@ -64,7 +64,7 @@ export function BentoGrid() {
           </article>
 
           {/* Engineering Mentorship */}
-          <article className="lg:col-span-4 bg-background border border-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-3">
+          <article className="bento-card-accent lg:col-span-4 group order-3">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
@@ -93,7 +93,7 @@ export function BentoGrid() {
           </article>
 
           {/* AI Orchestration */}
-          <article className="lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4">
+          <article className="bento-card-neutral lg:col-span-4 hover:scale-105 group order-4">
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
                 AI Orchestration
@@ -113,7 +113,7 @@ export function BentoGrid() {
           </article>
 
           {/* Tools & Products */}
-          <article className="lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5">
+          <article className="bento-card-neutral lg:col-span-4 hover:scale-105 group order-5">
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
                 Tools & Products
@@ -136,7 +136,7 @@ export function BentoGrid() {
           </article>
 
           {/* Industrial Roots & Leadership */}
-          <article className="lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6">
+          <article className="bento-card-accent lg:col-span-2 group order-6">
             <div className="relative z-10">
               <h3 className="text-lg font-bold mb-3 text-white">
                 Industrial Roots & Leadership
@@ -151,7 +151,7 @@ export function BentoGrid() {
           </article>
 
           {/* Engineering Insights */}
-          <article className="lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7">
+          <article className="bento-card-neutral lg:col-span-6 hover:scale-[1.02] group order-7">
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
                 Engineering Insights

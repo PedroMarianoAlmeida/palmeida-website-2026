@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white antialiased;
+  }
+}
+
+@layer components {
+  /* Bento card base style - reusable across all cards */
+  .bento-card {
+    @apply bg-background border rounded-3xl p-6 lg:p-8 shadow-lg
+           hover:scale-[1.025] active:scale-95 transition-all duration-300
+           relative overflow-hidden;
+  }
+
+  /* Card variants */
+  .bento-card-primary {
+    @apply bento-card border-primary/50 hover:shadow-[0_0_24px_rgb(0_168_107/0.3)];
+  }
+
+  .bento-card-secondary {
+    @apply bento-card border-secondary/60 hover:shadow-[0_0_30px_rgb(0_245_255/0.4)];
+  }
+
+  .bento-card-neutral {
+    @apply bento-card border-gray-700 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)];
+  }
+
+  .bento-card-accent {
+    @apply bento-card border-gray-800 hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+}

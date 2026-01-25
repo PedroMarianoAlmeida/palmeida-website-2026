@@ -18,7 +18,7 @@ const HomePage = () => {
         />
         <link rel="stylesheet" href="./styles.css" />
       </head>
-      <body className="">
+      <body>
         <Header />
         <Hero />
         <BentoGrid />

@@ -2,7 +2,7 @@ import { siGithub, siReaddotcv } from "simple-icons";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-gray-800 px-6 py-12">
+    <footer className="border-t border-gray-800 px-6 py-12">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
         <p className="text-gray-400 text-sm text-center">
           Pedro Almeida — Senior Software Engineer. Based in Rio de Janeiro, Brazil.

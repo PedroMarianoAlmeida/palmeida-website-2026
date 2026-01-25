@@ -21724,8 +21724,8 @@ var import_client = __toESM(require_client(), 1);
 // src/components/BentoGrid.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
 function BentoGrid() {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "relative max-w-7xl mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative section-padding", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "relative max-w-7xl mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "bento-card-secondary lg:col-span-4 lg:row-span-2 group order-1", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-xs font-bold text-secondary", children: "Live Product" }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
@@ -21752,7 +21752,7 @@ function BentoGrid() {
         )
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "bento-card-primary lg:col-span-8 hover:scale-[1.015] group order-2", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth & Design Systems" }),
@@ -21770,7 +21770,7 @@ function BentoGrid() {
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-primary", children: "Next.js \u2022 Storybook \u2022 LaunchDarkly \u2022 MongoDB" })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-background border border-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-3", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "bento-card-accent lg:col-span-4 group order-3", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Mentorship" }),
@@ -21797,7 +21797,7 @@ function BentoGrid() {
         )
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "bento-card-neutral lg:col-span-4 hover:scale-105 group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestration" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3 text-sm", children: [
         "Automating development workflows with Claude Code and MCPs to scale ",
@@ -21807,7 +21807,7 @@ function BentoGrid() {
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Building AI-native tooling across the modern development lifecycle." }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400", children: "MCP \u2022 Claude Code \u2022 Playwright \u2022 Automation" })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "bento-card-neutral lg:col-span-4 hover:scale-105 group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Tools & Products" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Other SaaS, npm packages and open source contributions." }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-300 mb-4 text-sm", children: [
@@ -21825,12 +21825,12 @@ function BentoGrid() {
         }
       )
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "bento-card-accent lg:col-span-2 group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Former Electrical Engineer" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Led a team of 6 electricians" })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "bento-card-neutral lg:col-span-6 hover:scale-[1.02] group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Insights" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-4", children: [
         "Building in public and sharing technical strategy with",
@@ -21865,7 +21865,7 @@ var siReaddotcv = { title: "Read.cv", slug: "readdotcv", get svg() {
 // src/components/Footer.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 function Footer() {
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("footer", { className: "bg-background border-t border-gray-800 px-6 py-12", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "max-w-7xl mx-auto flex flex-col items-center gap-6", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("footer", { className: "border-t border-gray-800 px-6 py-12", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "max-w-7xl mx-auto flex flex-col items-center gap-6", children: [
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-gray-400 text-sm text-center", children: "Pedro Almeida \u2014 Senior Software Engineer. Based in Rio de Janeiro, Brazil." }),
     /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { className: "flex flex-wrap justify-center gap-6", children: [
       /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
@@ -21959,7 +21959,7 @@ function Header() {
 // src/components/Hero.tsx
 var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center py-20 px-6 bg-background min-h-[75vh]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center py-20 px-6 min-h-[75vh]", children: [
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h1", { className: "text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4", children: [
       "Building Products.",
       " ",

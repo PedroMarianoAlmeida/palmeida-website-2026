@@ -25,30 +25,17 @@ export function Hero() {
         Triple Ten, and privately.
       </p>
 
-      {/* CTAs - Dual Pillar Logic */}
-      <div className="flex flex-col sm:flex-row gap-4 items-center">
-        {/* The "Teaching" Pillar */}
-        <a
-          href="https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-8 py-4 bg-primary text-background font-bold rounded-lg 
-               hover:brightness-110 hover:scale-105 active:scale-95 
-               transition-all duration-200 shadow-xl shadow-primary/10 w-full sm:w-auto"
-        >
-          Read Latest Insights →
-        </a>
-
-        {/* The "Building" Pillar */}
-        <a
-          href="#the-lab"
-          className="px-8 py-4 border border-gray-800 text-gray-300 font-bold rounded-lg 
-               hover:bg-white/5 hover:scale-105 active:scale-95 
-               transition-all duration-200 w-full sm:w-auto"
-        >
-          Explore the Lab
-        </a>
-      </div>
+      {/* Primary CTA */}
+      <a
+        href="https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-8 py-4 bg-primary text-background font-bold rounded-lg
+             hover:brightness-110 hover:scale-105 active:scale-95
+             transition-all duration-200 shadow-xl shadow-primary/10"
+      >
+        Read Latest Insights →
+      </a>
       {/* Build in Public Indicator - Interactive Link */}
       <div className="mt-12 flex items-center gap-3">
         {/* The Pulse */}

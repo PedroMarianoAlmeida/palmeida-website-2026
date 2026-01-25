@@ -21930,26 +21930,16 @@ function Hero() {
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-accent font-bold mx-1", children: "3,500+ followers" }),
       " on LinkedIn. Currently mentoring the next generation of developers at Triple Ten, and privately."
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "flex flex-col sm:flex-row gap-4 items-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
-        "a",
-        {
-          href: "https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/",
-          target: "_blank",
-          rel: "noopener noreferrer",
-          className: "px-8 py-4 bg-primary text-background font-bold rounded-lg \n               hover:brightness-110 hover:scale-105 active:scale-95 \n               transition-all duration-200 shadow-xl shadow-primary/10 w-full sm:w-auto",
-          children: "Read Latest Insights \u2192"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
-        "a",
-        {
-          href: "#the-lab",
-          className: "px-8 py-4 border border-gray-800 text-gray-300 font-bold rounded-lg \n               hover:bg-white/5 hover:scale-105 active:scale-95 \n               transition-all duration-200 w-full sm:w-auto",
-          children: "Explore the Lab"
-        }
-      )
-    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+      "a",
+      {
+        href: "https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "px-8 py-4 bg-primary text-background font-bold rounded-lg\n             hover:brightness-110 hover:scale-105 active:scale-95\n             transition-all duration-200 shadow-xl shadow-primary/10",
+        children: "Read Latest Insights \u2192"
+      }
+    ),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "mt-12 flex items-center gap-3", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("span", { className: "relative flex h-2 w-2", children: [
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" }),

@@ -9,11 +9,11 @@
 - **Tech Tags**: Next.js • MongoDB • LaunchDarkly • Storybook
 - **Action**: Download CV (PDF)
 
-### Box 2: Agentic Media & AI (Wide 2x1 - The Innovation)
-- **Title**: Agentic Media Infrastructure
-- **Main Copy**: Giving AI "hands" to manipulate the physical file system.
-- **The Flex**: Creator of ffmpeg-mcp-server. Architecting Sovereign AI workflows that allow LLMs like Claude to perform complex video and image processing locally.
-- **Tech Tags**: MCP • FFmpeg • Node.js • Claude Code
+### Box 2: AI Orchestrator (Wide 2x1 - The Innovation)
+- **Title**: AI Orchestrator
+- **Main Copy**: Using and creating the next generation of tools to master the AI-native development lifecycle.
+- **The Flex**: Becoming a faster, more precise developer every day by integrating Claude Code and custom MCPs into my daily workflow.
+- **Tech Tags**: MCP • Playwright • Claude Code • Automation
 
 ### Box 3: Technical Leadership (Square 1x1 - The Human)
 - **Title**: Technical Enablement

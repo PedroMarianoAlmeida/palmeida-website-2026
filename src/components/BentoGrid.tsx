@@ -34,18 +34,21 @@ export function BentoGrid() {
             </div>
           </article>
 
-          {/* Box 2: Agentic Media (4x1 - Wide) */}
+          {/* Box 2: AI Orchestrator (4x1 - Wide) */}
           <article className="lg:col-span-4 bg-[#0B0B0B] border border-[#00F5FF] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(0,245,255,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2">
             <div className="absolute inset-0 bg-gradient-to-br from-[#00F5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
-                Agentic Media
+                AI Orchestrator
               </h3>
               <p className="text-gray-400 mb-3 text-sm">
-                ffmpeg-mcp-server & local video processing.
+                Using and creating the next generation of tools to master the AI-native development lifecycle.
+              </p>
+              <p className="text-gray-300 mb-4 text-sm">
+                Becoming a faster, more precise developer every day by integrating Claude Code and custom MCPs into my daily workflow.
               </p>
               <p className="text-sm font-mono text-[#00F5FF]">
-                MCP • FFmpeg • Node.js • Claude Code
+                MCP • Playwright • Claude Code • Automation
               </p>
             </div>
           </article>

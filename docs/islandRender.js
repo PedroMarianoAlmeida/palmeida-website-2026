@@ -21755,9 +21755,10 @@ function BentoGrid() {
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-[#0B0B0B] border border-[#00F5FF] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(0,245,255,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00F5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Agentic Media" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "ffmpeg-mcp-server & local video processing." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00F5FF]", children: "MCP \u2022 FFmpeg \u2022 Node.js \u2022 Claude Code" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestrator" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Using and creating the next generation of tools to master the AI-native development lifecycle." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Becoming a faster, more precise developer every day by integrating Claude Code and custom MCPs into my daily workflow." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00F5FF]", children: "MCP \u2022 Playwright \u2022 Claude Code \u2022 Automation" })
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [

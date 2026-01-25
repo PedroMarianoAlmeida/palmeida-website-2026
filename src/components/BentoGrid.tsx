@@ -178,25 +178,29 @@ export function BentoGrid() {
             </div>
           </article>
 
-          {/* Box 8: Insights (6x1 - Wide) */}
+          {/* Box 8: Engineering Insights (6x1 - Wide) */}
           <article className="lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-7">
             <div className="relative z-10">
               <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
-                Insights
+                Engineering Insights
               </h3>
-              <p className="text-gray-400 mb-3">
-                Cutting lead times by{" "}
-                <span className="text-[#FFBF00] font-bold">80%</span> /
-                Architecture tips.
+              <p className="text-gray-400 mb-4">
+                Weekly posts on career growth, modern code, and AI workflows for
+                a community of{" "}
+                <span className="text-[#FFBF00] font-bold">3,500+</span>{" "}
+                followers.
               </p>
-              <p className="text-sm text-gray-500">
-                Optimized UI response times by{" "}
-                <span className="text-[#FFBF00] font-bold">40%</span> through
-                Promise orchestration.
+              <p className="text-sm font-mono text-gray-500 mb-3">
+                Career Strategy • Technical Writing
               </p>
-              <p className="text-sm text-emerald-500 mt-3">
-                Read on LinkedIn →
-              </p>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
+              >
+                Explore by Topic →
+              </a>
             </div>
           </article>
         </div>

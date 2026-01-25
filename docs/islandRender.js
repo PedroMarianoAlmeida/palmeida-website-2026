@@ -21838,20 +21838,25 @@ function BentoGrid() {
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Led a team of 6 electricians" })
       ] }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Insights" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
-          "Cutting lead times by",
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Insights" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-4", children: [
+          "Weekly posts on career growth, modern code, and AI workflows for a community of",
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "80%" }),
-          " / Architecture tips."
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-sm text-gray-500", children: [
-          "Optimized UI response times by",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "3,500+" }),
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "40%" }),
-          " through Promise orchestration."
+          "followers."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-emerald-500 mt-3", children: "Read on LinkedIn \u2192" })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-500 mb-3", children: "Career Strategy \u2022 Technical Writing" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+          "a",
+          {
+            href: "#",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+            children: "Explore by Topic \u2192"
+          }
+        )
       ] }) })
     ] })
   ] }) });

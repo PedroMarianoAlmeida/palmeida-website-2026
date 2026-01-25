@@ -308,8 +308,8 @@ var require_react_development = __commonJS({
           invokeCallback = children;
           callback = callback(invokeCallback);
           var childKey = "" === nameSoFar ? "." + getElementKey(invokeCallback, 0) : nameSoFar;
-          isArrayImpl(callback) ? (escapedPrefix = "", null != childKey && (escapedPrefix = childKey.replace(userProvidedKeyEscapeRegex, "$&/") + "/"), mapIntoArray(callback, array, escapedPrefix, "", function(c) {
-            return c;
+          isArrayImpl(callback) ? (escapedPrefix = "", null != childKey && (escapedPrefix = childKey.replace(userProvidedKeyEscapeRegex, "$&/") + "/"), mapIntoArray(callback, array, escapedPrefix, "", function(c2) {
+            return c2;
           })) : null != callback && (isValidElement(callback) && (null != callback.key && (invokeCallback && invokeCallback.key === callback.key || checkKeyStringCoercion(callback.key)), escapedPrefix = cloneAndReplaceKey(
             callback,
             escapedPrefix + (null == callback.key || invokeCallback && invokeCallback.key === callback.key ? "" : ("" + callback.key).replace(
@@ -1098,9 +1098,9 @@ var require_scheduler_development = __commonJS({
         }
         return first;
       }
-      function compare(a, b) {
-        var diff = a.sortIndex - b.sortIndex;
-        return 0 !== diff ? diff : a.id - b.id;
+      function compare(a2, b) {
+        var diff = a2.sortIndex - b.sortIndex;
+        return 0 !== diff ? diff : a2.id - b.id;
       }
       function advanceTimers(currentTime) {
         for (var timer = peek(timerQueue); null !== timer; ) {
@@ -1508,8 +1508,8 @@ var require_react_dom_development = __commonJS({
       exports.requestFormReset = function(form) {
         Internals.d.r(form);
       };
-      exports.unstable_batchedUpdates = function(fn, a) {
-        return fn(a);
+      exports.unstable_batchedUpdates = function(fn, a2) {
+        return fn(a2);
       };
       exports.useFormState = function(action, initialState, permalink) {
         return resolveDispatcher().useFormState(action, initialState, permalink);
@@ -1674,55 +1674,55 @@ var require_react_dom_client_development = __commonJS({
             throw Error("Unable to find node on an unmounted component.");
           return alternate !== fiber ? null : fiber;
         }
-        for (var a = fiber, b = alternate; ; ) {
-          var parentA = a.return;
+        for (var a2 = fiber, b = alternate; ; ) {
+          var parentA = a2.return;
           if (null === parentA) break;
           var parentB = parentA.alternate;
           if (null === parentB) {
             b = parentA.return;
             if (null !== b) {
-              a = b;
+              a2 = b;
               continue;
             }
             break;
           }
           if (parentA.child === parentB.child) {
             for (parentB = parentA.child; parentB; ) {
-              if (parentB === a) return assertIsMounted(parentA), fiber;
+              if (parentB === a2) return assertIsMounted(parentA), fiber;
               if (parentB === b) return assertIsMounted(parentA), alternate;
               parentB = parentB.sibling;
             }
             throw Error("Unable to find node on an unmounted component.");
           }
-          if (a.return !== b.return) a = parentA, b = parentB;
+          if (a2.return !== b.return) a2 = parentA, b = parentB;
           else {
             for (var didFindChild = false, _child = parentA.child; _child; ) {
-              if (_child === a) {
+              if (_child === a2) {
                 didFindChild = true;
-                a = parentA;
+                a2 = parentA;
                 b = parentB;
                 break;
               }
               if (_child === b) {
                 didFindChild = true;
                 b = parentA;
-                a = parentB;
+                a2 = parentB;
                 break;
               }
               _child = _child.sibling;
             }
             if (!didFindChild) {
               for (_child = parentB.child; _child; ) {
-                if (_child === a) {
+                if (_child === a2) {
                   didFindChild = true;
-                  a = parentB;
+                  a2 = parentB;
                   b = parentA;
                   break;
                 }
                 if (_child === b) {
                   didFindChild = true;
                   b = parentB;
-                  a = parentA;
+                  a2 = parentA;
                   break;
                 }
                 _child = _child.sibling;
@@ -1733,14 +1733,14 @@ var require_react_dom_client_development = __commonJS({
                 );
             }
           }
-          if (a.alternate !== b)
+          if (a2.alternate !== b)
             throw Error(
               "Return fibers should always be each others' alternates. This error is likely caused by a bug in React. Please file an issue."
             );
         }
-        if (3 !== a.tag)
+        if (3 !== a2.tag)
           throw Error("Unable to find node on an unmounted component.");
-        return a.stateNode.current === a ? fiber : alternate;
+        return a2.stateNode.current === a2 ? fiber : alternate;
       }
       function findCurrentHostFiberImpl(node) {
         var tag = node.tag;
@@ -1881,11 +1881,11 @@ var require_react_dom_client_development = __commonJS({
         fiberStack[index$jscomp$0] = fiber;
         cursor.current = value;
       }
-      function requiredContext(c) {
-        null === c && console.error(
+      function requiredContext(c2) {
+        null === c2 && console.error(
           "Expected host context to exist. This error is likely caused by a bug in React. Please file an issue."
         );
-        return c;
+        return c2;
       }
       function pushHostContainer(fiber, nextRootInstance) {
         push(rootInstanceStackCursor, nextRootInstance, fiber);
@@ -3876,16 +3876,16 @@ var require_react_dom_client_development = __commonJS({
           }
         }
       }
-      function batchedUpdates$1(fn, a, b) {
-        if (isInsideEventHandler) return fn(a, b);
+      function batchedUpdates$1(fn, a2, b) {
+        if (isInsideEventHandler) return fn(a2, b);
         isInsideEventHandler = true;
         try {
-          var JSCompiler_inline_result = fn(a);
+          var JSCompiler_inline_result = fn(a2);
           return JSCompiler_inline_result;
         } finally {
           if (isInsideEventHandler = false, null !== restoreTarget || null !== restoreQueue) {
-            if (flushSyncWork$1(), restoreTarget && (a = restoreTarget, fn = restoreQueue, restoreQueue = restoreTarget = null, restoreStateOfTarget(a), fn))
-              for (a = 0; a < fn.length; a++) restoreStateOfTarget(fn[a]);
+            if (flushSyncWork$1(), restoreTarget && (a2 = restoreTarget, fn = restoreQueue, restoreQueue = restoreTarget = null, restoreStateOfTarget(a2), fn))
+              for (a2 = 0; a2 < fn.length; a2++) restoreStateOfTarget(fn[a2]);
           }
         }
       }
@@ -10676,11 +10676,11 @@ var require_react_dom_client_development = __commonJS({
                 addendum = null === lastEffect ? " You returned null. If your effect does not require clean up, return undefined (or nothing)." : "function" === typeof lastEffect.then ? "\n\nIt looks like you wrote " + hookName + "(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:\n\n" + hookName + "(() => {\n  async function fetchData() {\n    // You can await here\n    const response = await MyAPI.getData(someId);\n    // ...\n  }\n  fetchData();\n}, [someId]); // Or [] if effect doesn't need props or state\n\nLearn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching" : " You returned: " + lastEffect;
                 runWithFiberInDEV(
                   finishedWork,
-                  function(n, a) {
+                  function(n, a2) {
                     console.error(
                       "%s must not return anything besides a function, which is used for clean-up.%s",
                       n,
-                      a
+                      a2
                     );
                   },
                   hookName,
@@ -17987,8 +17987,8 @@ var require_react_dom_client_development = __commonJS({
       function markRetryLaneImpl(fiber, retryLane) {
         fiber = fiber.memoizedState;
         if (null !== fiber && null !== fiber.dehydrated) {
-          var a = fiber.retryLane;
-          fiber.retryLane = 0 !== a && a < retryLane ? a : retryLane;
+          var a2 = fiber.retryLane;
+          fiber.retryLane = 0 !== a2 && a2 < retryLane ? a2 : retryLane;
         }
       }
       function markRetryLaneIfNotHydrated(fiber, retryLane) {
@@ -21718,7 +21718,7 @@ var require_jsx_runtime = __commonJS({
 });
 
 // docs/islandRender.tsx
-var import_react3 = __toESM(require_react(), 1);
+var import_react = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // src/components/BentoGrid.tsx
@@ -21851,138 +21851,16 @@ function BentoGrid() {
   ] }) }) });
 }
 
-// node_modules/lucide-react/dist/esm/createLucideIcon.js
-var import_react2 = __toESM(require_react());
-
-// node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.js
-var mergeClasses = (...classes) => classes.filter((className, index, array) => {
-  return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
-}).join(" ").trim();
-
-// node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.js
-var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
-
-// node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.js
-var toCamelCase = (string) => string.replace(
-  /^([A-Z])|[\s-_]+(\w)/g,
-  (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase()
-);
-
-// node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.js
-var toPascalCase = (string) => {
-  const camelCase = toCamelCase(string);
-  return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
-};
-
-// node_modules/lucide-react/dist/esm/Icon.js
-var import_react = __toESM(require_react());
-
-// node_modules/lucide-react/dist/esm/defaultAttributes.js
-var defaultAttributes = {
-  xmlns: "http://www.w3.org/2000/svg",
-  width: 24,
-  height: 24,
-  viewBox: "0 0 24 24",
-  fill: "none",
-  stroke: "currentColor",
-  strokeWidth: 2,
-  strokeLinecap: "round",
-  strokeLinejoin: "round"
-};
-
-// node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.js
-var hasA11yProp = (props) => {
-  for (const prop in props) {
-    if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
-      return true;
-    }
-  }
-  return false;
-};
-
-// node_modules/lucide-react/dist/esm/Icon.js
-var Icon = (0, import_react.forwardRef)(
-  ({
-    color = "currentColor",
-    size = 24,
-    strokeWidth = 2,
-    absoluteStrokeWidth,
-    className = "",
-    children,
-    iconNode,
-    ...rest
-  }, ref) => (0, import_react.createElement)(
-    "svg",
-    {
-      ref,
-      ...defaultAttributes,
-      width: size,
-      height: size,
-      stroke: color,
-      strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
-      className: mergeClasses("lucide", className),
-      ...!children && !hasA11yProp(rest) && { "aria-hidden": "true" },
-      ...rest
-    },
-    [
-      ...iconNode.map(([tag, attrs]) => (0, import_react.createElement)(tag, attrs)),
-      ...Array.isArray(children) ? children : [children]
-    ]
-  )
-);
-
-// node_modules/lucide-react/dist/esm/createLucideIcon.js
-var createLucideIcon = (iconName, iconNode) => {
-  const Component = (0, import_react2.forwardRef)(
-    ({ className, ...props }, ref) => (0, import_react2.createElement)(Icon, {
-      ref,
-      iconNode,
-      className: mergeClasses(
-        `lucide-${toKebabCase(toPascalCase(iconName))}`,
-        `lucide-${iconName}`,
-        className
-      ),
-      ...props
-    })
-  );
-  Component.displayName = toPascalCase(iconName);
-  return Component;
-};
-
-// node_modules/lucide-react/dist/esm/icons/download.js
-var __iconNode = [
-  ["path", { d: "M12 15V3", key: "m9g1x1" }],
-  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
-  ["path", { d: "m7 10 5 5 5-5", key: "brsn70" }]
-];
-var Download = createLucideIcon("download", __iconNode);
-
-// node_modules/lucide-react/dist/esm/icons/github.js
-var __iconNode2 = [
-  [
-    "path",
-    {
-      d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4",
-      key: "tonef"
-    }
-  ],
-  ["path", { d: "M9 18c-4.51 2-5-2-7-2", key: "9comsn" }]
-];
-var Github = createLucideIcon("github", __iconNode2);
-
-// node_modules/lucide-react/dist/esm/icons/linkedin.js
-var __iconNode3 = [
-  [
-    "path",
-    {
-      d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z",
-      key: "c2jq9f"
-    }
-  ],
-  ["rect", { width: "4", height: "12", x: "2", y: "9", key: "mk3on5" }],
-  ["circle", { cx: "4", cy: "4", r: "2", key: "bt5ra8" }]
-];
-var Linkedin = createLucideIcon("linkedin", __iconNode3);
+// node_modules/simple-icons/index.mjs
+var c = '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>';
+var t = '</title><path d="';
+var a = '"/></svg>';
+var siGithub = { title: "GitHub", slug: "github", get svg() {
+  return c + "GitHub" + t + this.path + a;
+}, path: "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12", source: "https://github.com/logos", hex: "181717", guidelines: "https://github.com/logos" };
+var siReaddotcv = { title: "Read.cv", slug: "readdotcv", get svg() {
+  return c + "Read.cv" + t + this.path + a;
+}, path: "M20.8315 3.36707L8.66861 0.10804C6.98928 -0.34192 5.26312 0.65467 4.81314 2.334L0.94304 16.7773C0.49306 18.4568 1.48966 20.1829 3.16899 20.6328L15.3319 23.892C17.0112 24.3419 18.7373 23.3453 19.1874 21.666L23.0574 7.22254C23.5073 5.54321 22.5108 3.81705 20.8315 3.36707ZM6.33349 2.74138C6.55849 1.90171 7.42156 1.40341 8.26123 1.62841L20.4241 4.88744C21.2637 5.11242 21.762 5.9755 21.537 6.81516L17.6669 21.2586C17.4421 22.0983 16.5789 22.5966 15.7393 22.3715L3.57639 19.1125C2.73671 18.8875 2.23842 18.0245 2.4634 17.1849L6.33349 2.74138ZM8.9669 5.07654C8.54705 4.96404 8.11552 5.2132 8.00302 5.63302C7.89054 6.05285 8.13968 6.4844 8.55952 6.59689L17.6817 9.04116C18.1015 9.15366 18.5331 8.90451 18.6455 8.48468C18.7581 8.06483 18.5089 7.6333 18.0891 7.52081L8.9669 5.07654ZM6.98458 9.43392C7.09708 9.01409 7.52862 8.76493 7.94844 8.87743L17.0706 11.3217C17.4904 11.4342 17.7395 11.8657 17.6271 12.2856C17.5146 12.7054 17.0831 12.9546 16.6632 12.8421L7.54107 10.3978C7.12124 10.2853 6.87208 9.85375 6.98458 9.43392ZM6.93 12.6783C6.51017 12.5658 6.07862 12.815 5.96614 13.2348C5.85364 13.6546 6.1028 14.0861 6.52263 14.1987L11.8439 15.6246C12.2637 15.737 12.6952 15.4879 12.8077 15.0679C12.9202 14.6481 12.6711 14.2167 12.2513 14.1041L6.93 12.6783Z", source: "https://read.cv/support/faq", hex: "111111" };
 
 // src/components/Footer.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
@@ -21998,7 +21876,7 @@ function Footer() {
           rel: "noopener noreferrer",
           className: "flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-200",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Linkedin, { size: 20 }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("svg", { role: "img", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" }) }),
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-sm font-medium", children: "LinkedIn" })
           ]
         }
@@ -22011,7 +21889,7 @@ function Footer() {
           rel: "noopener noreferrer",
           className: "flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-200",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Github, { size: 20 }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("svg", { role: "img", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("path", { d: siGithub.path }) }),
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-sm font-medium", children: "GitHub" })
           ]
         }
@@ -22023,7 +21901,7 @@ function Footer() {
           download: true,
           className: "flex items-center gap-2 text-gray-400 hover:text-secondary transition-colors duration-200",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Download, { size: 20 }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("svg", { role: "img", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("path", { d: siReaddotcv.path }) }),
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-sm font-medium", children: "Download CV" })
           ]
         }
@@ -22146,7 +22024,7 @@ var hydrateIslands = () => {
         try {
           const Component = componentRegistry[componentName];
           const props = propsJson ? JSON.parse(propsJson) : {};
-          const element = import_react3.default.createElement(Component, props);
+          const element = import_react.default.createElement(Component, props);
           (0, import_client.createRoot)(island).render(element);
         } catch (error) {
           console.error(`Failed to hydrate component ${componentName}:`, error);
@@ -22217,24 +22095,5 @@ react/cjs/react-jsx-runtime.development.js:
    *
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
-   *)
-
-lucide-react/dist/esm/shared/src/utils/mergeClasses.js:
-lucide-react/dist/esm/shared/src/utils/toKebabCase.js:
-lucide-react/dist/esm/shared/src/utils/toCamelCase.js:
-lucide-react/dist/esm/shared/src/utils/toPascalCase.js:
-lucide-react/dist/esm/defaultAttributes.js:
-lucide-react/dist/esm/shared/src/utils/hasA11yProp.js:
-lucide-react/dist/esm/Icon.js:
-lucide-react/dist/esm/createLucideIcon.js:
-lucide-react/dist/esm/icons/download.js:
-lucide-react/dist/esm/icons/github.js:
-lucide-react/dist/esm/icons/linkedin.js:
-lucide-react/dist/esm/lucide-react.js:
-  (**
-   * @license lucide-react v0.563.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
    *)
 */

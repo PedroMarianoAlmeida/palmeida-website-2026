@@ -2,15 +2,13 @@ export function BentoGrid() {
   return (
     <section className="relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
       <div className="relative max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white">
-          Focus Areas
-        </h2>
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
           {/* USD Latam Jobs — NEW PRIMARY */}
           <article className="lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1">
             <div className="absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full">
-              <span className="text-xs font-bold text-secondary">Live Product</span>
+              <span className="text-xs font-bold text-secondary">
+                Live Product
+              </span>
             </div>
             <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
@@ -22,7 +20,10 @@ export function BentoGrid() {
                 with <strong>US remote opportunities</strong>.
               </p>
               <p className="text-gray-300 mb-3">
-                <span className="text-secondary font-bold">18 active users</span> onboarding first paid subscribers.
+                <span className="text-secondary font-bold">
+                  18 active users
+                </span>{" "}
+                onboarding first paid subscribers.
               </p>
               <p className="text-sm text-gray-400 mb-4">
                 Building in public and scaling through AI-powered automation.
@@ -47,8 +48,9 @@ export function BentoGrid() {
                 Growth & Design Systems
               </h3>
               <p className="text-gray-400 mb-3">
-                <strong>Senior Software Engineer</strong> at <strong>NovaComp</strong>,
-                architecting high-conversion acquisition flows for a leading{" "}
+                <strong>Senior Software Engineer</strong> at{" "}
+                <strong>NovaComp</strong>, architecting high-conversion
+                acquisition flows for a leading{" "}
                 <strong>US solar provider</strong>.
               </p>
               <p className="text-gray-300 mb-4">
@@ -70,7 +72,8 @@ export function BentoGrid() {
               </h3>
               <p className="text-gray-400 mb-2 text-sm">
                 Guiding <span className="text-accent font-bold">20+</span>{" "}
-                developers via weekly live sessions at <strong>TripleTen</strong>.
+                developers via weekly live sessions at{" "}
+                <strong>TripleTen</strong>.
               </p>
               <p className="text-sm text-gray-400 mb-3">
                 Code reviews, live debugging, and career coaching.
@@ -155,8 +158,8 @@ export function BentoGrid() {
               </h3>
               <p className="text-gray-400 mb-4">
                 Building in public and sharing technical strategy with{" "}
-                <span className="text-accent font-bold">3,500+</span>{" "}
-                LinkedIn followers.
+                <span className="text-accent font-bold">3,500+</span> LinkedIn
+                followers.
               </p>
               <p className="text-sm font-mono text-gray-400 mb-3">
                 Building in Public • Technical Writing • Career Strategy

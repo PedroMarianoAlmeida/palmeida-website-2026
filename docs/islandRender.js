@@ -21724,132 +21724,131 @@ var import_client = __toESM(require_client(), 1);
 // src/components/BentoGrid.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
 function BentoGrid() {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative max-w-7xl mx-auto", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white", children: "Focus Areas" }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-xs font-bold text-secondary", children: "Live Product" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "USD Latam Jobs" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
-            "Subscription-based SaaS connecting Latin American developers with ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "US remote opportunities" }),
-            "."
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-300 mb-3", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-secondary font-bold", children: "18 active users" }),
-            " onboarding first paid subscribers."
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400 mb-4", children: "Building in public and scaling through AI-powered automation." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-secondary mb-4", children: "MERN Stack \u2022 Playwright \u2022 Vercel \u2022 Automation" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-            "a",
-            {
-              href: "#",
-              className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
-              children: "See the Journey \u2192"
-            }
-          )
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth & Design Systems" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Senior Software Engineer" }),
-            " at ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "NovaComp" }),
-            ", architecting high-conversion acquisition flows for a leading",
-            " ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "US solar provider" }),
-            "."
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4", children: "Bridging brand vision and engineering reality through scalable design systems and MongoDB-backed architectures." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-primary", children: "Next.js \u2022 Storybook \u2022 LaunchDarkly \u2022 MongoDB" })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-background border border-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Mentorship" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2 text-sm", children: [
-            "Guiding ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "20+" }),
-            " ",
-            "developers via weekly live sessions at ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "TripleTen" }),
-            "."
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400 mb-3", children: "Code reviews, live debugging, and career coaching." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-accent mb-3", children: "Live Debugging \u2022 Career Coaching \u2022 Code Reviews" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-            "a",
-            {
-              href: "https://www.linkedin.com/in/pedro-fullstack/details/recommendations/",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
-              children: "See testimonials on LinkedIn \u2192"
-            }
-          )
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestration" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3 text-sm", children: [
-          "Automating development workflows with Claude Code and MCPs to scale ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "USD Latam Jobs" }),
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-background px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "relative max-w-7xl mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-background border border-secondary/60 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgb(0_245_255/0.4)] hover:scale-[1.025] active:scale-95 transition-all duration-300 relative overflow-hidden group order-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-4 right-4 z-20 bg-secondary/20 border border-secondary/60 px-3 py-1 rounded-full", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-xs font-bold text-secondary", children: "Live Product" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "USD Latam Jobs" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
+          "Subscription-based SaaS connecting Latin American developers with ",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "US remote opportunities" }),
           "."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Building AI-native tooling across the modern development lifecycle." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400", children: "MCP \u2022 Claude Code \u2022 Playwright \u2022 Automation" })
-      ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Tools & Products" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Other SaaS, npm packages and open source contributions." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-300 mb-4 text-sm", children: [
-          "Contributing to repositories with",
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-300 mb-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-secondary font-bold", children: "18 active users" }),
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "30k+" }),
-          " combined stars."
+          "onboarding first paid subscribers."
         ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400 mb-4", children: "Building in public and scaling through AI-powered automation." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-secondary mb-4", children: "MERN Stack \u2022 Playwright \u2022 Vercel \u2022 Automation" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "a",
           {
             href: "#",
             className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
-            children: "Explore the Portfolio \u2192"
+            children: "See the Journey \u2192"
           }
         )
-      ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Former Electrical Engineer" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Led a team of 6 electricians" })
-      ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Insights" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-4", children: [
-          "Building in public and sharing technical strategy with",
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-8 bg-background border border-primary/50 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_24px_rgb(0_168_107/0.3)] hover:scale-[1.015] active:scale-95 transition-all duration-300 relative overflow-hidden group order-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth & Design Systems" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Senior Software Engineer" }),
+          " at",
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "3,500+" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "NovaComp" }),
+          ", architecting high-conversion acquisition flows for a leading",
           " ",
-          "LinkedIn followers."
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "US solar provider" }),
+          "."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400 mb-3", children: "Building in Public \u2022 Technical Writing \u2022 Career Strategy" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4", children: "Bridging brand vision and engineering reality through scalable design systems and MongoDB-backed architectures." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-primary", children: "Next.js \u2022 Storybook \u2022 LaunchDarkly \u2022 MongoDB" })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-background border border-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(0_168_107/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Mentorship" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2 text-sm", children: [
+          "Guiding ",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "20+" }),
+          " ",
+          "developers via weekly live sessions at",
+          " ",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "TripleTen" }),
+          "."
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400 mb-3", children: "Code reviews, live debugging, and career coaching." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-accent mb-3", children: "Live Debugging \u2022 Career Coaching \u2022 Code Reviews" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "a",
           {
-            href: "#",
+            href: "https://www.linkedin.com/in/pedro-fullstack/details/recommendations/",
+            target: "_blank",
+            rel: "noopener noreferrer",
             className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
-            children: "Explore by Topic \u2192"
+            children: "See testimonials on LinkedIn \u2192"
           }
         )
-      ] }) })
-    ] })
-  ] }) });
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestration" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3 text-sm", children: [
+        "Automating development workflows with Claude Code and MCPs to scale ",
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "USD Latam Jobs" }),
+        "."
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Building AI-native tooling across the modern development lifecycle." }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400", children: "MCP \u2022 Claude Code \u2022 Playwright \u2022 Automation" })
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Tools & Products" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Other SaaS, npm packages and open source contributions." }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-300 mb-4 text-sm", children: [
+        "Contributing to repositories with",
+        " ",
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "30k+" }),
+        " combined stars."
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+        "a",
+        {
+          href: "#",
+          className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+          children: "Explore the Portfolio \u2192"
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Former Electrical Engineer" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Led a team of 6 electricians" })
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Insights" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-4", children: [
+        "Building in public and sharing technical strategy with",
+        " ",
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "3,500+" }),
+        " LinkedIn followers."
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400 mb-3", children: "Building in Public \u2022 Technical Writing \u2022 Career Strategy" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+        "a",
+        {
+          href: "#",
+          className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+          children: "Explore by Topic \u2192"
+        }
+      )
+    ] }) })
+  ] }) }) });
 }
 
 // src/components/Footer.tsx

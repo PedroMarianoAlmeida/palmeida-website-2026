@@ -10,10 +10,10 @@ export function Hero() {
       </h1>
 
       {/* Roles & Context */}
-      <h2 className="text-xl md:text-2xl font-medium text-secondary mb-8 max-w-3xl leading-snug">
-        Senior Software Engineer at{" "}
-        <span className="border-b-2 border-primary/20">NovaComp</span> &
-        Tutor at Triple Ten.
+      <h2 className="text-xl md:text-2xl font-medium text-secondary mb-8 max-w-3xl leading-snug tracking-tight">
+        <span className="text-white/90">Senior Software Engineer</span>
+        <span className="mx-2 text-primary/50 font-light">&</span>
+        <span className="text-white/90">Web Development Tutor</span>
       </h2>
 
       {/* The Narrative: Focus on Trust & Transparency */}

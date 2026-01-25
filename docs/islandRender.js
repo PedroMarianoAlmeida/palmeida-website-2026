@@ -21873,11 +21873,10 @@ function Hero() {
       " ",
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-primary font-black italic", children: "Teaching Engineers." })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h2", { className: "text-xl md:text-2xl font-medium text-secondary mb-8 max-w-3xl leading-snug", children: [
-      "Senior Software Engineer at",
-      " ",
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "border-b-2 border-primary/20", children: "NovaComp" }),
-      " & Tutor at Triple Ten."
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h2", { className: "text-xl md:text-2xl font-medium text-secondary mb-8 max-w-3xl leading-snug tracking-tight", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-white/90", children: "Senior Software Engineer" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "mx-2 text-primary/50 font-light", children: "&" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-white/90", children: "Web Development Tutor" })
     ] }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("p", { className: "max-w-2xl text-lg text-gray-400 leading-relaxed mb-10", children: [
       "7+ years of experience building in public and sharing technical insights with a community of",

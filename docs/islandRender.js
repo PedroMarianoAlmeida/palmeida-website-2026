@@ -21725,7 +21725,7 @@ var import_client = __toESM(require_client(), 1);
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
 function BentoGrid() {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-[#0B0B0B] px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative max-w-7xl mx-auto", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white", children: "What I Do" }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white", children: "Focus Areas" }),
     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.45)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),

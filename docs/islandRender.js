@@ -21867,15 +21867,15 @@ function Header() {
 // src/components/Hero.tsx
 var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center py-20 px-6 bg-background min-h-[70vh]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center py-20 px-6 bg-background min-h-[75vh]", children: [
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h1", { className: "text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4", children: [
       "Building Products.",
       " ",
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-primary font-black italic", children: "Teaching Engineers." })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h2", { className: "text-xl md:text-2xl font-medium text-secondary mb-8 max-w-3xl leading-snug tracking-tight", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h2", { className: "text-xl md:text-2xl font-medium mb-8 max-w-3xl leading-snug tracking-tight", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-white/90", children: "Senior Software Engineer" }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "mx-2 text-primary/50 font-light", children: "&" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "mx-3 text-primary/50 font-light", children: "&" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-white/90", children: "Web Development Tutor" })
     ] }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("p", { className: "max-w-2xl text-lg text-gray-400 leading-relaxed mb-10", children: [
@@ -21890,7 +21890,7 @@ function Hero() {
           href: "https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/",
           target: "_blank",
           rel: "noopener noreferrer",
-          className: "px-8 py-4 bg-primary text-background font-bold rounded-lg hover:brightness-110 transition-all shadow-xl shadow-primary/10 w-full sm:w-auto",
+          className: "px-8 py-4 bg-primary text-background font-bold rounded-lg \n               hover:brightness-110 hover:scale-105 active:scale-95 \n               transition-all duration-200 shadow-xl shadow-primary/10 w-full sm:w-auto",
           children: "Read Latest Insights \u2192"
         }
       ),
@@ -21898,12 +21898,12 @@ function Hero() {
         "a",
         {
           href: "#the-lab",
-          className: "px-8 py-4 border border-gray-800 text-gray-300 font-bold rounded-lg hover:bg-white/5 transition-all w-full sm:w-auto",
+          className: "px-8 py-4 border border-gray-800 text-gray-300 font-bold rounded-lg \n               hover:bg-white/5 hover:scale-105 active:scale-95 \n               transition-all duration-200 w-full sm:w-auto",
           children: "Explore the Lab"
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "mt-12 flex items-center gap-3 opacity-60", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "mt-12 flex items-center gap-3", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("span", { className: "relative flex h-2 w-2", children: [
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "relative inline-flex rounded-full h-2 w-2 bg-secondary" })

@@ -21869,7 +21869,7 @@ function Footer() {
 var import_jsx_runtime3 = __toESM(require_jsx_runtime(), 1);
 function Header() {
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full z-50 px-6 py-8 flex justify-between items-center backdrop-blur-md bg-background/10", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4 flex justify-between items-center backdrop-blur-md bg-background/10", children: [
       /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("a", { href: "/", className: "group flex flex-col", children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { className: "text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors", children: "palmeida" }),
         /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { className: "text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none", children: "Product Engineer" })

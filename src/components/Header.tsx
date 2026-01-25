@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 px-6 py-8 flex justify-between items-center backdrop-blur-md bg-background/10">
+      <header className="fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4 flex justify-between items-center backdrop-blur-md bg-background/10">
         {/* Branding - Left Aligned */}
         <a href="/" className="group flex flex-col">
           <span className="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors">

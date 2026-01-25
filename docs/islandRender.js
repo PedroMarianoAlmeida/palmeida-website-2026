@@ -21788,47 +21788,38 @@ function BentoGrid() {
           )
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 bg-background border border-secondary/70 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_24px_rgb(0_245_255/0.35)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestration" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3 text-sm", children: [
-            "Automating development workflows with Claude Code and MCPs to scale ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "USD Latam Jobs" }),
-            "."
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Building AI-native tooling across the modern development lifecycle." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-secondary", children: "MCP \u2022 Claude Code \u2022 Playwright \u2022 Automation" })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Open Source & NPM" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-4", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "AI Orchestration" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-3 text-sm", children: [
-          "Contributing to high-impact repositories with",
+          "Automating development workflows with Claude Code and MCPs to scale ",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "USD Latam Jobs" }),
+          "."
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Building AI-native tooling across the modern development lifecycle." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-gray-400", children: "MCP \u2022 Claude Code \u2022 Playwright \u2022 Automation" })
+      ] }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Tools & Products" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 mb-3 text-sm", children: "Other SaaS, npm packages and open source contributions." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-300 mb-4 text-sm", children: [
+          "Contributing to repositories with",
           " ",
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-accent font-bold", children: "30k+" }),
           " combined stars."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-300 mb-4 text-sm", children: "Building reusable components and internal tools for the community." }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "a",
           {
-            href: "https://github.com/pedroalpacheco",
-            target: "_blank",
-            rel: "noopener noreferrer",
+            href: "#",
             className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
-            children: "Contributions on GitHub \u2192"
+            children: "Explore the Portfolio \u2192"
           }
         )
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2", children: [
-          "Former ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Electrical Engineer" }),
-          " who led a team of 6 electricians in industrial settings."
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm text-gray-400", children: "This foundation explains my seniority mindset and leadership origins." })
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgb(255_191_0/0.25)] hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group order-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Industrial Roots & Leadership" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Former Electrical Engineer" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-sm", children: "Led a team of 6 electricians" })
       ] }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-6 bg-background border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_18px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 relative overflow-hidden group order-7", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-3 text-white", children: "Engineering Insights" }),

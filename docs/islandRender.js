@@ -21718,7 +21718,7 @@ var require_jsx_runtime = __commonJS({
 });
 
 // docs/islandRender.tsx
-var import_react = __toESM(require_react(), 1);
+var import_react3 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // src/components/BentoGrid.tsx
@@ -21851,18 +21851,185 @@ function BentoGrid() {
   ] }) }) });
 }
 
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
+var import_react2 = __toESM(require_react());
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.js
+var mergeClasses = (...classes) => classes.filter((className, index, array) => {
+  return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+}).join(" ").trim();
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.js
+var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.js
+var toCamelCase = (string) => string.replace(
+  /^([A-Z])|[\s-_]+(\w)/g,
+  (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase()
+);
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.js
+var toPascalCase = (string) => {
+  const camelCase = toCamelCase(string);
+  return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
+};
+
+// node_modules/lucide-react/dist/esm/Icon.js
+var import_react = __toESM(require_react());
+
+// node_modules/lucide-react/dist/esm/defaultAttributes.js
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+};
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.js
+var hasA11yProp = (props) => {
+  for (const prop in props) {
+    if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
+      return true;
+    }
+  }
+  return false;
+};
+
+// node_modules/lucide-react/dist/esm/Icon.js
+var Icon = (0, import_react.forwardRef)(
+  ({
+    color = "currentColor",
+    size = 24,
+    strokeWidth = 2,
+    absoluteStrokeWidth,
+    className = "",
+    children,
+    iconNode,
+    ...rest
+  }, ref) => (0, import_react.createElement)(
+    "svg",
+    {
+      ref,
+      ...defaultAttributes,
+      width: size,
+      height: size,
+      stroke: color,
+      strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+      className: mergeClasses("lucide", className),
+      ...!children && !hasA11yProp(rest) && { "aria-hidden": "true" },
+      ...rest
+    },
+    [
+      ...iconNode.map(([tag, attrs]) => (0, import_react.createElement)(tag, attrs)),
+      ...Array.isArray(children) ? children : [children]
+    ]
+  )
+);
+
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
+var createLucideIcon = (iconName, iconNode) => {
+  const Component = (0, import_react2.forwardRef)(
+    ({ className, ...props }, ref) => (0, import_react2.createElement)(Icon, {
+      ref,
+      iconNode,
+      className: mergeClasses(
+        `lucide-${toKebabCase(toPascalCase(iconName))}`,
+        `lucide-${iconName}`,
+        className
+      ),
+      ...props
+    })
+  );
+  Component.displayName = toPascalCase(iconName);
+  return Component;
+};
+
+// node_modules/lucide-react/dist/esm/icons/download.js
+var __iconNode = [
+  ["path", { d: "M12 15V3", key: "m9g1x1" }],
+  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
+  ["path", { d: "m7 10 5 5 5-5", key: "brsn70" }]
+];
+var Download = createLucideIcon("download", __iconNode);
+
+// node_modules/lucide-react/dist/esm/icons/github.js
+var __iconNode2 = [
+  [
+    "path",
+    {
+      d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4",
+      key: "tonef"
+    }
+  ],
+  ["path", { d: "M9 18c-4.51 2-5-2-7-2", key: "9comsn" }]
+];
+var Github = createLucideIcon("github", __iconNode2);
+
+// node_modules/lucide-react/dist/esm/icons/linkedin.js
+var __iconNode3 = [
+  [
+    "path",
+    {
+      d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z",
+      key: "c2jq9f"
+    }
+  ],
+  ["rect", { width: "4", height: "12", x: "2", y: "9", key: "mk3on5" }],
+  ["circle", { cx: "4", cy: "4", r: "2", key: "bt5ra8" }]
+];
+var Linkedin = createLucideIcon("linkedin", __iconNode3);
+
 // src/components/Footer.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 function Footer() {
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("footer", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { children: "Pedro Almeida \u2014 Senior Software Engineer. Based in Rio de Janeiro, Brazil." }),
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "./assets/pedro-almeida-cv.docx", download: true, children: "Download CV" }),
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "https://www.linkedin.com/in/pedro-mariano-almeida/", target: "_blank", rel: "noopener noreferrer", children: "LinkedIn" }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "https://github.com/PedroMarianoAlmeida", target: "_blank", rel: "noopener noreferrer", children: "GitHub" }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "https://www.youtube.com/@pedromariano-webdev", target: "_blank", rel: "noopener noreferrer", children: "YouTube" })
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("footer", { className: "bg-background border-t border-gray-800 px-6 py-12", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "max-w-7xl mx-auto flex flex-col items-center gap-6", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-gray-400 text-sm text-center", children: "Pedro Almeida \u2014 Senior Software Engineer. Based in Rio de Janeiro, Brazil." }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { className: "flex flex-wrap justify-center gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
+        "a",
+        {
+          href: "https://www.linkedin.com/in/palmeida-dev/",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-200",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Linkedin, { size: 20 }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-sm font-medium", children: "LinkedIn" })
+          ]
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
+        "a",
+        {
+          href: "https://github.com/PedroMarianoAlmeida",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-200",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Github, { size: 20 }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-sm font-medium", children: "GitHub" })
+          ]
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
+        "a",
+        {
+          href: "./assets/pedro-almeida-cv.docx",
+          download: true,
+          className: "flex items-center gap-2 text-gray-400 hover:text-secondary transition-colors duration-200",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Download, { size: 20 }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-sm font-medium", children: "Download CV" })
+          ]
+        }
+      )
     ] })
-  ] });
+  ] }) });
 }
 
 // src/components/Header.tsx
@@ -21979,7 +22146,7 @@ var hydrateIslands = () => {
         try {
           const Component = componentRegistry[componentName];
           const props = propsJson ? JSON.parse(propsJson) : {};
-          const element = import_react.default.createElement(Component, props);
+          const element = import_react3.default.createElement(Component, props);
           (0, import_client.createRoot)(island).render(element);
         } catch (error) {
           console.error(`Failed to hydrate component ${componentName}:`, error);
@@ -22050,5 +22217,24 @@ react/cjs/react-jsx-runtime.development.js:
    *
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/shared/src/utils/mergeClasses.js:
+lucide-react/dist/esm/shared/src/utils/toKebabCase.js:
+lucide-react/dist/esm/shared/src/utils/toCamelCase.js:
+lucide-react/dist/esm/shared/src/utils/toPascalCase.js:
+lucide-react/dist/esm/defaultAttributes.js:
+lucide-react/dist/esm/shared/src/utils/hasA11yProp.js:
+lucide-react/dist/esm/Icon.js:
+lucide-react/dist/esm/createLucideIcon.js:
+lucide-react/dist/esm/icons/download.js:
+lucide-react/dist/esm/icons/github.js:
+lucide-react/dist/esm/icons/linkedin.js:
+lucide-react/dist/esm/lucide-react.js:
+  (**
+   * @license lucide-react v0.563.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
    *)
 */

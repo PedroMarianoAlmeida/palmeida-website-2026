@@ -12,7 +12,8 @@ export function Hero() {
       {/* Roles & Identity - Refined Typography */}
       <h2 className="text-base md:text-2xl font-medium mb-5 md:mb-8 max-w-3xl leading-snug tracking-tight">
         <span className="text-white/90">Senior Software Engineer</span>
-        <span className="mx-2 md:mx-3 text-primary/50 font-light">&</span>
+        <span className="hidden md:inline mx-2 md:mx-3 text-primary/50 font-light">&</span>
+        <br className="md:hidden" />
         <span className="text-white/90">Web Development Tutor</span>
       </h2>
 

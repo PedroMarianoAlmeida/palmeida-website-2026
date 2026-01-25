@@ -137,21 +137,24 @@ export function BentoGrid() {
             </div>
           </article>
 
-          {/* Box 6: OSS (2x2 - Tall) */}
+          {/* Box 6: Open Source Contributor (2x2 - Tall) */}
           <article className="lg:col-span-2 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6">
             <div className="relative z-10">
-              <h3 className="text-lg font-bold mb-3 text-white">OSS</h3>
-              <p className="text-gray-400 mb-2 text-sm">
-                <span className="text-[#FFBF00] font-bold">15+</span> Merge
-                Requests
+              <h3 className="text-lg font-bold mb-3 text-white">Open Source Contributor</h3>
+              <p className="text-gray-400 mb-3 text-sm">
+                Contributing to high-impact projects used by thousands of developers worldwide.
               </p>
-              <p className="text-xs text-gray-500">PayPal, React Email</p>
-              <div className="mt-3 flex gap-1">
-                <div className="w-2 h-2 bg-emerald-500 rounded-sm"></div>
-                <div className="w-2 h-2 bg-emerald-600 rounded-sm"></div>
-                <div className="w-2 h-2 bg-emerald-400 rounded-sm"></div>
-                <div className="w-2 h-2 bg-emerald-700 rounded-sm"></div>
-              </div>
+              <p className="text-xs text-gray-500 mb-4">
+                Enhancing the ecosystem across repositories with <span className="text-[#FFBF00] font-bold">30k+</span> combined stars.
+              </p>
+              <a
+                href="https://github.com/pedroalpacheco"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
+              >
+                Contributions list on GitHub →
+              </a>
             </div>
           </article>
 

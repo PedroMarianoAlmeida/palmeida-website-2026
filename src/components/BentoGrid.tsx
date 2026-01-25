@@ -1,18 +1,6 @@
 export function BentoGrid() {
   return (
     <section className="relative bg-[#0B0B0B] px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-      {/* Topographic Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="topo" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-            <path d="M10 10c20 0 20 20 40 20s20-20 40-20 20 20 40 20" stroke="#1A1A1A" fill="none" strokeWidth="0.5"/>
-            <path d="M10 30c20 0 20 20 40 20s20-20 40-20 20 20 40 20" stroke="#1A1A1A" fill="none" strokeWidth="0.5"/>
-            <path d="M10 50c20 0 20 20 40 20s20-20 40-20 20 20 40 20" stroke="#1A1A1A" fill="none" strokeWidth="0.5"/>
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#topo)" />
-        </svg>
-      </div>
-
       <div className="relative max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white">
           What I Do
@@ -20,17 +8,19 @@ export function BentoGrid() {
 
         {/* Desktop: 12-column grid, Mobile: single column stack */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]">
-
           {/* Box 1: Growth Engineering (6x2 - Large) */}
           <article className="lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-1">
             <div className="absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
-              <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">Growth Engineering</h3>
+              <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">
+                Growth Engineering
+              </h3>
               <p className="text-gray-400 mb-3">
                 NovaComp Solar / High-conversion acquisition flows.
               </p>
               <p className="text-gray-300 mb-4">
-                Leveraging MongoDB and Next.js to build high-conversion acquisition flows and scalable Design Systems.
+                Leveraging MongoDB and Next.js to build high-conversion
+                acquisition flows and scalable Design Systems.
               </p>
               <p className="text-sm font-mono text-[#00A86B]">
                 Next.js • TypeScript • MongoDB • Tailwind
@@ -42,7 +32,9 @@ export function BentoGrid() {
           <article className="lg:col-span-4 bg-[#0B0B0B] border border-[#00F5FF] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(0,245,255,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-2">
             <div className="absolute inset-0 bg-gradient-to-br from-[#00F5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
-              <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">Agentic Media</h3>
+              <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
+                Agentic Media
+              </h3>
               <p className="text-gray-400 mb-3 text-sm">
                 ffmpeg-mcp-server & local video processing.
               </p>
@@ -57,10 +49,12 @@ export function BentoGrid() {
             <div className="relative z-10">
               <h3 className="text-lg font-bold mb-3 text-white">Leadership</h3>
               <p className="text-gray-400 mb-2 text-sm">
-                Mentoring <span className="text-[#FFBF00] font-bold">20+</span> devs
+                Mentoring <span className="text-[#FFBF00] font-bold">20+</span>{" "}
+                devs
               </p>
               <p className="text-xs text-gray-500 mb-3">
-                <span className="text-[#FFBF00] font-bold">-50%</span> resolution time
+                <span className="text-[#FFBF00] font-bold">-50%</span>{" "}
+                resolution time
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
@@ -72,9 +66,12 @@ export function BentoGrid() {
           {/* Box 5: The Lab & Ventures (4x2 - Medium) */}
           <article className="lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5">
             <div className="relative z-10">
-              <h3 className="text-xl lg:text-2xl font-bold mb-4 text-white">The Lab & Ventures</h3>
+              <h3 className="text-xl lg:text-2xl font-bold mb-4 text-white">
+                The Lab & Ventures
+              </h3>
               <p className="text-gray-400 mb-6">
-                Building developer-first tools and AI-integrated Micro-SaaS experiments. From NPM packages to production-ready products.
+                Building developer-first tools and AI-integrated Micro-SaaS
+                experiments. From NPM packages to production-ready products.
               </p>
 
               <div className="flex items-start justify-between gap-4">
@@ -102,8 +99,12 @@ export function BentoGrid() {
                       AI
                     </div>
                     <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/>
+                      <svg
+                        className="w-6 h-6 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z" />
                       </svg>
                     </div>
                   </div>
@@ -117,11 +118,10 @@ export function BentoGrid() {
             <div className="relative z-10">
               <h3 className="text-lg font-bold mb-3 text-white">OSS</h3>
               <p className="text-gray-400 mb-2 text-sm">
-                <span className="text-[#FFBF00] font-bold">15+</span> Merge Requests
+                <span className="text-[#FFBF00] font-bold">15+</span> Merge
+                Requests
               </p>
-              <p className="text-xs text-gray-500">
-                PayPal, React Email
-              </p>
+              <p className="text-xs text-gray-500">PayPal, React Email</p>
               <div className="mt-3 flex gap-1">
                 <div className="w-2 h-2 bg-emerald-500 rounded-sm"></div>
                 <div className="w-2 h-2 bg-emerald-600 rounded-sm"></div>
@@ -135,15 +135,40 @@ export function BentoGrid() {
           <article className="lg:col-span-2 bg-[#0B0B0B] border border-[#FFBF00] rounded-3xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(255,191,0,0.5)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-6">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0" y1="50%" x2="100%" y2="50%" stroke="#FFBF00" strokeWidth="1" opacity="0.3" />
-                <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#FFBF00" strokeWidth="1" opacity="0.3" />
-                <circle cx="50%" cy="50%" r="20" stroke="#FFBF00" fill="none" strokeWidth="1" opacity="0.3" />
+                <line
+                  x1="0"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#FFBF00"
+                  strokeWidth="1"
+                  opacity="0.3"
+                />
+                <line
+                  x1="50%"
+                  y1="0"
+                  x2="50%"
+                  y2="100%"
+                  stroke="#FFBF00"
+                  strokeWidth="1"
+                  opacity="0.3"
+                />
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="20"
+                  stroke="#FFBF00"
+                  fill="none"
+                  strokeWidth="1"
+                  opacity="0.3"
+                />
               </svg>
             </div>
             <div className="relative z-10">
               <h3 className="text-lg font-bold mb-3 text-white">Industrial</h3>
               <p className="text-gray-400 mb-2 text-sm">
-                <span className="text-[#FFBF00] font-bold">$1M+</span> budgets / CEDAE
+                <span className="text-[#FFBF00] font-bold">$1M+</span> budgets /
+                CEDAE
               </p>
               <p className="text-xs font-mono text-[#FFBF00]">
                 PLC • C/C++ • Leadership
@@ -154,19 +179,24 @@ export function BentoGrid() {
           {/* Box 8: Insights (6x1 - Wide) */}
           <article className="lg:col-span-6 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-7">
             <div className="relative z-10">
-              <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">Insights</h3>
+              <h3 className="text-xl lg:text-2xl font-bold mb-3 text-white">
+                Insights
+              </h3>
               <p className="text-gray-400 mb-3">
-                Cutting lead times by <span className="text-[#FFBF00] font-bold">80%</span> / Architecture tips.
+                Cutting lead times by{" "}
+                <span className="text-[#FFBF00] font-bold">80%</span> /
+                Architecture tips.
               </p>
               <p className="text-sm text-gray-500">
-                Optimized UI response times by <span className="text-[#FFBF00] font-bold">40%</span> through Promise orchestration.
+                Optimized UI response times by{" "}
+                <span className="text-[#FFBF00] font-bold">40%</span> through
+                Promise orchestration.
               </p>
               <p className="text-sm text-emerald-500 mt-3">
                 Read on LinkedIn →
               </p>
             </div>
           </article>
-
         </div>
       </div>
     </section>

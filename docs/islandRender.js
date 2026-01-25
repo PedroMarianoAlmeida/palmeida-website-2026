@@ -21867,13 +21867,49 @@ function Header() {
 // src/components/Hero.tsx
 var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { children: "Pedro Almeida" }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h2", { children: "Senior Software Engineer & AI Infrastructure Architect" }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "7+ years of engineering resilient systems using TypeScript and React." }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", { href: "https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/", children: "Read Latest Insights" }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", { href: "https://www.linkedin.com/in/pedro-mariano-almeida/", children: "Connect on LinkedIn" })
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "flex flex-col items-center justify-center text-center py-20 px-6 bg-background min-h-[70vh]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h1", { className: "text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4", children: [
+      "Building Products.",
+      " ",
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-primary font-black italic", children: "Teaching Engineers." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h2", { className: "text-xl md:text-2xl font-medium text-secondary mb-8 max-w-3xl leading-snug", children: [
+      "Senior Software Engineer at",
+      " ",
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "border-b-2 border-primary/20", children: "NovaComp" }),
+      " & Tutor at Triple Ten."
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("p", { className: "max-w-2xl text-lg text-gray-400 leading-relaxed mb-10", children: [
+      "7+ years of experience building in public and sharing technical insights with a community of",
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-accent font-bold mx-1", children: "3,500+ followers" }),
+      " on LinkedIn. Currently mentoring the next generation of developers at Triple Ten, and privately."
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "flex flex-col sm:flex-row gap-4 items-center", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        "a",
+        {
+          href: "https://www.linkedin.com/in/pedro-mariano-almeida/recent-activity/all/",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "px-8 py-4 bg-primary text-background font-bold rounded-lg hover:brightness-110 transition-all shadow-xl shadow-primary/10 w-full sm:w-auto",
+          children: "Read Latest Insights \u2192"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        "a",
+        {
+          href: "#the-lab",
+          className: "px-8 py-4 border border-gray-800 text-gray-300 font-bold rounded-lg hover:bg-white/5 transition-all w-full sm:w-auto",
+          children: "Explore the Lab"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "mt-12 flex items-center gap-3 opacity-60", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("span", { className: "relative flex h-2 w-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" }),
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "relative inline-flex rounded-full h-2 w-2 bg-secondary" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "text-xs text-gray-500 uppercase tracking-[0.3em] font-bold", children: "Currently Building in Public" })
     ] })
   ] });
 }

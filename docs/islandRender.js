@@ -21727,7 +21727,7 @@ function BentoGrid() {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "relative bg-[#0B0B0B] px-4 sm:px-6 lg:px-8 py-16 sm:py-24", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative max-w-7xl mx-auto", children: [
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-12 text-center text-white", children: "What I Do" }),
     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-2xl lg:text-3xl font-bold mb-4 text-white", children: "Growth & Design Systems" }),
@@ -21735,7 +21735,8 @@ function BentoGrid() {
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MERN Developer" }),
             " at ",
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "NovaComp" }),
-            ", architecting high-conversion acquisition flows for a leading ",
+            ", architecting high-conversion acquisition flows for a leading",
+            " ",
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "US solar provider" }),
             "."
           ] }),
@@ -21761,16 +21762,16 @@ function BentoGrid() {
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-sm font-mono text-[#00F5FF]", children: "MCP \u2022 Playwright \u2022 Claude Code \u2022 Automation" })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Engineering Leadership" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg font-bold mb-3 text-white", children: "Technical Leadership & Mentorship" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 mb-2 text-sm", children: [
           "Guiding ",
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-[#FFBF00] font-bold", children: "20+" }),
-          " engineers through the complexities of the full-stack ecosystem."
+          " ",
+          "developers via weekly live webinars and workshops."
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-500 mb-3", children: "Fostering technical growth through live debugging and 1:1 guidance." }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs italic text-gray-400 mb-3", children: '"Translating complex architecture into actionable knowledge."' }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs font-mono text-gray-500", children: "Public Speaking \u2022 Code Review \u2022 Mentorship" })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs text-gray-500 mb-2", children: "Providing career coaching and technical guidance to help engineers navigate the industry." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-xs font-mono text-gray-500", children: "Public Speaking \u2022 Live Debugging \u2022 Mentorship" })
       ] }) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", { className: "lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-xl lg:text-2xl font-bold mb-4 text-white", children: "The Lab & Ventures" }),

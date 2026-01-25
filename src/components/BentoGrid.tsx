@@ -8,18 +8,22 @@ export function BentoGrid() {
 
         {/* Desktop: 12-column grid, Mobile: single column stack */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 min-h-[700px] lg:max-h-[900px]">
-          {/* Box 1: Growth & Design Systems (6x2 - Large) */}
-          <article className="lg:col-span-6 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1">
+          {/* Box 1: Growth & Design Systems (4x2 - Large) */}
+          <article className="lg:col-span-4 lg:row-span-2 bg-[#0B0B0B] border border-[#00A86B] rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-[0_0_30px_rgba(0,168,107,0.5)] hover:scale-[1.025] transition-all duration-300 relative overflow-hidden group order-1">
             <div className="absolute inset-0 bg-gradient-to-br from-[#00A86B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">
                 Growth & Design Systems
               </h3>
               <p className="text-gray-400 mb-3">
-                <strong>MERN Developer</strong> at <strong>NovaComp</strong>, architecting high-conversion acquisition flows for a leading <strong>US solar provider</strong>.
+                <strong>MERN Developer</strong> at <strong>NovaComp</strong>,
+                architecting high-conversion acquisition flows for a leading{" "}
+                <strong>US solar provider</strong>.
               </p>
               <p className="text-gray-300 mb-4">
-                Bridging the gap between brand vision and engineering reality by maintaining scalable Design Systems and MongoDB-backed architectures.
+                Bridging the gap between brand vision and engineering reality by
+                maintaining scalable Design Systems and MongoDB-backed
+                architectures.
               </p>
               <p className="text-sm font-mono text-[#00A86B] mb-4">
                 Next.js • MongoDB • LaunchDarkly • Storybook
@@ -42,10 +46,12 @@ export function BentoGrid() {
                 AI Orchestrator
               </h3>
               <p className="text-gray-400 mb-3 text-sm">
-                Using and creating the next generation of tools to master the AI-native development lifecycle.
+                Using and creating the next generation of tools to master the
+                AI-native development lifecycle.
               </p>
               <p className="text-gray-300 mb-4 text-sm">
-                Becoming a faster, more precise developer every day by integrating Claude Code and custom MCPs into my daily workflow.
+                Becoming a faster, more precise developer every day by
+                integrating Claude Code and custom MCPs into my daily workflow.
               </p>
               <p className="text-sm font-mono text-[#00F5FF]">
                 MCP • Playwright • Claude Code • Automation
@@ -53,21 +59,22 @@ export function BentoGrid() {
             </div>
           </article>
 
-          {/* Box 3: Engineering Leadership (2x1 - Square) */}
-          <article className="lg:col-span-2 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3">
+          {/* Box 3: Technical Leadership & Mentorship (4x1 - Wide) */}
+          <article className="lg:col-span-4 bg-[#0B0B0B] border border-gray-700 rounded-3xl p-6 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden group order-3">
             <div className="relative z-10">
-              <h3 className="text-lg font-bold mb-3 text-white">Engineering Leadership</h3>
+              <h3 className="text-lg font-bold mb-3 text-white">
+                Technical Leadership & Mentorship
+              </h3>
               <p className="text-gray-400 mb-2 text-sm">
-                Guiding <span className="text-[#FFBF00] font-bold">20+</span> engineers through the complexities of the full-stack ecosystem.
+                Guiding <span className="text-[#FFBF00] font-bold">20+</span>{" "}
+                developers via weekly live webinars and workshops.
               </p>
-              <p className="text-xs text-gray-500 mb-3">
-                Fostering technical growth through live debugging and 1:1 guidance.
-              </p>
-              <p className="text-xs italic text-gray-400 mb-3">
-                "Translating complex architecture into actionable knowledge."
+              <p className="text-xs text-gray-500 mb-2">
+                Providing career coaching and technical guidance to help
+                engineers navigate the industry.
               </p>
               <p className="text-xs font-mono text-gray-500">
-                Public Speaking • Code Review • Mentorship
+                Public Speaking • Live Debugging • Mentorship
               </p>
             </div>
           </article>

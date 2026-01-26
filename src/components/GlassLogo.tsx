@@ -6,13 +6,18 @@ export function GlassLogo() {
     <GlassSurface
       width="auto"
       height="auto"
-      borderRadius={9999}
-      backgroundOpacity={0.15}
-      brightness={15}
-      opacity={0.85}
-      blur={8}
-      saturation={1.5}
-      borderWidth={0.1}
+      borderRadius={50}
+      backgroundOpacity={0.1}
+      saturation={1}
+      borderWidth={0.07}
+      brightness={50}
+      opacity={0.93}
+      blur={11}
+      displace={0.5}
+      distortionScale={-180}
+      redOffset={0}
+      greenOffset={10}
+      blueOffset={20}
       className="w-fit"
     >
       <a href="./index.html" className="group flex flex-col w-fit px-4 py-3 cursor-pointer">

@@ -22027,10 +22027,17 @@ function GlassLogo() {
       greenOffset: 10,
       blueOffset: 20,
       className: "w-fit",
-      children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("a", { href: "./index.html", className: "group flex flex-col w-fit px-4 py-3 cursor-pointer", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors", children: "palmeida" }),
-        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors", children: "Product Engineer" })
-      ] })
+      children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
+        "a",
+        {
+          href: "./index.html",
+          className: "group flex flex-col w-fit px-4 py-3 cursor-pointer gap-1",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors", children: "palmeida" }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors", children: "Product Engineer" })
+          ]
+        }
+      )
     }
   );
 }

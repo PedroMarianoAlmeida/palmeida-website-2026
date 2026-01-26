@@ -1,5 +1,4 @@
-import React from 'react';
-import { GlassSurface } from '@/components/GlassSurface';
+import { GlassSurface } from "@/components/GlassSurface";
 
 export function GlassLogo() {
   return (
@@ -20,7 +19,10 @@ export function GlassLogo() {
       blueOffset={20}
       className="w-fit"
     >
-      <a href="./index.html" className="group flex flex-col w-fit px-4 py-3 cursor-pointer">
+      <a
+        href="./index.html"
+        className="group flex flex-col w-fit px-4 py-3 cursor-pointer gap-1"
+      >
         <span className="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors">
           palmeida
         </span>

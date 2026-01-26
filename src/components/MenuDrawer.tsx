@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Drawer } from "vaul";
+import { HomeIcon } from "lucide-react";
 
 export function MenuDrawer() {
   const [open, setOpen] = useState(false);
@@ -8,13 +9,7 @@ export function MenuDrawer() {
     {
       label: "Home",
       href: "./index.html",
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        />
-      ),
+      icon: <HomeIcon />,
     },
     {
       label: "About",
@@ -126,25 +121,23 @@ export function MenuDrawer() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="px-6 py-4 text-lg font-medium text-white/90 hover:text-primary hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item"
+                  className="px-6 py-4 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item"
                   onClick={() => setOpen(false)}
                 >
-                  <span
-                    className="w-10 h-10 rounded-xl bg-[hsla(0,0%,100%,0.12)] backdrop-blur-[0.6em] border border-white/20 flex items-center justify-center transition-all group-hover/item:bg-primary/20"
-                    style={{
-                      boxShadow: "0 0 0 0.1em hsla(0, 0%, 100%, 0.2) inset",
-                    }}
+                  <button
+                    type="button"
+                    className="relative bg-transparent outline-none border-none cursor-pointer w-[3.5em] h-[3.5em] [perspective:24em] [transform-style:preserve-3d] group"
                   >
-                    <svg
-                      className="w-5 h-5 text-white/90 group-hover/item:text-primary transition-colors"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
+                    {/* The Glass Pane */}
+                    <span
+                      className="absolute inset-0 rounded-[1.1em] bg-[hsla(0,0%,100%,0.12)] transition-transform duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] origin-[80%_50%] flex backdrop-blur-[0.6em] border border-white/20 group-hover:[transform:translate3d(0,0,1.5em)] items-center justify-center"
+                      style={{
+                        boxShadow: "0 0 0 0.1em hsla(0, 0%, 100%, 0.2) inset",
+                      }}
                     >
                       {item.icon}
-                    </svg>
-                  </span>
+                    </span>
+                  </button>
                   {item.label}
                 </a>
               ))}

@@ -21718,7 +21718,7 @@ var require_jsx_runtime = __commonJS({
 });
 
 // docs/islandRender.tsx
-var import_react6 = __toESM(require_react(), 1);
+var import_react8 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // src/components/GlassSurface.tsx
@@ -22043,7 +22043,7 @@ function GlassLogo() {
 }
 
 // src/components/MenuDrawer.tsx
-var import_react4 = __toESM(require_react(), 1);
+var import_react6 = __toESM(require_react(), 1);
 
 // node_modules/@radix-ui/react-dialog/dist/index.mjs
 var React25 = __toESM(require_react(), 1);
@@ -25638,22 +25638,126 @@ var Drawer = {
   Description
 };
 
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
+var import_react5 = __toESM(require_react());
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.js
+var mergeClasses = (...classes) => classes.filter((className, index, array) => {
+  return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+}).join(" ").trim();
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.js
+var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.js
+var toCamelCase = (string) => string.replace(
+  /^([A-Z])|[\s-_]+(\w)/g,
+  (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase()
+);
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.js
+var toPascalCase = (string) => {
+  const camelCase = toCamelCase(string);
+  return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
+};
+
+// node_modules/lucide-react/dist/esm/Icon.js
+var import_react4 = __toESM(require_react());
+
+// node_modules/lucide-react/dist/esm/defaultAttributes.js
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+};
+
+// node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.js
+var hasA11yProp = (props) => {
+  for (const prop in props) {
+    if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
+      return true;
+    }
+  }
+  return false;
+};
+
+// node_modules/lucide-react/dist/esm/Icon.js
+var Icon = (0, import_react4.forwardRef)(
+  ({
+    color = "currentColor",
+    size = 24,
+    strokeWidth = 2,
+    absoluteStrokeWidth,
+    className = "",
+    children,
+    iconNode,
+    ...rest
+  }, ref) => (0, import_react4.createElement)(
+    "svg",
+    {
+      ref,
+      ...defaultAttributes,
+      width: size,
+      height: size,
+      stroke: color,
+      strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+      className: mergeClasses("lucide", className),
+      ...!children && !hasA11yProp(rest) && { "aria-hidden": "true" },
+      ...rest
+    },
+    [
+      ...iconNode.map(([tag, attrs]) => (0, import_react4.createElement)(tag, attrs)),
+      ...Array.isArray(children) ? children : [children]
+    ]
+  )
+);
+
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
+var createLucideIcon = (iconName, iconNode) => {
+  const Component = (0, import_react5.forwardRef)(
+    ({ className, ...props }, ref) => (0, import_react5.createElement)(Icon, {
+      ref,
+      iconNode,
+      className: mergeClasses(
+        `lucide-${toKebabCase(toPascalCase(iconName))}`,
+        `lucide-${iconName}`,
+        className
+      ),
+      ...props
+    })
+  );
+  Component.displayName = toPascalCase(iconName);
+  return Component;
+};
+
+// node_modules/lucide-react/dist/esm/icons/house.js
+var __iconNode = [
+  ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
+  [
+    "path",
+    {
+      d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+      key: "r6nss1"
+    }
+  ]
+];
+var House = createLucideIcon("house", __iconNode);
+
 // src/components/MenuDrawer.tsx
 var import_jsx_runtime10 = __toESM(require_jsx_runtime(), 1);
 function MenuDrawer() {
-  const [open, setOpen] = (0, import_react4.useState)(false);
+  const [open, setOpen] = (0, import_react6.useState)(false);
   const menuItems = [
     {
       label: "Home",
       href: "./index.html",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-        "path",
-        {
-          strokeLinecap: "round",
-          strokeLinejoin: "round",
-          d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        }
-      )
+      icon: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(House, {})
     },
     {
       label: "About",
@@ -25761,24 +25865,21 @@ function MenuDrawer() {
           "a",
           {
             href: item.href,
-            className: "px-6 py-4 text-lg font-medium text-white/90 hover:text-primary hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item",
+            className: "px-6 py-4 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item",
             onClick: () => setOpen(false),
             children: [
               /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-                "span",
+                "button",
                 {
-                  className: "w-10 h-10 rounded-xl bg-[hsla(0,0%,100%,0.12)] backdrop-blur-[0.6em] border border-white/20 flex items-center justify-center transition-all group-hover/item:bg-primary/20",
-                  style: {
-                    boxShadow: "0 0 0 0.1em hsla(0, 0%, 100%, 0.2) inset"
-                  },
+                  type: "button",
+                  className: "relative bg-transparent outline-none border-none cursor-pointer w-[3.5em] h-[3.5em] [perspective:24em] [transform-style:preserve-3d] group",
                   children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-                    "svg",
+                    "span",
                     {
-                      className: "w-5 h-5 text-white/90 group-hover/item:text-primary transition-colors",
-                      fill: "none",
-                      viewBox: "0 0 24 24",
-                      stroke: "currentColor",
-                      strokeWidth: 2,
+                      className: "absolute inset-0 rounded-[1.1em] bg-[hsla(0,0%,100%,0.12)] transition-transform duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] origin-[80%_50%] flex backdrop-blur-[0.6em] border border-white/20 group-hover:[transform:translate3d(0,0,1.5em)] items-center justify-center",
+                      style: {
+                        boxShadow: "0 0 0 0.1em hsla(0, 0%, 100%, 0.2) inset"
+                      },
                       children: item.icon
                     }
                   )
@@ -25795,7 +25896,7 @@ function MenuDrawer() {
 }
 
 // src/components/SearchableContentWithFilter.tsx
-var import_react5 = __toESM(require_react(), 1);
+var import_react7 = __toESM(require_react(), 1);
 
 // src/components/LinkedinPostCard.tsx
 var import_jsx_runtime11 = __toESM(require_jsx_runtime(), 1);
@@ -25846,13 +25947,13 @@ var import_jsx_runtime12 = __toESM(require_jsx_runtime(), 1);
 function SearchableContentWithFilter({
   items
 }) {
-  const [selectedTags, setSelectedTags] = (0, import_react5.useState)(() => {
+  const [selectedTags, setSelectedTags] = (0, import_react7.useState)(() => {
     if (typeof window === "undefined") return [];
     const params = new URLSearchParams(window.location.search);
     const tags = params.get("tags");
     return tags ? tags.split(",").filter(Boolean) : [];
   });
-  (0, import_react5.useEffect)(() => {
+  (0, import_react7.useEffect)(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
     if (selectedTags.length > 0) {
@@ -25863,14 +25964,14 @@ function SearchableContentWithFilter({
     const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
     window.history.replaceState({}, "", newUrl);
   }, [selectedTags]);
-  const allTags = (0, import_react5.useMemo)(() => {
+  const allTags = (0, import_react7.useMemo)(() => {
     const tagSet = /* @__PURE__ */ new Set();
     items.forEach((item) => {
       item.tags.forEach((tag) => tagSet.add(tag));
     });
     return Array.from(tagSet).sort();
   }, [items]);
-  const filteredItems = (0, import_react5.useMemo)(() => {
+  const filteredItems = (0, import_react7.useMemo)(() => {
     if (selectedTags.length === 0) {
       return items;
     }
@@ -25964,7 +26065,7 @@ var hydrateIslands = () => {
         try {
           const Component = componentRegistry[componentName];
           const props = propsJson ? JSON.parse(propsJson) : {};
-          const element = import_react6.default.createElement(Component, props);
+          const element = import_react8.default.createElement(Component, props);
           (0, import_client.createRoot)(island).render(element);
         } catch (error) {
           console.error(`Failed to hydrate component ${componentName}:`, error);
@@ -26035,5 +26136,22 @@ react/cjs/react-jsx-runtime.development.js:
    *
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/shared/src/utils/mergeClasses.js:
+lucide-react/dist/esm/shared/src/utils/toKebabCase.js:
+lucide-react/dist/esm/shared/src/utils/toCamelCase.js:
+lucide-react/dist/esm/shared/src/utils/toPascalCase.js:
+lucide-react/dist/esm/defaultAttributes.js:
+lucide-react/dist/esm/shared/src/utils/hasA11yProp.js:
+lucide-react/dist/esm/Icon.js:
+lucide-react/dist/esm/createLucideIcon.js:
+lucide-react/dist/esm/icons/house.js:
+lucide-react/dist/esm/lucide-react.js:
+  (**
+   * @license lucide-react v0.563.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
    *)
 */

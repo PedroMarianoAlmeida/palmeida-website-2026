@@ -20,7 +20,7 @@ const InsightsPage = () => {
         <Header />
 
         {/* Main Content */}
-        <main className="section-padding">
+        <main className="pt-2 pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">

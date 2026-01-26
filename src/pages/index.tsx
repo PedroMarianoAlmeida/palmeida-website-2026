@@ -1,4 +1,3 @@
-import { Island } from "@/Island";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { BentoGrid } from "@/components/BentoGrid";
@@ -20,9 +19,7 @@ const HomePage = () => {
         <link rel="stylesheet" href="./styles.css" />
       </head>
       <body>
-        <Island>
-          <Header />
-        </Island>
+        <Header />
         <Hero />
         <BentoGrid />
         <Footer />

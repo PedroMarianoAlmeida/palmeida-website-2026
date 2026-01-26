@@ -19,9 +19,7 @@ const InsightsPage = () => {
         <script src="./islandRender.js" defer />
       </head>
       <body>
-        <Island>
-          <Header />
-        </Island>
+        <Header />
 
         {/* Main Content */}
         <main className="pt-2 pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8">

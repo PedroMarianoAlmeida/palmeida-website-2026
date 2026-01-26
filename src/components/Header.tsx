@@ -1,3 +1,4 @@
+import { Island } from "@/Island";
 import { MenuDrawer } from "@/components/MenuDrawer";
 
 export function Header() {
@@ -15,8 +16,10 @@ export function Header() {
             </span>
           </a>
 
-          {/* Menu Drawer */}
-          <MenuDrawer />
+          {/* Menu Drawer - Only this interactive part is wrapped in Island */}
+          <Island>
+            <MenuDrawer />
+          </Island>
         </div>
       </header>
       {/* Spacer to prevent content from sliding under fixed header */}

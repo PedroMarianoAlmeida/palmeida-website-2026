@@ -1,4 +1,3 @@
-import { Island } from "@/Island";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -16,9 +15,7 @@ const AboutPage = () => {
         <link rel="stylesheet" href="./styles.css" />
       </head>
       <body>
-        <Island>
-          <Header />
-        </Island>
+        <Header />
 
         {/* Main Content */}
         <main>

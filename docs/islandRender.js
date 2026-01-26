@@ -25383,26 +25383,11 @@ function MenuDrawer() {
   ] });
 }
 
-// src/components/Header.tsx
-var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
-function Header() {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(import_jsx_runtime9.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("header", { className: "fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-7xl mx-auto flex justify-between items-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("a", { href: "./index.html", className: "group flex flex-col w-fit bg-background px-4 py-3 rounded-full hover:bg-primary/20 transition-colors cursor-pointer", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors", children: "palmeida" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors", children: "Product Engineer" })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(MenuDrawer, {})
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "h-24 bg-black" })
-  ] });
-}
-
 // src/components/SearchableContentWithFilter.tsx
 var import_react4 = __toESM(require_react(), 1);
 
 // src/components/LinkedinPostCard.tsx
-var import_jsx_runtime10 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 function LinkedinPostCard({
   title,
   url,
@@ -25414,12 +25399,12 @@ function LinkedinPostCard({
     month: "short",
     day: "numeric"
   });
-  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("article", { className: "bento-card-neutral group", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
-    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "relative z-10 flex flex-col h-full", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h3", { className: "text-lg lg:text-xl font-bold mb-3 text-white", children: title }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "flex flex-wrap gap-2 mb-3", children: tags.map((tag, index) => /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("article", { className: "bento-card-neutral group", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "relative z-10 flex flex-col h-full", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h3", { className: "text-lg lg:text-xl font-bold mb-3 text-white", children: title }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "flex flex-wrap gap-2 mb-3", children: tags.map((tag, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
           "span",
           {
             className: "text-xs px-2 py-1 rounded-full bg-gray-800 text-gray-300 border border-gray-700",
@@ -25428,9 +25413,9 @@ function LinkedinPostCard({
           index
         )) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex items-center justify-between mt-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("time", { className: "text-sm text-gray-500", children: formattedDate }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex items-center justify-between mt-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("time", { className: "text-sm text-gray-500", children: formattedDate }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
           "a",
           {
             href: url,
@@ -25446,7 +25431,7 @@ function LinkedinPostCard({
 }
 
 // src/components/SearchableContentWithFilter.tsx
-var import_jsx_runtime11 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime10 = __toESM(require_jsx_runtime(), 1);
 function SearchableContentWithFilter({
   items
 }) {
@@ -25490,11 +25475,11 @@ function SearchableContentWithFilter({
   const clearFilters = () => {
     setSelectedTags([]);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "mb-8", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex items-center justify-between mb-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("h2", { className: "text-xl font-bold text-white", children: "Filter by Topic" }),
-        selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mb-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex items-center justify-between mb-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h2", { className: "text-xl font-bold text-white", children: "Filter by Topic" }),
+        selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
           "button",
           {
             onClick: clearFilters,
@@ -25503,9 +25488,9 @@ function SearchableContentWithFilter({
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "flex flex-wrap gap-2", children: allTags.map((tag) => {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "flex flex-wrap gap-2", children: allTags.map((tag) => {
         const isSelected = selectedTags.includes(tag);
-        return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
+        return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
           "button",
           {
             onClick: () => toggleTag(tag),
@@ -25516,19 +25501,19 @@ function SearchableContentWithFilter({
         );
       }) })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("p", { className: "text-gray-400 text-sm", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("p", { className: "text-gray-400 text-sm", children: [
       "Showing ",
       filteredItems.length,
       " of ",
       items.length,
       " items",
-      selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("span", { className: "ml-2 text-primary", children: [
+      selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("span", { className: "ml-2 text-primary", children: [
         "(filtered by: ",
         selectedTags.join(", "),
         ")"
       ] })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
       LinkedinPostCard,
       {
         title: item.title,
@@ -25538,9 +25523,9 @@ function SearchableContentWithFilter({
       },
       index
     )) }),
-    filteredItems.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "text-center py-12", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No items found with the selected filters." }),
-      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
+    filteredItems.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "text-center py-12", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No items found with the selected filters." }),
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
         "button",
         {
           onClick: clearFilters,
@@ -25554,7 +25539,7 @@ function SearchableContentWithFilter({
 
 // docs/islandRender.tsx
 var componentRegistry = {
-  "Header": Header,
+  "MenuDrawer": MenuDrawer,
   "SearchableContentWithFilter": SearchableContentWithFilter
 };
 var hydrateIslands = () => {

@@ -25837,7 +25837,7 @@ function MenuDrawer() {
     ) }),
     /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Drawer.Portal, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Overlay, { className: "fixed inset-0 bg-black/60 backdrop-blur-sm z-40 transition-opacity duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Content, { className: "fixed top-0 right-0 bottom-0 z-50 bg-zinc-900/40 backdrop-blur-xl flex flex-col rounded-l-[24px] w-[85vw] max-w-md border-l border-white/10 shadow-2xl", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "p-6 rounded-l-[24px] flex-1 overflow-y-auto", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Content, { className: "fixed top-0 right-0 bottom-0 z-50 bg-zinc-900/40 backdrop-blur-xl flex flex-col rounded-l-[24px] w-[85vw] max-w-md border-l border-white/10 shadow-2xl", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "p-6 rounded-l-[24px] flex-1 overflow-y-auto flex flex-col", children: [
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Close, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
           "button",
           {
@@ -25867,7 +25867,7 @@ function MenuDrawer() {
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Title, { className: "text-2xl font-bold text-white mb-2", children: "Menu" }),
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Description, { className: "text-gray-400 text-sm", children: "Navigate through the site" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("nav", { className: "flex flex-col gap-2", children: menuItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("nav", { className: "flex flex-col gap-2 flex-grow", children: menuItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
           "a",
           {
             href: item.href,
@@ -25880,7 +25880,7 @@ function MenuDrawer() {
           },
           item.href
         )) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "mt-auto pt-8 border-t border-white/10", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex justify-center gap-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "pt-8 border-t border-white/10", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex justify-center gap-6", children: [
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
             "a",
             {

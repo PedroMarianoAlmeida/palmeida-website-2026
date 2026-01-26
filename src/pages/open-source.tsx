@@ -1,3 +1,4 @@
+import { Island } from "@/Island";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -15,7 +16,9 @@ const OpenSourcePage = () => {
         <link rel="stylesheet" href="./styles.css" />
       </head>
       <body>
-        <Header />
+        <Island>
+          <Header />
+        </Island>
 
         {/* Main Content */}
         <main>

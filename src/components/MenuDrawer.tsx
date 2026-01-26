@@ -5,10 +5,50 @@ export function MenuDrawer() {
   const [open, setOpen] = useState(false);
 
   const menuItems = [
-    { label: "Home", href: "./index.html" },
-    { label: "About", href: "./about.html" },
-    { label: "Insights", href: "./insights.html" },
-    { label: "Open Source", href: "./open-source.html" },
+    {
+      label: "Home",
+      href: "./index.html",
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+        />
+      ),
+    },
+    {
+      label: "About",
+      href: "./about.html",
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+        />
+      ),
+    },
+    {
+      label: "Insights",
+      href: "./insights.html",
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+        />
+      ),
+    },
+    {
+      label: "Open Source",
+      href: "./open-source.html",
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+        />
+      ),
+    },
   ];
 
   return (
@@ -86,9 +126,25 @@ export function MenuDrawer() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="px-6 py-4 text-lg font-medium text-white/90 hover:text-primary hover:bg-primary/10 rounded-2xl transition-all"
+                  className="px-6 py-4 text-lg font-medium text-white/90 hover:text-primary hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item"
                   onClick={() => setOpen(false)}
                 >
+                  <span
+                    className="w-10 h-10 rounded-xl bg-[hsla(0,0%,100%,0.12)] backdrop-blur-[0.6em] border border-white/20 flex items-center justify-center transition-all group-hover/item:bg-primary/20"
+                    style={{
+                      boxShadow: "0 0 0 0.1em hsla(0, 0%, 100%, 0.2) inset",
+                    }}
+                  >
+                    <svg
+                      className="w-5 h-5 text-white/90 group-hover/item:text-primary transition-colors"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      {item.icon}
+                    </svg>
+                  </span>
                   {item.label}
                 </a>
               ))}

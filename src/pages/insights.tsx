@@ -1,9 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { LinkedinPostCard } from "@/components/LinkedinPostCard";
+import { Island } from "@/Island";
+import { LinkedinPostsWithFilter } from "@/components/LinkedinPostsWithFilter";
 import { linkedinPostList } from "@/data/linkedinPosts";
 
 const InsightsPage = () => {
+  // Serialize posts for Island (convert Date to ISO string)
+  const serializedPosts = linkedinPostList.map((post) => ({
+    ...post,
+    createdAt: post.createdAt,
+  }));
+
   return (
     <html lang="en">
       <head>
@@ -15,6 +22,7 @@ const InsightsPage = () => {
           content="Technical insights and articles on Growth Engineering, Architecture, and modern web development practices."
         />
         <link rel="stylesheet" href="./styles.css" />
+        <script src="./islandRender.js" defer />
       </head>
       <body>
         <Header />
@@ -32,18 +40,10 @@ const InsightsPage = () => {
               </p>
             </div>
 
-            {/* Posts Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {linkedinPostList.map((post, index) => (
-                <LinkedinPostCard
-                  key={index}
-                  title={post.title}
-                  url={post.url}
-                  tags={post.tags}
-                  createdAt={post.createdAt}
-                />
-              ))}
-            </div>
+            {/* Interactive Posts with Filter */}
+            <Island>
+              <LinkedinPostsWithFilter posts={serializedPosts} />
+            </Island>
           </div>
         </main>
 

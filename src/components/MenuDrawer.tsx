@@ -46,8 +46,8 @@ export function MenuDrawer() {
 
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 transition-opacity duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
-        <Drawer.Content className="fixed top-0 right-0 bottom-0 z-50 bg-zinc-900 flex flex-col rounded-l-[24px] w-[85vw] max-w-md">
-          <div className="p-6 bg-zinc-900 rounded-l-[24px] flex-1 overflow-y-auto">
+        <Drawer.Content className="fixed top-0 right-0 bottom-0 z-50 bg-zinc-900/40 backdrop-blur-xl flex flex-col rounded-l-[24px] w-[85vw] max-w-md border-l border-white/10 shadow-2xl">
+          <div className="p-6 rounded-l-[24px] flex-1 overflow-y-auto">
             {/* Close Button */}
             <Drawer.Close asChild>
               <button

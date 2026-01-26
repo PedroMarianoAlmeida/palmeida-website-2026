@@ -14,22 +14,114 @@
   <body>
     <header class="fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <a
-          href="./index.html"
-          class="group flex flex-col w-fit bg-background px-4 py-3 rounded-full hover:bg-primary/20 transition-colors cursor-pointer"
-        >
-          <span
-            class="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors"
+        <div id="island-5" data-island="GlassLogo" data-props="{}">
+          <div
+            class="relative flex items-center justify-center overflow-hidden transition-opacity duration-[260ms] ease-out focus-visible:outline-2 focus-visible:outline-[#007AFF] focus-visible:outline-offset-2 w-fit"
+            style="
+              width: auto;
+              height: auto;
+              border-radius: 9999px;
+              --glass-frost: 0.15;
+              --glass-saturation: 1.5;
+              background: rgba(255, 255, 255, 0.4);
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              box-shadow:
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.3);
+            "
           >
-            palmeida
-          </span>
-          <span
-            class="text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors"
-          >
-            Product Engineer
-          </span>
-        </a>
-        <div id="island-3" data-island="MenuDrawer" data-props="{}">
+            <svg
+              class="w-full h-full pointer-events-none absolute inset-0 opacity-0 -z-10"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter
+                  id="glass-filter-_R_am_"
+                  color-interpolation-filters="sRGB"
+                  x="0%"
+                  y="0%"
+                  width="100%"
+                  height="100%"
+                >
+                  <feImage
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    preserveAspectRatio="none"
+                    result="map"
+                  ></feImage>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="map"
+                    id="redchannel"
+                    result="dispRed"
+                  ></feDisplacementMap>
+                  <feColorMatrix
+                    in="dispRed"
+                    type="matrix"
+                    values="1 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 1 0"
+                    result="red"
+                  ></feColorMatrix>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="map"
+                    id="greenchannel"
+                    result="dispGreen"
+                  ></feDisplacementMap>
+                  <feColorMatrix
+                    in="dispGreen"
+                    type="matrix"
+                    values="0 0 0 0 0
+                      0 1 0 0 0
+                      0 0 0 0 0
+                      0 0 0 1 0"
+                    result="green"
+                  ></feColorMatrix>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="map"
+                    id="bluechannel"
+                    result="dispBlue"
+                  ></feDisplacementMap>
+                  <feColorMatrix
+                    in="dispBlue"
+                    type="matrix"
+                    values="0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 1 0 0
+                      0 0 0 1 0"
+                    result="blue"
+                  ></feColorMatrix>
+                  <feBlend in="red" in2="green" mode="screen" result="rg"></feBlend>
+                  <feBlend in="rg" in2="blue" mode="screen" result="output"></feBlend>
+                  <feGaussianBlur in="output" stdDeviation="0.7"></feGaussianBlur>
+                </filter>
+              </defs>
+            </svg>
+            <div
+              class="w-full h-full flex items-center justify-center p-2 rounded-[inherit] relative z-10"
+            >
+              <a href="./index.html" class="group flex flex-col w-fit px-4 py-3 cursor-pointer">
+                <span
+                  class="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors"
+                >
+                  palmeida
+                </span>
+                <span
+                  class="text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors"
+                >
+                  Product Engineer
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <script type="module" src="./islandRender.js" defer=""></script>
+        <div id="island-6" data-island="MenuDrawer" data-props="{}">
           <button
             type="button"
             class="relative bg-transparent outline-none border-none cursor-pointer w-[3.5em] h-[3.5em] [perspective:24em] [transform-style:preserve-3d] group"
@@ -72,7 +164,7 @@
           </p>
         </div>
         <div
-          id="island-4"
+          id="island-7"
           data-island="SearchableContentWithFilter"
           data-props='{"items":[{"title":"My first open source contibuition of 2026","tags":["Open Source","Caroussel"],"createdAt":"2026-01-25","url":"https://www.linkedin.com/posts/palmeida-dev_first-open-source-2026-activity-7420562814945341440-1kWi?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAb9HFEBsP2eXbciI3E5LX0tWfvkOT9bo_U"},{"title":"Filter feature at Usd Latam Jobs portal","tags":["Usd Latam Jobs","SaaS","Video"],"createdAt":"2026-01-16","url":"https://www.linkedin.com/posts/palmeida-dev_new-feature-live-on-our-job-portal-turn-activity-7417944169760915457-Cm8n?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAb9HFEBsP2eXbciI3E5LX0tWfvkOT9bo_U"},{"title":"State of USD Latam Jobs - Dec/2025","tags":["Carrear","Usd Latam Jobs","SaaS","Caroussel"],"createdAt":"2026-01-09","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7415407364507598848"},{"title":"Why is AI still bad at coding sometimes?","tags":["AI","Caroussel"],"createdAt":"2025-12-26","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7410333859063533570"},{"title":"Github retrospective CTA","tags":["SaaS","Code","Text","Image"],"createdAt":"2025-12-23","url":"https://www.linkedin.com/feed/update/urn:li:share:7409246551560114176"},{"title":"It is time to abandon React Server Components","tags":["Code","Caroussel"],"createdAt":"2025-12-19","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7407797512100818944"},{"title":"6 month of TripleTen","tags":["Carrear","Caroussel"],"createdAt":"2025-12-12","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7405260800422273024"},{"title":"Free trial Usd Latam Jobs","tags":["SaaS","Usd Latam Jobs","Text","Image"],"createdAt":"2025-12-11","url":"https://www.linkedin.com/feed/update/urn:li:share:7404898236064460802"},{"title":"Github Retrospective Release","tags":["SaaS","Text"],"createdAt":"2025-12-10","url":"https://www.linkedin.com/feed/update/urn:li:share:7404535597589196800"},{"title":"First month Usd Latam Jobs","tags":["Usd Latam Jobs","SaaS","Text","Image"],"createdAt":"2025-12-09","url":"https://www.linkedin.com/feed/update/urn:li:share:7404173310168641536"},{"title":"How I prevent burnout","tags":["Health","Caroussel"],"createdAt":"2025-12-05","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7402723577755635713"},{"title":"Scam warning","tags":["Carrear","Text"],"createdAt":"2025-11-28","url":"https://www.linkedin.com/feed/update/urn:li:share:7400186733520191488"},{"title":"How I prevent burnout","tags":["Health"],"createdAt":"2025-12-05","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7402723577755635713"},{"title":"Why I stop using Browser to Chat with AI","tags":["AI","Code","Caroussel"],"createdAt":"2025-11-21","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7397650492845133825"},{"title":"Domain Driven Design with AI","tags":["AI","Code","Caroussel"],"createdAt":"2025-11-14","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7395113424185217024"},{"title":"Vibe Coders &amp; Software Developers","tags":["AI","Caroussel","Carrear"],"createdAt":"2025-11-07","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7392576740029726720"},{"title":"How to Work for an International Company 7/7","tags":["Caroussel","Carrear","How to Work for an International Company"],"createdAt":"2025-10-31","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7390040463199707136"},{"title":"The Hidden Psychological Impact of Layoffs","tags":["Caroussel","Health"],"createdAt":"2025-10-24","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7387504373234556928"},{"title":"How to Work for an International Company 6/7","tags":["Caroussel","Carrear","How to Work for an International Company"],"createdAt":"2025-10-17","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7384967524578410497"},{"title":"Why Super AGI is BS","tags":["Caroussel","AI"],"createdAt":"2025-10-10","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7382430491469320192"},{"title":"How to Work for an International Company 5/7","tags":["Caroussel","Carrear","How to Work for an International Company"],"createdAt":"2025-10-03","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7379893768872951808"},{"title":"The Truth About Open Source and Salary","tags":["Caroussel","Carrear","Open Source"],"createdAt":"2025-09-26","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7377357297070526464"},{"title":"How to Work for an International Company 4/7","tags":["Caroussel","Carrear","How to Work for an International Company"],"createdAt":"2025-09-19","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7374820387244703745"},{"title":"My setup","tags":["Caroussel","Setup"],"createdAt":"2025-09-12","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7372283538429341696"},{"title":"How to Work for an International Company 3/7","tags":["Caroussel","Carrear","How to Work for an International Company"],"createdAt":"2025-09-05","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7369746762275643392"},{"title":"How I became the #2 contribuitor on React Bits","tags":["Image","Text","Open Source"],"createdAt":"2025-08-29","url":"https://www.linkedin.com/feed/update/urn:li:share:7367210297239023616"},{"title":"How to Work for an International Company 2/7","tags":["Video","Text","Carrear","How to Work for an International Company"],"createdAt":"2025-08-22","url":"https://www.linkedin.com/feed/update/urn:li:ugcPost:7364673556825239553"},{"title":"Evolution AI tools for coding","tags":["AI","Text"],"createdAt":"2025-08-15","url":"https://www.linkedin.com/feed/update/urn:li:share:7362136596885725185"},{"title":"How to Work for an International Company 1/7","tags":["Text","Carrear","How to Work for an International Company"],"createdAt":"2025-08-07","url":"https://www.linkedin.com/feed/update/urn:li:share:7359272368847872000"}]}'
         >

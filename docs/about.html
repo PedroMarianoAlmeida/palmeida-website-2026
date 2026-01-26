@@ -13,22 +13,114 @@
   <body>
     <header class="fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <a
-          href="./index.html"
-          class="group flex flex-col w-fit bg-background px-4 py-3 rounded-full hover:bg-primary/20 transition-colors cursor-pointer"
-        >
-          <span
-            class="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors"
+        <div id="island-1" data-island="GlassLogo" data-props="{}">
+          <div
+            class="relative flex items-center justify-center overflow-hidden transition-opacity duration-[260ms] ease-out focus-visible:outline-2 focus-visible:outline-[#007AFF] focus-visible:outline-offset-2 w-fit"
+            style="
+              width: auto;
+              height: auto;
+              border-radius: 9999px;
+              --glass-frost: 0.15;
+              --glass-saturation: 1.5;
+              background: rgba(255, 255, 255, 0.4);
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              box-shadow:
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.3);
+            "
           >
-            palmeida
-          </span>
-          <span
-            class="text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors"
-          >
-            Product Engineer
-          </span>
-        </a>
-        <div id="island-1" data-island="MenuDrawer" data-props="{}">
+            <svg
+              class="w-full h-full pointer-events-none absolute inset-0 opacity-0 -z-10"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter
+                  id="glass-filter-_R_am_"
+                  color-interpolation-filters="sRGB"
+                  x="0%"
+                  y="0%"
+                  width="100%"
+                  height="100%"
+                >
+                  <feImage
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    preserveAspectRatio="none"
+                    result="map"
+                  ></feImage>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="map"
+                    id="redchannel"
+                    result="dispRed"
+                  ></feDisplacementMap>
+                  <feColorMatrix
+                    in="dispRed"
+                    type="matrix"
+                    values="1 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 1 0"
+                    result="red"
+                  ></feColorMatrix>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="map"
+                    id="greenchannel"
+                    result="dispGreen"
+                  ></feDisplacementMap>
+                  <feColorMatrix
+                    in="dispGreen"
+                    type="matrix"
+                    values="0 0 0 0 0
+                      0 1 0 0 0
+                      0 0 0 0 0
+                      0 0 0 1 0"
+                    result="green"
+                  ></feColorMatrix>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="map"
+                    id="bluechannel"
+                    result="dispBlue"
+                  ></feDisplacementMap>
+                  <feColorMatrix
+                    in="dispBlue"
+                    type="matrix"
+                    values="0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 1 0 0
+                      0 0 0 1 0"
+                    result="blue"
+                  ></feColorMatrix>
+                  <feBlend in="red" in2="green" mode="screen" result="rg"></feBlend>
+                  <feBlend in="rg" in2="blue" mode="screen" result="output"></feBlend>
+                  <feGaussianBlur in="output" stdDeviation="0.7"></feGaussianBlur>
+                </filter>
+              </defs>
+            </svg>
+            <div
+              class="w-full h-full flex items-center justify-center p-2 rounded-[inherit] relative z-10"
+            >
+              <a href="./index.html" class="group flex flex-col w-fit px-4 py-3 cursor-pointer">
+                <span
+                  class="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors"
+                >
+                  palmeida
+                </span>
+                <span
+                  class="text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors"
+                >
+                  Product Engineer
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <script type="module" src="./islandRender.js" defer=""></script>
+        <div id="island-2" data-island="MenuDrawer" data-props="{}">
           <button
             type="button"
             class="relative bg-transparent outline-none border-none cursor-pointer w-[3.5em] h-[3.5em] [perspective:24em] [transform-style:preserve-3d] group"

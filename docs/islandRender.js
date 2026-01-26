@@ -21773,7 +21773,23 @@ var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 function LinkedinPostsWithFilter({
   posts
 }) {
-  const [selectedTags, setSelectedTags] = (0, import_react.useState)([]);
+  const [selectedTags, setSelectedTags] = (0, import_react.useState)(() => {
+    if (typeof window === "undefined") return [];
+    const params = new URLSearchParams(window.location.search);
+    const tags = params.get("tags");
+    return tags ? tags.split(",").filter(Boolean) : [];
+  });
+  (0, import_react.useEffect)(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (selectedTags.length > 0) {
+      params.set("tags", selectedTags.join(","));
+    } else {
+      params.delete("tags");
+    }
+    const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+    window.history.replaceState({}, "", newUrl);
+  }, [selectedTags]);
   const allTags = (0, import_react.useMemo)(() => {
     const tagSet = /* @__PURE__ */ new Set();
     posts.forEach((post) => {

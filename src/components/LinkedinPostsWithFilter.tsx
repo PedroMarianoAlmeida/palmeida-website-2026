@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { LinkedinPostCard } from "@/components/LinkedinPostCard";
 
 interface LinkedinPost {
@@ -15,7 +15,31 @@ interface LinkedinPostsWithFilterProps {
 export function LinkedinPostsWithFilter({
   posts,
 }: LinkedinPostsWithFilterProps) {
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  // Initialize state from URL query params
+  const [selectedTags, setSelectedTags] = useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
+    const params = new URLSearchParams(window.location.search);
+    const tags = params.get("tags");
+    return tags ? tags.split(",").filter(Boolean) : [];
+  });
+
+  // Sync selectedTags with URL query params
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const params = new URLSearchParams(window.location.search);
+    if (selectedTags.length > 0) {
+      params.set("tags", selectedTags.join(","));
+    } else {
+      params.delete("tags");
+    }
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+
+    window.history.replaceState({}, "", newUrl);
+  }, [selectedTags]);
 
   // Extract all unique tags from posts
   const allTags = useMemo(() => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Drawer } from "vaul";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, LightbulbIcon, DollarSignIcon } from "lucide-react";
 
 export function MenuDrawer() {
   const [open, setOpen] = useState(false);
@@ -12,37 +12,14 @@ export function MenuDrawer() {
       icon: <HomeIcon />,
     },
     {
-      label: "About",
-      href: "./about.html",
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-        />
-      ),
-    },
-    {
       label: "Insights",
       href: "./insights.html",
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-        />
-      ),
+      icon: <LightbulbIcon />,
     },
     {
-      label: "Open Source",
-      href: "./open-source.html",
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-        />
-      ),
+      label: "Usd Latam Jobs",
+      href: "https://usd-latam-jobs.vercel.app/",
+      icon: <DollarSignIcon />,
     },
   ];
 
@@ -121,23 +98,10 @@ export function MenuDrawer() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="px-6 py-4 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item"
+                  className="px-8 py-2 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item"
                   onClick={() => setOpen(false)}
                 >
-                  <button
-                    type="button"
-                    className="relative bg-transparent outline-none border-none cursor-pointer w-[3.5em] h-[3.5em] [perspective:24em] [transform-style:preserve-3d] group"
-                  >
-                    {/* The Glass Pane */}
-                    <span
-                      className="absolute inset-0 rounded-[1.1em] bg-[hsla(0,0%,100%,0.12)] transition-transform duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] origin-[80%_50%] flex backdrop-blur-[0.6em] border border-white/20 group-hover:[transform:translate3d(0,0,1.5em)] items-center justify-center"
-                      style={{
-                        boxShadow: "0 0 0 0.1em hsla(0, 0%, 100%, 0.2) inset",
-                      }}
-                    >
-                      {item.icon}
-                    </span>
-                  </button>
+                  {item.icon}
                   {item.label}
                 </a>
               ))}

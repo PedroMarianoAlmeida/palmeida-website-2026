@@ -48,9 +48,6 @@ export function MenuDrawer() {
         <Drawer.Overlay className="fixed inset-0 bg-black/60 z-40" />
         <Drawer.Content className="fixed top-0 right-0 bottom-0 z-50 bg-zinc-900 flex flex-col rounded-l-[24px] w-[85vw] max-w-md">
           <div className="p-6 bg-zinc-900 rounded-l-[24px] flex-1 overflow-y-auto">
-            {/* Drawer Handle */}
-            <div className="w-1.5 h-12 rounded-full bg-zinc-700 mb-8" />
-
             {/* Menu Title */}
             <div className="mb-8">
               <Drawer.Title className="text-2xl font-bold text-white mb-2">

@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Island } from "@/Island";
-import { LinkedinPostsWithFilter } from "@/components/LinkedinPostsWithFilter";
+import { SearchableContentWithFilter } from "@/components/SearchableContentWithFilter";
 import { linkedinPostList } from "@/data/linkedinPosts";
 
 const InsightsPage = () => {
@@ -42,7 +42,7 @@ const InsightsPage = () => {
 
             {/* Interactive Posts with Filter */}
             <Island>
-              <LinkedinPostsWithFilter posts={serializedPosts} />
+              <SearchableContentWithFilter items={serializedPosts} />
             </Island>
           </div>
         </main>

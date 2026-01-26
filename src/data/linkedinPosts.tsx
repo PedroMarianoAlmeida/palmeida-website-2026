@@ -1,4 +1,6 @@
-type LinkedinPostTags =
+import { SearchableCardItem } from "@/types/searchableCard";
+
+export type LinkedinPostTags =
   | "AI"
   | "Carrear"
   | "SaaS"
@@ -13,14 +15,11 @@ type LinkedinPostTags =
   | "How to Work for an International Company"
   | "Setup";
 
-interface LinkedinPostsItem {
-  title: string;
-  url: string;
-  tags: LinkedinPostTags[];
+export interface LinkedinPostItem extends Omit<SearchableCardItem<LinkedinPostTags>, "createdAt"> {
   createdAt: Date;
 }
 
-export const linkedinPostList: LinkedinPostsItem[] = [
+export const linkedinPostList: LinkedinPostItem[] = [
   {
     title: "My first open source contibuition of 2026",
     tags: ["Open Source", "Caroussel"],

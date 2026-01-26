@@ -1,9 +1,6 @@
-interface LinkedinPostCardProps {
-  title: string;
-  url: string;
-  tags: string[];
-  createdAt: string;
-}
+import { SearchableCardItem } from "@/types/searchableCard";
+
+type LinkedinPostCardProps = SearchableCardItem;
 
 export function LinkedinPostCard({
   title,

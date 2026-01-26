@@ -21721,7 +21721,7 @@ var require_jsx_runtime = __commonJS({
 var import_react2 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
-// src/components/LinkedinPostsWithFilter.tsx
+// src/components/SearchableContentWithFilter.tsx
 var import_react = __toESM(require_react(), 1);
 
 // src/components/LinkedinPostCard.tsx
@@ -21768,10 +21768,10 @@ function LinkedinPostCard({
   ] });
 }
 
-// src/components/LinkedinPostsWithFilter.tsx
+// src/components/SearchableContentWithFilter.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
-function LinkedinPostsWithFilter({
-  posts
+function SearchableContentWithFilter({
+  items
 }) {
   const [selectedTags, setSelectedTags] = (0, import_react.useState)(() => {
     if (typeof window === "undefined") return [];
@@ -21792,19 +21792,19 @@ function LinkedinPostsWithFilter({
   }, [selectedTags]);
   const allTags = (0, import_react.useMemo)(() => {
     const tagSet = /* @__PURE__ */ new Set();
-    posts.forEach((post) => {
-      post.tags.forEach((tag) => tagSet.add(tag));
+    items.forEach((item) => {
+      item.tags.forEach((tag) => tagSet.add(tag));
     });
     return Array.from(tagSet).sort();
-  }, [posts]);
-  const filteredPosts = (0, import_react.useMemo)(() => {
+  }, [items]);
+  const filteredItems = (0, import_react.useMemo)(() => {
     if (selectedTags.length === 0) {
-      return posts;
+      return items;
     }
-    return posts.filter(
-      (post) => selectedTags.some((tag) => post.tags.includes(tag))
+    return items.filter(
+      (item) => selectedTags.some((tag) => item.tags.includes(tag))
     );
-  }, [posts, selectedTags]);
+  }, [items, selectedTags]);
   const toggleTag = (tag) => {
     setSelectedTags(
       (prev) => prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
@@ -21841,28 +21841,28 @@ function LinkedinPostsWithFilter({
     ] }),
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("p", { className: "text-gray-400 text-sm", children: [
       "Showing ",
-      filteredPosts.length,
+      filteredItems.length,
       " of ",
-      posts.length,
-      " posts",
+      items.length,
+      " items",
       selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("span", { className: "ml-2 text-primary", children: [
         "(filtered by: ",
         selectedTags.join(", "),
         ")"
       ] })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredPosts.map((post, index) => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
       LinkedinPostCard,
       {
-        title: post.title,
-        url: post.url,
-        tags: post.tags,
-        createdAt: post.createdAt
+        title: item.title,
+        url: item.url,
+        tags: item.tags,
+        createdAt: item.createdAt
       },
       index
     )) }),
-    filteredPosts.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "text-center py-12", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No posts found with the selected filters." }),
+    filteredItems.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "text-center py-12", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No items found with the selected filters." }),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
         "button",
         {
@@ -21877,7 +21877,7 @@ function LinkedinPostsWithFilter({
 
 // docs/islandRender.tsx
 var componentRegistry = {
-  "LinkedinPostsWithFilter": LinkedinPostsWithFilter
+  "SearchableContentWithFilter": SearchableContentWithFilter
 };
 var hydrateIslands = () => {
   const islands = document.querySelectorAll("[data-island]");

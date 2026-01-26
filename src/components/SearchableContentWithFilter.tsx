@@ -1,20 +1,14 @@
 import { useState, useMemo, useEffect } from "react";
+import { SearchableCardItem } from "@/types/searchableCard";
 import { LinkedinPostCard } from "@/components/LinkedinPostCard";
 
-interface LinkedinPost {
-  title: string;
-  url: string;
-  tags: string[];
-  createdAt: string;
+interface SearchableContentWithFilterProps {
+  items: SearchableCardItem[];
 }
 
-interface LinkedinPostsWithFilterProps {
-  posts: LinkedinPost[];
-}
-
-export function LinkedinPostsWithFilter({
-  posts,
-}: LinkedinPostsWithFilterProps) {
+export function SearchableContentWithFilter({
+  items,
+}: SearchableContentWithFilterProps) {
   // Initialize state from URL query params
   const [selectedTags, setSelectedTags] = useState<string[]>(() => {
     if (typeof window === "undefined") return [];
@@ -41,24 +35,24 @@ export function LinkedinPostsWithFilter({
     window.history.replaceState({}, "", newUrl);
   }, [selectedTags]);
 
-  // Extract all unique tags from posts
+  // Extract all unique tags from items
   const allTags = useMemo(() => {
     const tagSet = new Set<string>();
-    posts.forEach((post) => {
-      post.tags.forEach((tag) => tagSet.add(tag));
+    items.forEach((item) => {
+      item.tags.forEach((tag) => tagSet.add(tag));
     });
     return Array.from(tagSet).sort();
-  }, [posts]);
+  }, [items]);
 
-  // Filter posts based on selected tags
-  const filteredPosts = useMemo(() => {
+  // Filter items based on selected tags
+  const filteredItems = useMemo(() => {
     if (selectedTags.length === 0) {
-      return posts;
+      return items;
     }
-    return posts.filter((post) =>
-      selectedTags.some((tag) => post.tags.includes(tag))
+    return items.filter((item) =>
+      selectedTags.some((tag) => item.tags.includes(tag))
     );
-  }, [posts, selectedTags]);
+  }, [items, selectedTags]);
 
   const toggleTag = (tag: string) => {
     setSelectedTags((prev) =>
@@ -108,7 +102,7 @@ export function LinkedinPostsWithFilter({
       {/* Results Count */}
       <div className="mb-6">
         <p className="text-gray-400 text-sm">
-          Showing {filteredPosts.length} of {posts.length} posts
+          Showing {filteredItems.length} of {items.length} items
           {selectedTags.length > 0 && (
             <span className="ml-2 text-primary">
               (filtered by: {selectedTags.join(", ")})
@@ -117,24 +111,24 @@ export function LinkedinPostsWithFilter({
         </p>
       </div>
 
-      {/* Posts Grid */}
+      {/* Items Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredPosts.map((post, index) => (
+        {filteredItems.map((item, index) => (
           <LinkedinPostCard
             key={index}
-            title={post.title}
-            url={post.url}
-            tags={post.tags}
-            createdAt={post.createdAt}
+            title={item.title}
+            url={item.url}
+            tags={item.tags}
+            createdAt={item.createdAt}
           />
         ))}
       </div>
 
       {/* Empty State */}
-      {filteredPosts.length === 0 && (
+      {filteredItems.length === 0 && (
         <div className="text-center py-12">
           <p className="text-gray-400 text-lg mb-4">
-            No posts found with the selected filters.
+            No items found with the selected filters.
           </p>
           <button
             onClick={clearFilters}

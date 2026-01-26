@@ -2,7 +2,7 @@ import { SearchableCardItem } from "@/types/searchableCard";
 
 export type LinkedinPostTags =
   | "AI"
-  | "Carrear"
+  | "Career"
   | "SaaS"
   | "Health"
   | "Open Source"
@@ -30,7 +30,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "State of USD Latam Jobs - Dec/2025",
-    tags: ["Carrear", "Usd Latam Jobs", "SaaS", "Caroussel"],
+    tags: ["Career", "Usd Latam Jobs", "SaaS", "Caroussel"],
     createdAt: "2026-01-09",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7415407364507598848",
   },
@@ -54,7 +54,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "6 month of TripleTen",
-    tags: ["Carrear", "Caroussel"],
+    tags: ["Career", "Caroussel"],
     createdAt: "2025-12-12",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7405260800422273024",
   },
@@ -86,7 +86,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
 
   {
     title: "Scam warning",
-    tags: ["Carrear", "Text"],
+    tags: ["Career", "Text"],
     createdAt: "2025-11-28",
     url: "https://www.linkedin.com/feed/update/urn:li:share:7400186733520191488",
   },
@@ -110,13 +110,13 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "Vibe Coders & Software Developers",
-    tags: ["AI", "Caroussel", "Carrear"],
+    tags: ["AI", "Caroussel", "Career"],
     createdAt: "2025-11-07",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7392576740029726720",
   },
   {
     title: "How to Work for an International Company 7/7",
-    tags: ["Caroussel", "Carrear", "How to Work for an International Company"],
+    tags: ["Caroussel", "Career", "How to Work for an International Company"],
     createdAt: "2025-10-31",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7390040463199707136",
   },
@@ -128,7 +128,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "How to Work for an International Company 6/7",
-    tags: ["Caroussel", "Carrear", "How to Work for an International Company"],
+    tags: ["Caroussel", "Career", "How to Work for an International Company"],
     createdAt: "2025-10-17",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7384967524578410497",
   },
@@ -140,19 +140,19 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "How to Work for an International Company 5/7",
-    tags: ["Caroussel", "Carrear", "How to Work for an International Company"],
+    tags: ["Caroussel", "Career", "How to Work for an International Company"],
     createdAt: "2025-10-03",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7379893768872951808",
   },
   {
     title: "The Truth About Open Source and Salary",
-    tags: ["Caroussel", "Carrear", "Open Source"],
+    tags: ["Caroussel", "Career", "Open Source"],
     createdAt: "2025-09-26",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7377357297070526464",
   },
   {
     title: "How to Work for an International Company 4/7",
-    tags: ["Caroussel", "Carrear", "How to Work for an International Company"],
+    tags: ["Caroussel", "Career", "How to Work for an International Company"],
     createdAt: "2025-09-19",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7374820387244703745",
   },
@@ -164,7 +164,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "How to Work for an International Company 3/7",
-    tags: ["Caroussel", "Carrear", "How to Work for an International Company"],
+    tags: ["Caroussel", "Career", "How to Work for an International Company"],
     createdAt: "2025-09-05",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7369746762275643392",
   },
@@ -179,7 +179,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
     tags: [
       "Video",
       "Text",
-      "Carrear",
+      "Career",
       "How to Work for an International Company",
     ],
     createdAt: "2025-08-22",
@@ -193,7 +193,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   },
   {
     title: "How to Work for an International Company 1/7",
-    tags: ["Text", "Carrear", "How to Work for an International Company"],
+    tags: ["Text", "Career", "How to Work for an International Company"],
     createdAt: "2025-08-07",
     url: "https://www.linkedin.com/feed/update/urn:li:share:7359272368847872000",
   },

@@ -4,7 +4,7 @@ export function Header() {
       <header className="fixed top-0 left-0 w-full z-50 px-6 pt-6 pb-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Branding - Left Aligned with backdrop blur */}
-          <a href="./index.html" className="group flex flex-col w-fit backdrop-blur-md bg-background/10 px-4 py-3 rounded-full hover:bg-primary/20 transition-colors cursor-pointer">
+          <a href="./index.html" className="group flex flex-col w-fit bg-background px-4 py-3 rounded-full hover:bg-primary/20 transition-colors cursor-pointer">
             <span className="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors">
               palmeida
             </span>

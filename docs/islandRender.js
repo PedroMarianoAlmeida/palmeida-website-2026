@@ -25795,11 +25795,6 @@ function MenuDrawer() {
       label: "Insights",
       href: "./insights.html",
       icon: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Lightbulb, {})
-    },
-    {
-      label: "Usd Latam Jobs",
-      href: "https://usd-latam-jobs.vercel.app/",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(DollarSign, {})
     }
   ];
   return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Drawer.Root, { open, onOpenChange: setOpen, direction: "right", children: [
@@ -25865,21 +25860,41 @@ function MenuDrawer() {
         ) }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mb-8 mt-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Title, { className: "text-2xl font-bold text-white mb-2", children: "Menu" }),
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Drawer.Description, { className: "text-gray-400 text-sm", children: "Navigate through the site" })
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Drawer.Description, { className: "text-gray-400 text-sm", children: [
+            "Navigate through the site and",
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-secondary", children: "beyond" })
+          ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("nav", { className: "flex flex-col gap-2 flex-grow", children: menuItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
-          "a",
-          {
-            href: item.href,
-            className: "px-8 py-2 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item",
-            onClick: () => setOpen(false),
-            children: [
-              item.icon,
-              item.label
-            ]
-          },
-          item.href
-        )) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("nav", { className: "flex flex-col gap-2 flex-grow", children: [
+          menuItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+            "a",
+            {
+              href: item.href,
+              className: "px-8 py-2 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item",
+              onClick: () => setOpen(false),
+              children: [
+                item.icon,
+                item.label
+              ]
+            },
+            item.href
+          )),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+            "a",
+            {
+              href: "https://usd-latam-jobs.vercel.app/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "px-8 py-2 text-lg font-medium text-gray-400 hover:text-white hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item mt-6 text-secondary",
+              onClick: () => setOpen(false),
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(DollarSign, {}),
+                "Usd Latam Jobs"
+              ]
+            }
+          )
+        ] }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "pt-8 border-t border-white/10", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex justify-center gap-6", children: [
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
             "a",
@@ -25887,7 +25902,7 @@ function MenuDrawer() {
               href: "https://www.linkedin.com/in/palmeida-dev/",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "p-3 text-white/70 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
+              className: "p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
               "aria-label": "LinkedIn",
               children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                 "svg",
@@ -25909,7 +25924,7 @@ function MenuDrawer() {
               href: "https://github.com/PedroMarianoAlmeida",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "p-3 text-white/70 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
+              className: "p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
               "aria-label": "GitHub",
               children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                 "svg",
@@ -25930,7 +25945,7 @@ function MenuDrawer() {
             {
               href: "./assets/pedro-almeida-cv.docx",
               download: true,
-              className: "p-3 text-white/70 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
+              className: "p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
               "aria-label": "Download CV",
               children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                 "svg",

@@ -17,11 +17,6 @@ export function MenuDrawer() {
       href: "./insights.html",
       icon: <LightbulbIcon />,
     },
-    {
-      label: "Usd Latam Jobs",
-      href: "https://usd-latam-jobs.vercel.app/",
-      icon: <DollarSignIcon />,
-    },
   ];
 
   return (
@@ -89,7 +84,8 @@ export function MenuDrawer() {
                 Menu
               </Drawer.Title>
               <Drawer.Description className="text-gray-400 text-sm">
-                Navigate through the site
+                Navigate through the site and{" "}
+                <span className="text-secondary">beyond</span>
               </Drawer.Description>
             </div>
 
@@ -106,6 +102,16 @@ export function MenuDrawer() {
                   {item.label}
                 </a>
               ))}
+              <a
+                href="https://usd-latam-jobs.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-2 text-lg font-medium text-gray-400 hover:text-white hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item mt-6 text-secondary"
+                onClick={() => setOpen(false)}
+              >
+                <DollarSignIcon />
+                Usd Latam Jobs
+              </a>
             </nav>
 
             {/* Menu Footer - Social Links */}
@@ -115,7 +121,7 @@ export function MenuDrawer() {
                   href="https://www.linkedin.com/in/palmeida-dev/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 text-white/70 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12"
+                  className="p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12"
                   aria-label="LinkedIn"
                 >
                   <svg
@@ -133,7 +139,7 @@ export function MenuDrawer() {
                   href="https://github.com/PedroMarianoAlmeida"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 text-white/70 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12"
+                  className="p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12"
                   aria-label="GitHub"
                 >
                   <svg
@@ -150,7 +156,7 @@ export function MenuDrawer() {
                 <a
                   href="./assets/pedro-almeida-cv.docx"
                   download
-                  className="p-3 text-white/70 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12"
+                  className="p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12"
                   aria-label="Download CV"
                 >
                   <svg

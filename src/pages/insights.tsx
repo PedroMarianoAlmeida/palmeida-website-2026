@@ -8,7 +8,7 @@ const InsightsPage = () => {
   // Serialize posts for Island (convert Date to ISO string)
   const serializedPosts = linkedinPostList.map((post) => ({
     ...post,
-    createdAt: post.createdAt,
+    createdAt: post.createdAt.toISOString(),
   }));
 
   return (

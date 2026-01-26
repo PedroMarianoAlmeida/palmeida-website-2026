@@ -2,7 +2,7 @@ interface LinkedinPostCardProps {
   title: string;
   url: string;
   tags: string[];
-  createdAt: Date;
+  createdAt: string;
 }
 
 export function LinkedinPostCard({
@@ -11,7 +11,7 @@ export function LinkedinPostCard({
   tags,
   createdAt,
 }: LinkedinPostCardProps) {
-  const formattedDate = createdAt.toLocaleDateString("en-US", {
+  const formattedDate = new Date(createdAt).toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
     day: "numeric",

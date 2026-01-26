@@ -21723,7 +21723,53 @@ var import_client = __toESM(require_client(), 1);
 
 // src/components/LinkedinPostsWithFilter.tsx
 var import_react = __toESM(require_react(), 1);
+
+// src/components/LinkedinPostCard.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
+function LinkedinPostCard({
+  title,
+  url,
+  tags,
+  createdAt
+}) {
+  const formattedDate = new Date(createdAt).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "bento-card-neutral group", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "relative z-10 flex flex-col h-full", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "text-lg lg:text-xl font-bold mb-3 text-white", children: title }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "flex flex-wrap gap-2 mb-3", children: tags.map((tag, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+          "span",
+          {
+            className: "text-xs px-2 py-1 rounded-full bg-gray-800 text-gray-300 border border-gray-700",
+            children: tag
+          },
+          index
+        )) })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "flex items-center justify-between mt-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("time", { className: "text-sm text-gray-500", children: formattedDate }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+          "a",
+          {
+            href: url,
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+            children: "Read on LinkedIn \u2192"
+          }
+        )
+      ] })
+    ] })
+  ] });
+}
+
+// src/components/LinkedinPostsWithFilter.tsx
+var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 function LinkedinPostsWithFilter({
   posts
 }) {
@@ -21751,11 +21797,11 @@ function LinkedinPostsWithFilter({
   const clearFilters = () => {
     setSelectedTags([]);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "mb-8", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "flex items-center justify-between mb-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "text-xl font-bold text-white", children: "Filter by Topic" }),
-        selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "mb-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "flex items-center justify-between mb-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h2", { className: "text-xl font-bold text-white", children: "Filter by Topic" }),
+        selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
           "button",
           {
             onClick: clearFilters,
@@ -21764,9 +21810,9 @@ function LinkedinPostsWithFilter({
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "flex flex-wrap gap-2", children: allTags.map((tag) => {
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "flex flex-wrap gap-2", children: allTags.map((tag) => {
         const isSelected = selectedTags.includes(tag);
-        return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+        return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
           "button",
           {
             onClick: () => toggleTag(tag),
@@ -21777,21 +21823,31 @@ function LinkedinPostsWithFilter({
         );
       }) })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "text-gray-400 text-sm", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("p", { className: "text-gray-400 text-sm", children: [
       "Showing ",
       filteredPosts.length,
       " of ",
       posts.length,
       " posts",
-      selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "ml-2 text-primary", children: [
+      selectedTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("span", { className: "ml-2 text-primary", children: [
         "(filtered by: ",
         selectedTags.join(", "),
         ")"
       ] })
     ] }) }),
-    filteredPosts.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "text-center py-12", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No posts found with the selected filters." }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredPosts.map((post, index) => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+      LinkedinPostCard,
+      {
+        title: post.title,
+        url: post.url,
+        tags: post.tags,
+        createdAt: post.createdAt
+      },
+      index
+    )) }),
+    filteredPosts.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "text-center py-12", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No posts found with the selected filters." }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
         "button",
         {
           onClick: clearFilters,

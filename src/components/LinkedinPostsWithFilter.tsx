@@ -5,7 +5,7 @@ interface LinkedinPost {
   title: string;
   url: string;
   tags: string[];
-  createdAt: Date;
+  createdAt: string;
 }
 
 interface LinkedinPostsWithFilterProps {
@@ -94,7 +94,7 @@ export function LinkedinPostsWithFilter({
       </div>
 
       {/* Posts Grid */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredPosts.map((post, index) => (
           <LinkedinPostCard
             key={index}
@@ -104,7 +104,7 @@ export function LinkedinPostsWithFilter({
             createdAt={post.createdAt}
           />
         ))}
-      </div> */}
+      </div>
 
       {/* Empty State */}
       {filteredPosts.length === 0 && (

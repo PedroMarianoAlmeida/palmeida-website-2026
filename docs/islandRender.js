@@ -25361,9 +25361,34 @@ function MenuDrawer() {
       }
     ) }),
     /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(Drawer.Portal, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Drawer.Overlay, { className: "fixed inset-0 bg-black/60 z-40" }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Drawer.Overlay, { className: "fixed inset-0 bg-black/60 backdrop-blur-sm z-40 transition-opacity duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" }),
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Drawer.Content, { className: "fixed top-0 right-0 bottom-0 z-50 bg-zinc-900 flex flex-col rounded-l-[24px] w-[85vw] max-w-md", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "p-6 bg-zinc-900 rounded-l-[24px] flex-1 overflow-y-auto", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mb-8", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Drawer.Close, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+          "button",
+          {
+            className: "absolute top-6 right-6 p-2 hover:bg-zinc-800 rounded-lg transition-colors group",
+            "aria-label": "Close menu",
+            children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+              "svg",
+              {
+                className: "w-5 h-5 text-gray-400 group-hover:text-white transition-colors",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                stroke: "currentColor",
+                strokeWidth: 2,
+                children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                  "path",
+                  {
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    d: "M6 18L18 6M6 6l12 12"
+                  }
+                )
+              }
+            )
+          }
+        ) }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mb-8 mt-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Drawer.Title, { className: "text-2xl font-bold text-white mb-2", children: "Menu" }),
           /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Drawer.Description, { className: "text-gray-400 text-sm", children: "Navigate through the site" })
         ] }),

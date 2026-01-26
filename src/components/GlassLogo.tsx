@@ -8,7 +8,7 @@ export function GlassLogo() {
       borderRadius={50}
       backgroundOpacity={0.6}
       saturation={1}
-      borderWidth={0.07}
+      borderWidth={0}
       brightness={50}
       opacity={0.8}
       blur={11}
@@ -21,7 +21,7 @@ export function GlassLogo() {
     >
       <a
         href="./index.html"
-        className="group flex flex-col w-fit px-4 py-3 cursor-pointer gap-1"
+        className="group flex flex-col w-fit px-8 pt-1 pb-3 cursor-pointer gap-1"
       >
         <span className="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors">
           palmeida

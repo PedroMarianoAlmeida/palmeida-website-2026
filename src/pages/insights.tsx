@@ -5,12 +5,6 @@ import { SearchableContentWithFilter } from "@/components/SearchableContentWithF
 import { linkedinPostList } from "@/data/linkedinPosts";
 
 const InsightsPage = () => {
-  // Serialize posts for Island (convert Date to ISO string)
-  const serializedPosts = linkedinPostList.map((post) => ({
-    ...post,
-    createdAt: post.createdAt.toISOString(),
-  }));
-
   return (
     <html lang="en">
       <head>
@@ -42,7 +36,7 @@ const InsightsPage = () => {
 
             {/* Interactive Posts with Filter */}
             <Island>
-              <SearchableContentWithFilter items={serializedPosts} />
+              <SearchableContentWithFilter items={linkedinPostList} />
             </Island>
           </div>
         </main>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Drawer } from "vaul";
 import { HomeIcon, LightbulbIcon, DollarSignIcon } from "lucide-react";
 import { siGithub, siReaddotcv } from "simple-icons";
+import GlareHover from "@/components/reactBits/GlareHover";
 
 export function MenuDrawer() {
   const [open, setOpen] = useState(false);
@@ -114,20 +115,37 @@ export function MenuDrawer() {
                 href="https://usd-latam-jobs.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 p-4 bg-secondary/5 border border-secondary/20 rounded-2xl backdrop-blur-sm hover:bg-secondary/10 hover:border-secondary/40 transition-all flex items-center gap-4 group/item animate-in slide-in-from-right fade-in"
+                className="mt-6 block animate-in slide-in-from-right fade-in"
                 style={{ animationDelay: '150ms' }}
                 onClick={() => setOpen(false)}
               >
-                <span className="transition-all group-hover/item:scale-110 group-hover/item:rotate-12 text-secondary">
-                  <DollarSignIcon />
-                </span>
-                <div className="flex-1">
-                  <div className="text-lg font-medium text-white">Usd Latam Jobs</div>
-                  <div className="text-xs text-gray-500 font-mono">Live Product</div>
-                </div>
-                <span className="text-xs font-mono text-secondary/60 group-hover/item:text-secondary/80">
-                  // 03
-                </span>
+                <GlareHover
+                  width="100%"
+                  height="auto"
+                  background="rgba(196, 240, 255, 0.05)"
+                  borderRadius="1rem"
+                  borderColor="rgba(196, 240, 255, 0.2)"
+                  glareColor="#C4F0FF"
+                  glareOpacity={0.3}
+                  glareAngle={-45}
+                  glareSize={200}
+                  transitionDuration={500}
+                  className="backdrop-blur-sm"
+                  style={{ padding: '1rem' }}
+                >
+                  <div className="flex items-center gap-4 group/item">
+                    <span className="transition-all group-hover/item:scale-110 group-hover/item:rotate-12 text-secondary">
+                      <DollarSignIcon />
+                    </span>
+                    <div className="flex-1">
+                      <div className="text-lg font-medium text-white">Usd Latam Jobs</div>
+                      <div className="text-xs text-gray-500 font-mono">Live Product</div>
+                    </div>
+                    <span className="text-xs font-mono text-secondary/60 group-hover/item:text-secondary/80">
+                      // 03
+                    </span>
+                  </div>
+                </GlareHover>
               </a>
             </nav>
 

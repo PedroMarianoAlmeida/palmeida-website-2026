@@ -32,7 +32,7 @@ export function BentoGrid() {
                 MERN Stack • Playwright • Vercel • Automation
               </p>
               <a
-                href="#"
+                href="./insights.html?tags=Usd%20Latam%20Jobs"
                 className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
               >
                 See the Journey →

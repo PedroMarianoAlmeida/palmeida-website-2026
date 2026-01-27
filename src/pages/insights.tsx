@@ -10,10 +10,10 @@ const InsightsPage = () => {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Insights - Pedro Almeida</title>
+        <title>Pedro Almeida | Insights</title>
         <meta
           name="description"
-          content="Technical insights and articles on Growth Engineering, Architecture, and modern web development practices."
+          content="A searchable knowledge base of professional engineering insights, growth strategies, and career mentorship. Curated from 7+ years of building in the tech industry."
         />
         <link rel="stylesheet" href="./styles.css" />
         <script src="./islandRender.js" defer />

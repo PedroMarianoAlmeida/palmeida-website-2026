@@ -9,12 +9,10 @@ const HomePage = () => {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          Pedro Almeida - Senior Software Engineer & AI Infrastructure Architect
-        </title>
+        <title>Pedro Almeida | Product Engineer</title>
         <meta
           name="description"
-          content="7+ years of engineering resilient systems using TypeScript and React. Senior Software Engineer specializing in Growth Engineering and AI Infrastructure."
+          content="7+ years of building at the intersection of AI and Infrastructure. Senior Product Engineer specializing in Growth Engineering, TypeScript, and React. Founder of USD Latam Jobs."
         />
         <link rel="stylesheet" href="./styles.css" />
       </head>

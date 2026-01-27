@@ -25994,9 +25994,8 @@ function MenuDrawer() {
                   glareAngle: -45,
                   glareSize: 200,
                   transitionDuration: 500,
-                  className: "backdrop-blur-sm",
-                  style: { padding: "1rem" },
-                  children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex items-center gap-4 group/item", children: [
+                  className: "backdrop-blur-sm px-8 py-4",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex items-center gap-4 group/item w-full", children: [
                     /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("span", { className: "transition-all group-hover/item:scale-110 group-hover/item:rotate-12 text-secondary", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(DollarSign, {}) }),
                     /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex-1", children: [
                       /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "text-lg font-medium text-white", children: "Usd Latam Jobs" }),

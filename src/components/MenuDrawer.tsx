@@ -130,10 +130,9 @@ export function MenuDrawer() {
                   glareAngle={-45}
                   glareSize={200}
                   transitionDuration={500}
-                  className="backdrop-blur-sm"
-                  style={{ padding: '1rem' }}
+                  className="backdrop-blur-sm px-8 py-4"
                 >
-                  <div className="flex items-center gap-4 group/item">
+                  <div className="flex items-center gap-4 group/item w-full">
                     <span className="transition-all group-hover/item:scale-110 group-hover/item:rotate-12 text-secondary">
                       <DollarSignIcon />
                     </span>

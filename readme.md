@@ -1,10 +1,32 @@
-# React Page Lite
+# Pedro Almeida's Portfolio Website
 
-A lightweight React-based static site generator with islands architecture.
+My personal portfolio showcasing professional work, LinkedIn content, and open-source contributions. Built with React Page Lite and deployed via GitHub Pages.
 
-Generate static HTML with selective interactivity - JavaScript only where you need it.
+## 🌐 Live Site
 
-## Quick Start
+Visit via [GitHub Pages](https://pedromarianoalmeida.github.io/palmeida-website-2026/)
+
+## 📋 About This Project
+
+This is a static-first marketing site featuring:
+- **Homepage**: Hero section with CTAs, bento grid showcasing projects and skills
+- **About Page**: Professional background and experience
+- **Insights Page**: Curated LinkedIn posts with filtering by topic
+- **Open Source Page**: Contributions and projects
+
+All pages are pre-rendered to static HTML for optimal SEO and performance.
+
+## 🛠️ Built With React Page Lite
+
+This site is built using **React Page Lite**, a lightweight static site generator with islands architecture that I created.
+
+**Why I built it:**
+- Static-first approach for optimal SEO and performance
+- Islands architecture for selective interactivity when needed
+- Simple TypeScript + Tailwind + React setup with zero config
+- Perfect for marketing sites and portfolios
+
+**Want to try it?** You can scaffold a new project in seconds:
 
 ```bash
 npx react-page-lite my-app
@@ -12,89 +34,103 @@ cd my-app
 npm run buildAndWatch
 ```
 
-Then open `docs/index.html` in your browser.
+Learn more: [React Page Lite on GitHub](https://github.com/PedroMarianoAlmeida/react-page-lite)
 
-## Features
+## 🏗️ Project Structure
 
-- ⚡ **Static-First**: Pure HTML by default, SEO-friendly
-- 🏝️ **Islands Architecture**: Add interactivity with `<Island>` wrapper
-- 🎯 **Simple**: TypeScript + Tailwind + React, zero config
-- 🚀 **Deploy Anywhere**: Just copy the output folder to any host
-- 🔧 **Auto-Discovery**: Components are automatically bundled
-- ⚙️ **Configurable**: Custom output directory via `config.json`
+```
+src/
+├── pages/              # Site pages
+│   ├── index.tsx       # Homepage
+│   ├── about.tsx       # About page
+│   ├── insights.tsx    # LinkedIn posts showcase
+│   └── open-source.tsx # Open source contributions
+├── components/         # Reusable components
+│   ├── Header.tsx      # Navigation
+│   ├── Hero.tsx        # Hero section
+│   ├── BentoGrid.tsx   # Feature grid
+│   ├── Footer.tsx      # Footer
+│   ├── SearchableContentWithFilter.tsx  # Interactive filtering
+│   └── LinkedinPostCard.tsx             # Post card component
+└── data/
+    └── linkedinPosts.tsx  # LinkedIn post data
 
-## Usage
-
-**1. Create a page** (returns full HTML document):
-
-```tsx
-// src/pages/index.tsx
-const HomePage = () => (
-  <html lang="en">
-    <head>
-      <title>My Site</title>
-      <link rel="stylesheet" href="./styles.css" />
-    </head>
-    <body>
-      <h1>Static Content</h1>
-    </body>
-  </html>
-);
-
-export default HomePage;
+docs/                   # Build output (GitHub Pages)
 ```
 
-**2. Add interactivity with islands:**
+## 🚀 Development
+
+**Start development server:**
+```bash
+npm run buildAndWatch
+```
+
+This watches for file changes and automatically:
+1. Compiles Tailwind CSS with purging
+2. Auto-discovers and bundles components
+3. Renders pages to static HTML
+
+**One-time build:**
+```bash
+node _internal/build.js
+```
+
+## 🎨 Design System
+
+Custom color scheme defined in `tailwind.config.js`:
+- **Primary**: `#4DFFA5` (bright green) - CTAs and highlights
+- **Secondary**: `#C4F0FF` (light blue) - Accents
+- **Accent**: `#FFE975` (yellow) - Social proof elements
+- **Background**: `#030712` (dark) - Base background
+
+Uses Tailwind CSS with `@tailwindcss/typography` plugin.
+
+## 📝 Content Management
+
+### Adding LinkedIn Posts
+
+Edit `src/data/linkedinPosts.tsx`:
+
+```typescript
+{
+  title: "Your Post Title",
+  url: "https://www.linkedin.com/...",
+  tags: ["AI", "Code"], // Available: AI, Career, SaaS, Open Source, etc.
+  createdAt: "2026-1-26"
+}
+```
+
+### Adding New Pages
+
+1. Create `.tsx` file in `src/pages/`
+2. Export default function returning complete `<html>` document
+3. Include stylesheet: `<link rel="stylesheet" href="./styles.css" />`
+
+## 🏝️ Islands Architecture (Available but Currently Unused)
+
+All components are currently static. To add interactivity:
 
 ```tsx
 import { Island } from "@/Island";
 import { Counter } from "@/components/Counter";
 
 <Island>
-  <Counter />
+  <Counter initialValue={0} />
 </Island>
 ```
 
-**3. Create interactive components:**
+The component will automatically hydrate on the client with React hooks support.
 
-```tsx
-// src/components/Counter.tsx
-import { useState } from "react";
+## 📦 Deployment
 
-export function Counter() {
-  const [count, setCount] = useState(0);
-  return <button onClick={() => setCount(c => c + 1)}>Count: {count}</button>;
-}
-```
+Deployed to GitHub Pages using the `docs/` folder. Any push to main automatically deploys via GitHub Pages.
 
-Props are automatically serialized for hydration.
+## 🔧 Configuration
 
-## Project Structure
-
-```
-src/
-├── pages/              # HTML pages (export default function)
-│   ├── index.tsx       # → docs/index.html
-│   └── demo.tsx        # → docs/demo.html
-├── components/         # Interactive components (auto-discovered)
-│   └── Counter.tsx     # Example interactive component
-└── styles/
-    └── globals.css     # Tailwind input
-
-docs/                   # Build output (configurable)
-├── index.html         # Static HTML
-├── demo.html          # Demo page
-├── styles.css         # Processed CSS
-└── islandRender.js    # Bundled interactive components
-
-_internal/              # Build system
-config.json             # Configuration file
-```
-
-**Configuration** (`config.json`):
+`config.json`:
 ```json
 {
-  "outputDir": "docs",  // Change to "dist", "build", etc.
+  "outputDir": "docs",  // GitHub Pages compatible
   "buildOptions": {
     "minify": true,
     "sourcemap": false
@@ -102,74 +138,10 @@ config.json             # Configuration file
 }
 ```
 
-Perfect for GitHub Pages with `"outputDir": "docs"`.
+## 📄 License
 
-## How It Works
+This is a personal portfolio project. Feel free to fork and adapt for your own use.
 
-**Build Time:**
-- Renders pages to static HTML with proper formatting
-- Auto-discovers components and bundles into `islandRender.js`
-- Processes Tailwind CSS and purges unused styles
+---
 
-**Runtime:**
-- Static HTML loads instantly (SEO-friendly, no JavaScript required)
-- Islands hydrate progressively on the client
-- Only interactive components download/execute JavaScript
-
-## Development
-
-**Commands:**
-- `npm run buildAndWatch` - Watch mode (rebuilds on file changes)
-- `node _internal/build.js` - One-time build
-- `npm run update-template` - Update build system to latest version (safe, never touches your src/)
-
-**Structure:**
-- **Pages:** Create `.tsx` in `src/pages/` → generates HTML files
-- **Components:** Create `.tsx` in `src/components/` → auto-bundled for islands
-- **Styling:** Use Tailwind classes (automatically purged)
-- **Imports:** TypeScript paths (`@/Island`, `@/components/Counter`)
-
-## Deployment
-
-Copy the entire output folder to any static host:
-
-```bash
-# Default output: docs/ folder
-cp -r docs/ /your/web/server/
-
-# Or deploy to:
-# - GitHub Pages (use outputDir: "docs")
-# - Netlify, Vercel, Cloudflare Pages
-# - Any CDN or static hosting
-```
-
-## Use Cases
-
-Perfect for:
-- Marketing websites
-- Landing pages
-- Documentation sites
-- Portfolios
-
-Not for: Apps requiring authentication, databases, or server-side logic.
-
-## Updating
-
-Get the latest build system improvements without affecting your content:
-
-```bash
-npm run update-template
-```
-
-**What gets updated:**
-- `_internal/` - Build system and tooling
-- Config files (`tailwind.config.js`, `tsconfig.json`, etc.)
-
-**What's never touched:**
-- `src/pages/` - Your pages
-- `src/components/` - Your components
-- `src/styles/` - Your styles
-- `docs/` or `dist/` - Your output
-
-The update script creates backups automatically. Your content is always safe.
-
+Built with ❤️ by [Pedro Almeida](https://www.linkedin.com/in/palmeida-dev/)

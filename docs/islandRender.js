@@ -25867,15 +25867,20 @@ function MenuDrawer() {
           ] })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("nav", { className: "flex flex-col gap-2 flex-grow", children: [
-          menuItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+          menuItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
             "a",
             {
               href: item.href,
-              className: "px-8 py-2 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item",
+              className: "px-8 py-2 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item animate-in slide-in-from-right fade-in",
+              style: { animationDelay: `${index * 50}ms` },
               onClick: () => setOpen(false),
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "transition-all group-hover/item:scale-110 group-hover/item:rotate-12", children: item.icon }),
-                item.label
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "transition-all group-hover/item:scale-110 group-hover/item:rotate-12 text-primary", children: item.icon }),
+                item.label,
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("span", { className: "ml-auto text-xs font-mono text-gray-600 group-hover/item:text-primary/60", children: [
+                  "// ",
+                  String(index + 1).padStart(2, "0")
+                ] })
               ]
             },
             item.href
@@ -25886,79 +25891,90 @@ function MenuDrawer() {
               href: "https://usd-latam-jobs.vercel.app/",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "px-8 py-2 text-lg font-medium text-gray-400 hover:text-white hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item mt-6 text-secondary",
+              className: "mt-6 p-4 bg-secondary/5 border border-secondary/20 rounded-2xl backdrop-blur-sm hover:bg-secondary/10 hover:border-secondary/40 transition-all flex items-center gap-4 group/item animate-in slide-in-from-right fade-in",
+              style: { animationDelay: "150ms" },
               onClick: () => setOpen(false),
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "transition-all group-hover/item:scale-110 group-hover/item:rotate-12", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(DollarSign, {}) }),
-                "Usd Latam Jobs"
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "transition-all group-hover/item:scale-110 group-hover/item:rotate-12 text-secondary", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(DollarSign, {}) }),
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex-1", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "text-lg font-medium text-white", children: "Usd Latam Jobs" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "text-xs text-gray-500 font-mono", children: "Live Product" })
+                ] }),
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-xs font-mono text-secondary/60 group-hover/item:text-secondary/80", children: "// 03" })
               ]
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "pt-8 border-t border-white/10", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex justify-center gap-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-            "a",
-            {
-              href: "https://www.linkedin.com/in/palmeida-dev/",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
-              "aria-label": "LinkedIn",
-              children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-                "svg",
-                {
-                  role: "img",
-                  viewBox: "0 0 24 24",
-                  xmlns: "http://www.w3.org/2000/svg",
-                  width: "24",
-                  height: "24",
-                  fill: "currentColor",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" })
-                }
-              )
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-            "a",
-            {
-              href: "https://github.com/PedroMarianoAlmeida",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
-              "aria-label": "GitHub",
-              children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-                "svg",
-                {
-                  role: "img",
-                  viewBox: "0 0 24 24",
-                  xmlns: "http://www.w3.org/2000/svg",
-                  width: "24",
-                  height: "24",
-                  fill: "currentColor",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("path", { d: siGithub.path })
-                }
-              )
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "pt-6 border-t border-white/10", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex justify-between items-center", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              "a",
+              {
+                href: "https://www.linkedin.com/in/palmeida-dev/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "p-2.5 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
+                "aria-label": "LinkedIn",
+                children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                  "svg",
+                  {
+                    role: "img",
+                    viewBox: "0 0 24 24",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "20",
+                    height: "20",
+                    fill: "currentColor",
+                    children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" })
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              "a",
+              {
+                href: "https://github.com/PedroMarianoAlmeida",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "p-2.5 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
+                "aria-label": "GitHub",
+                children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                  "svg",
+                  {
+                    role: "img",
+                    viewBox: "0 0 24 24",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "20",
+                    height: "20",
+                    fill: "currentColor",
+                    children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("path", { d: siGithub.path })
+                  }
+                )
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
             "a",
             {
               href: "./assets/pedro-almeida-cv.docx",
               download: true,
-              className: "p-3 text-gray-400 hover:text-white rounded-lg transition-all hover:scale-110 hover:rotate-12",
+              className: "px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all flex items-center gap-2 text-sm font-medium group",
               "aria-label": "Download CV",
-              children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-                "svg",
-                {
-                  role: "img",
-                  viewBox: "0 0 24 24",
-                  xmlns: "http://www.w3.org/2000/svg",
-                  width: "24",
-                  height: "24",
-                  fill: "currentColor",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("path", { d: siReaddotcv.path })
-                }
-              )
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                  "svg",
+                  {
+                    role: "img",
+                    viewBox: "0 0 24 24",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "16",
+                    height: "16",
+                    fill: "currentColor",
+                    className: "transition-transform group-hover:scale-110",
+                    children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("path", { d: siReaddotcv.path })
+                  }
+                ),
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { children: "CV" })
+              ]
             }
           )
         ] }) })

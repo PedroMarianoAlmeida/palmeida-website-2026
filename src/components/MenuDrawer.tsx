@@ -98,7 +98,9 @@ export function MenuDrawer() {
                   className="px-8 py-2 text-lg font-medium text-white/90 hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item"
                   onClick={() => setOpen(false)}
                 >
-                  {item.icon}
+                  <span className="transition-all group-hover/item:scale-110 group-hover/item:rotate-12">
+                    {item.icon}
+                  </span>
                   {item.label}
                 </a>
               ))}
@@ -109,7 +111,9 @@ export function MenuDrawer() {
                 className="px-8 py-2 text-lg font-medium text-gray-400 hover:text-white hover:bg-primary/10 rounded-2xl transition-all flex items-center gap-4 group/item mt-6 text-secondary"
                 onClick={() => setOpen(false)}
               >
-                <DollarSignIcon />
+                <span className="transition-all group-hover/item:scale-110 group-hover/item:rotate-12">
+                  <DollarSignIcon />
+                </span>
                 Usd Latam Jobs
               </a>
             </nav>

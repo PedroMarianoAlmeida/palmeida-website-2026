@@ -22034,7 +22034,7 @@ function GlassLogo() {
           className: "group flex flex-col w-fit px-8 pt-1 pb-3 cursor-pointer gap-1",
           children: [
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors", children: "palmeida" }),
-            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-[10px] text-gray-300 uppercase tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors", children: "Product Engineer" })
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "text-[10px] text-gray-300 uppercase tracking-tight sm:tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors", children: "Product Engineer" })
           ]
         }
       )

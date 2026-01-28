@@ -7,6 +7,7 @@ export function ContentCards({
   url,
   tags,
   createdAt,
+  description,
   cta,
 }: ContentCardsProps) {
   const formattedDate = createdAt
@@ -25,6 +26,9 @@ export function ContentCards({
           <h3 className="text-lg lg:text-xl font-bold mb-3 text-white">
             {title}
           </h3>
+          {description && (
+            <p className="text-sm text-gray-400 mb-4">{description}</p>
+          )}
           <div className="flex flex-wrap gap-2 mb-3">
             {tags.map((tag, index) => (
               <span

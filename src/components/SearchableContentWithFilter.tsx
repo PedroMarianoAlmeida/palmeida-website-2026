@@ -120,6 +120,7 @@ export function SearchableContentWithFilter({
             url={item.url}
             tags={item.tags}
             createdAt={item.createdAt}
+            description={item.description}
             cta={item.cta}
           />
         ))}

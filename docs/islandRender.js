@@ -26109,6 +26109,7 @@ function ContentCards({
   url,
   tags,
   createdAt,
+  description,
   cta
 }) {
   const formattedDate = createdAt ? new Date(createdAt).toLocaleDateString("en-US", {
@@ -26121,6 +26122,7 @@ function ContentCards({
     /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "relative z-10 flex flex-col h-full", children: [
       /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "flex-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h3", { className: "text-lg lg:text-xl font-bold mb-3 text-white", children: title }),
+        description && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { className: "text-sm text-gray-400 mb-4", children: description }),
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "flex flex-wrap gap-2 mb-3", children: tags.map((tag, index) => /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
           "span",
           {
@@ -26237,6 +26239,7 @@ function SearchableContentWithFilter({
         url: item.url,
         tags: item.tags,
         createdAt: item.createdAt,
+        description: item.description,
         cta: item.cta
       },
       index

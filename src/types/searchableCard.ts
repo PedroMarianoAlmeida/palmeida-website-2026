@@ -5,4 +5,5 @@ export interface SearchableCardItem<T = string> {
   createdAt?: string; // It is actually a Date, but needs to be string to be serializable
   description?: string;
   cta?: string;
+  img?: string;
 }

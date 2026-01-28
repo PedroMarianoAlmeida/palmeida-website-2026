@@ -1328,7 +1328,7 @@ var require_react_dom_development = __commonJS({
         return dispatcher;
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var React29 = require_react(), Internals = {
+      var React30 = require_react(), Internals = {
         d: {
           f: noop2,
           r: function() {
@@ -1346,7 +1346,7 @@ var require_react_dom_development = __commonJS({
         },
         p: 0,
         findDOMNode: null
-      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React29.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React30.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
       "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
         "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
       );
@@ -2881,7 +2881,7 @@ var require_react_dom_client_development = __commonJS({
         "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
       }
       function validateOptionProps(element, props) {
-        null == props.value && ("object" === typeof props.children && null !== props.children ? React29.Children.forEach(props.children, function(child) {
+        null == props.value && ("object" === typeof props.children && null !== props.children ? React30.Children.forEach(props.children, function(child) {
           null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
             "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
           ));
@@ -18513,14 +18513,14 @@ var require_react_dom_client_development = __commonJS({
         ));
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var Scheduler = require_scheduler(), React29 = require_react(), ReactDOM3 = require_react_dom(), assign = Object.assign, REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+      var Scheduler = require_scheduler(), React30 = require_react(), ReactDOM3 = require_react_dom(), assign = Object.assign, REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
       Symbol.for("react.scope");
       var REACT_ACTIVITY_TYPE = Symbol.for("react.activity");
       Symbol.for("react.legacy_hidden");
       Symbol.for("react.tracing_marker");
       var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel");
       Symbol.for("react.view_transition");
-      var MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, ReactSharedInternals = React29.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM3.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, NotPending = Object.freeze({
+      var MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, ReactSharedInternals = React30.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM3.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, NotPending = Object.freeze({
         pending: false,
         data: null,
         method: null,
@@ -21308,7 +21308,7 @@ var require_react_dom_client_development = __commonJS({
         }
       };
       (function() {
-        var isomorphicReactPackageVersion = React29.version;
+        var isomorphicReactPackageVersion = React30.version;
         if ("19.2.3" !== isomorphicReactPackageVersion)
           throw Error(
             'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.2.3\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -21662,18 +21662,18 @@ var require_react_jsx_runtime_development = __commonJS({
       function isValidElement2(object) {
         return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
       }
-      var React29 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React29.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+      var React30 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React30.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
         return null;
       };
-      React29 = {
+      React30 = {
         react_stack_bottom_frame: function(callStackForError) {
           return callStackForError();
         }
       };
       var specialPropKeyWarningShown;
       var didWarnAboutElementRef = {};
-      var unknownOwnerDebugStack = React29.react_stack_bottom_frame.bind(
-        React29,
+      var unknownOwnerDebugStack = React30.react_stack_bottom_frame.bind(
+        React30,
         UnknownOwner
       )();
       var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
@@ -21718,7 +21718,7 @@ var require_jsx_runtime = __commonJS({
 });
 
 // docs/islandRender.tsx
-var import_react9 = __toESM(require_react(), 1);
+var import_react10 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // src/components/GlassSurface.tsx
@@ -26100,7 +26100,241 @@ function MenuDrawer() {
 }
 
 // src/components/SearchableContentWithFilter.tsx
-var import_react8 = __toESM(require_react(), 1);
+var import_react9 = __toESM(require_react(), 1);
+
+// node_modules/react-masonry-css/dist/react-masonry-css.module.js
+var import_react8 = __toESM(require_react());
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+function _extends() {
+  _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends.apply(this, arguments);
+}
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function(sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+  return keys;
+}
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function(key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function(key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+  return target;
+}
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, { value, enumerable: true, configurable: true, writable: true });
+  } else {
+    obj[key] = value;
+  }
+  return obj;
+}
+var defaultProps = {
+  breakpointCols: void 0,
+  // optional, number or object { default: number, [key: number]: number }
+  className: void 0,
+  // required, string
+  columnClassName: void 0,
+  // optional, string
+  // Any React children. Typically an array of JSX items
+  children: void 0,
+  // Custom attributes, however it is advised against
+  // using these to prevent unintended issues and future conflicts
+  // ...any other attribute, will be added to the container
+  columnAttrs: void 0,
+  // object, added to the columns
+  // Deprecated props
+  // The column property is deprecated.
+  // It is an alias of the `columnAttrs` property
+  column: void 0
+};
+var DEFAULT_COLUMNS = 2;
+var Masonry = class extends import_react8.default.Component {
+  constructor(props) {
+    super(props);
+    this.reCalculateColumnCount = this.reCalculateColumnCount.bind(this);
+    this.reCalculateColumnCountDebounce = this.reCalculateColumnCountDebounce.bind(this);
+    let columnCount;
+    if (this.props.breakpointCols && this.props.breakpointCols.default) {
+      columnCount = this.props.breakpointCols.default;
+    } else {
+      columnCount = parseInt(this.props.breakpointCols) || DEFAULT_COLUMNS;
+    }
+    this.state = {
+      columnCount
+    };
+  }
+  componentDidMount() {
+    this.reCalculateColumnCount();
+    if (window) {
+      window.addEventListener("resize", this.reCalculateColumnCountDebounce);
+    }
+  }
+  componentDidUpdate() {
+    this.reCalculateColumnCount();
+  }
+  componentWillUnmount() {
+    if (window) {
+      window.removeEventListener("resize", this.reCalculateColumnCountDebounce);
+    }
+  }
+  reCalculateColumnCountDebounce() {
+    if (!window || !window.requestAnimationFrame) {
+      this.reCalculateColumnCount();
+      return;
+    }
+    if (window.cancelAnimationFrame) {
+      window.cancelAnimationFrame(this._lastRecalculateAnimationFrame);
+    }
+    this._lastRecalculateAnimationFrame = window.requestAnimationFrame(() => {
+      this.reCalculateColumnCount();
+    });
+  }
+  reCalculateColumnCount() {
+    const windowWidth = window && window.innerWidth || Infinity;
+    let breakpointColsObject = this.props.breakpointCols;
+    if (typeof breakpointColsObject !== "object") {
+      breakpointColsObject = {
+        default: parseInt(breakpointColsObject) || DEFAULT_COLUMNS
+      };
+    }
+    let matchedBreakpoint = Infinity;
+    let columns = breakpointColsObject.default || DEFAULT_COLUMNS;
+    for (let breakpoint in breakpointColsObject) {
+      const optBreakpoint = parseInt(breakpoint);
+      const isCurrentBreakpoint = optBreakpoint > 0 && windowWidth <= optBreakpoint;
+      if (isCurrentBreakpoint && optBreakpoint < matchedBreakpoint) {
+        matchedBreakpoint = optBreakpoint;
+        columns = breakpointColsObject[breakpoint];
+      }
+    }
+    columns = Math.max(1, parseInt(columns) || 1);
+    if (this.state.columnCount !== columns) {
+      this.setState({
+        columnCount: columns
+      });
+    }
+  }
+  itemsInColumns() {
+    const currentColumnCount = this.state.columnCount;
+    const itemsInColumns = new Array(currentColumnCount);
+    const items = import_react8.default.Children.toArray(this.props.children);
+    for (let i = 0; i < items.length; i++) {
+      const columnIndex = i % currentColumnCount;
+      if (!itemsInColumns[columnIndex]) {
+        itemsInColumns[columnIndex] = [];
+      }
+      itemsInColumns[columnIndex].push(items[i]);
+    }
+    return itemsInColumns;
+  }
+  renderColumns() {
+    const {
+      column,
+      columnAttrs = {},
+      columnClassName
+    } = this.props;
+    const childrenInColumns = this.itemsInColumns();
+    const columnWidth = `${100 / childrenInColumns.length}%`;
+    let className = columnClassName;
+    if (className && typeof className !== "string") {
+      this.logDeprecated('The property "columnClassName" requires a string');
+      if (typeof className === "undefined") {
+        className = "my-masonry-grid_column";
+      }
+    }
+    const columnAttributes = _objectSpread(_objectSpread(_objectSpread({}, column), columnAttrs), {}, {
+      style: _objectSpread(_objectSpread({}, columnAttrs.style), {}, {
+        width: columnWidth
+      }),
+      className
+    });
+    return childrenInColumns.map((items, i) => {
+      return /* @__PURE__ */ import_react8.default.createElement("div", _extends({}, columnAttributes, {
+        key: i
+      }), items);
+    });
+  }
+  logDeprecated(message) {
+    console.error("[Masonry]", message);
+  }
+  render() {
+    const _this$props = this.props, {
+      // ignored
+      children,
+      breakpointCols,
+      columnClassName,
+      columnAttrs,
+      column,
+      // used
+      className
+    } = _this$props, rest = _objectWithoutProperties(_this$props, ["children", "breakpointCols", "columnClassName", "columnAttrs", "column", "className"]);
+    let classNameOutput = className;
+    if (typeof className !== "string") {
+      this.logDeprecated('The property "className" requires a string');
+      if (typeof className === "undefined") {
+        classNameOutput = "my-masonry-grid";
+      }
+    }
+    return /* @__PURE__ */ import_react8.default.createElement("div", _extends({}, rest, {
+      className: classNameOutput
+    }), this.renderColumns());
+  }
+};
+Masonry.defaultProps = defaultProps;
+var react_masonry_css_module_default = Masonry;
 
 // src/components/ContentCards.tsx
 var import_jsx_runtime12 = __toESM(require_jsx_runtime(), 1);
@@ -26110,7 +26344,8 @@ function ContentCards({
   tags,
   createdAt,
   description,
-  cta
+  cta,
+  img
 }) {
   const formattedDate = createdAt ? new Date(createdAt).toLocaleDateString("en-US", {
     year: "numeric",
@@ -26123,6 +26358,14 @@ function ContentCards({
       /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "flex-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h3", { className: "text-lg lg:text-xl font-bold mb-3 text-white", children: title }),
         description && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { className: "text-sm text-gray-400 mb-4", children: description }),
+        img && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+          "img",
+          {
+            src: img,
+            alt: title,
+            className: "w-full rounded-lg mb-4 border border-gray-700"
+          }
+        ),
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "flex flex-wrap gap-2 mb-3", children: tags.map((tag, index) => /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
           "span",
           {
@@ -26154,13 +26397,13 @@ var import_jsx_runtime13 = __toESM(require_jsx_runtime(), 1);
 function SearchableContentWithFilter({
   items
 }) {
-  const [selectedTags, setSelectedTags] = (0, import_react8.useState)(() => {
+  const [selectedTags, setSelectedTags] = (0, import_react9.useState)(() => {
     if (typeof window === "undefined") return [];
     const params = new URLSearchParams(window.location.search);
     const tags = params.get("tags");
     return tags ? tags.split(",").filter(Boolean) : [];
   });
-  (0, import_react8.useEffect)(() => {
+  (0, import_react9.useEffect)(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
     if (selectedTags.length > 0) {
@@ -26171,14 +26414,14 @@ function SearchableContentWithFilter({
     const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
     window.history.replaceState({}, "", newUrl);
   }, [selectedTags]);
-  const allTags = (0, import_react8.useMemo)(() => {
+  const allTags = (0, import_react9.useMemo)(() => {
     const tagSet = /* @__PURE__ */ new Set();
     items.forEach((item) => {
       item.tags.forEach((tag) => tagSet.add(tag));
     });
     return Array.from(tagSet).sort();
   }, [items]);
-  const filteredItems = (0, import_react8.useMemo)(() => {
+  const filteredItems = (0, import_react9.useMemo)(() => {
     if (selectedTags.length === 0) {
       return items;
     }
@@ -26232,18 +26475,30 @@ function SearchableContentWithFilter({
         ")"
       ] })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-      ContentCards,
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+      react_masonry_css_module_default,
       {
-        title: item.title,
-        url: item.url,
-        tags: item.tags,
-        createdAt: item.createdAt,
-        description: item.description,
-        cta: item.cta
-      },
-      index
-    )) }),
+        breakpointCols: {
+          default: 3,
+          1024: 2,
+          768: 1
+        },
+        className: "flex -ml-6 w-auto",
+        columnClassName: "pl-6 bg-clip-padding",
+        children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+          ContentCards,
+          {
+            title: item.title,
+            url: item.url,
+            tags: item.tags,
+            createdAt: item.createdAt,
+            description: item.description,
+            cta: item.cta,
+            img: item.img
+          }
+        ) }, index))
+      }
+    ),
     filteredItems.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "text-center py-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No items found with the selected filters." }),
       /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
@@ -26274,7 +26529,7 @@ var hydrateIslands = () => {
         try {
           const Component = componentRegistry[componentName];
           const props = propsJson ? JSON.parse(propsJson) : {};
-          const element = import_react9.default.createElement(Component, props);
+          const element = import_react10.default.createElement(Component, props);
           (0, import_client.createRoot)(island).render(element);
         } catch (error) {
           console.error(`Failed to hydrate component ${componentName}:`, error);

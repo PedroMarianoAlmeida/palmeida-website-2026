@@ -9,6 +9,7 @@ export function ContentCards({
   createdAt,
   description,
   cta,
+  img,
 }: ContentCardsProps) {
   const formattedDate = createdAt
     ? new Date(createdAt).toLocaleDateString("en-US", {
@@ -28,6 +29,13 @@ export function ContentCards({
           </h3>
           {description && (
             <p className="text-sm text-gray-400 mb-4">{description}</p>
+          )}
+          {img && (
+            <img
+              src={img}
+              alt={title}
+              className="w-full rounded-lg mb-4 border border-gray-700"
+            />
           )}
           <div className="flex flex-wrap gap-2 mb-3">
             {tags.map((tag, index) => (

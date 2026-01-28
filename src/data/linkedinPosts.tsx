@@ -52,7 +52,7 @@ export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
     cta: "Read on LinkedIn",
   },
   {
-    title: "It is time to abandon React Server Components",
+    title: "It is time to abandon React Server Components?",
     tags: ["Code", "Caroussel"],
     createdAt: "2025-12-19",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7407797512100818944",

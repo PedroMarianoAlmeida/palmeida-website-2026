@@ -25,6 +25,7 @@
     "lucide-react": "^0.563.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "react-masonry-css": "^1.0.16",
     "simple-icons": "^16.6.1",
     "vaul": "^1.1.2"
   }

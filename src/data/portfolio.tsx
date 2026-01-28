@@ -26,6 +26,7 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     description:
       "A specialized job portal connecting Senior Latin American developers with high-paying USD roles.",
     cta: "Visit site",
+    img: "./porfolio/usd-latam-jobs.png",
   },
   {
     title: "Product: Ratata",
@@ -34,6 +35,7 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     description:
       "A micro-SaaS for creating streamlined event invitation links with integrated RSVP confirmation.",
     cta: "Visit site",
+    img: "./porfolio/ratata.png",
   },
   {
     title: "Product: Better Image",
@@ -42,15 +44,7 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     description:
       "A prompt-engineering micro-SaaS designed to generate high-fidelity AI imagery; archived due to operating costs.",
     cta: "View on LinkedIn",
-  },
-
-  // --- Open Source Software / NPM Packages ---
-  {
-    title: "OSS: ffmpeg-mcp-server",
-    tags: ["npm", "Open Source"],
-    url: "https://www.npmjs.com/package/ffmpeg-mcp-server",
-    description: "An MCP server designed for image editing using FFmpeg.",
-    cta: "View on npm",
+    img: "./porfolio/better-image.png",
   },
   {
     title: "OSS: ts-try-async",
@@ -61,6 +55,24 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     cta: "View on npm",
   },
   {
+    title: "PR: React Bits Performance Improvement",
+    tags: ["npm", "Open Source", "Contributions", "React Bits", "Performance"],
+    url: "https://github.com/DavidHDev/react-bits/pull/169",
+    description:
+      "Diagnosed and resolved a performance bottleneck causing FPS drops in specific components.",
+    cta: "View PR",
+  },
+
+  {
+    title: "OSS: ffmpeg-mcp-server",
+    tags: ["npm", "Open Source"],
+    url: "https://www.npmjs.com/package/ffmpeg-mcp-server",
+    description: "An MCP server designed for image editing using FFmpeg.",
+    cta: "View on npm",
+    img: "./porfolio/ffmpeg-mcp.png",
+  },
+
+  {
     title: "OSS: react-page-lite",
     tags: ["npm", "Open Source"],
     url: "https://www.npmjs.com/package/react-page-lite",
@@ -69,7 +81,6 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     cta: "View on npm",
   },
 
-  // --- Public Contributions (Pull Requests) ---
   {
     title: "PR: Add Storybook to react-qrcode-logo",
     tags: [
@@ -119,14 +130,7 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
       "Streamlined project onboarding by improving the setup documentation for future developers.",
     cta: "View PR",
   },
-  {
-    title: "PR: React Bits Performance Improvement",
-    tags: ["npm", "Open Source", "Contributions", "React Bits", "Performance"],
-    url: "https://github.com/DavidHDev/react-bits/pull/169",
-    description:
-      "Diagnosed and resolved a performance bottleneck causing FPS drops in specific components.",
-    cta: "View PR",
-  },
+
   {
     title: "PR: React Bits Official Website UX",
     tags: [
@@ -142,7 +146,6 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     cta: "View PR",
   },
 
-  // React Bits Type Safety Improvements
   {
     title: "PR: React Bits: Fix types on TextTrail & RotatingText",
     tags: ["npm", "Open Source", "Contributions", "React Bits", "TypeScript"],

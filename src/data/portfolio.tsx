@@ -18,7 +18,6 @@ export type PortfolioTags =
   | "Paypal";
 
 export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
-  // --- Proprietary SaaS Products ---
   {
     title: "Product: USD Latam Jobs",
     tags: ["SaaS"],
@@ -38,6 +37,17 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     img: "./porfolio/ratata.png",
   },
   {
+    title:
+      "PR: React Bits Performance Improvement on VariableProximity comopnent",
+    tags: ["npm", "Open Source", "Contributions", "React Bits", "Performance"],
+    url: "https://github.com/DavidHDev/react-bits/pull/169",
+    description:
+      "Diagnosed and resolved a performance bottleneck causing FPS drops in specific components. Make the calculation only when mouse moves, and now all the time",
+    cta: "View PR",
+    video: "./porfolio/react-bits-variable-proximity.gif",
+  },
+
+  {
     title: "Product: Better Image",
     tags: ["SaaS", "Archived"],
     url: "https://www.linkedin.com/posts/palmeida-dev_betterimageai-generativeai-aiart-activity-7279552746964365312-l5ER/",
@@ -55,35 +65,6 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     cta: "View on npm",
   },
   {
-    title:
-      "PR: React Bits Performance Improvement on VariableProximity comopnent",
-    tags: ["npm", "Open Source", "Contributions", "React Bits", "Performance"],
-    url: "https://github.com/DavidHDev/react-bits/pull/169",
-    description:
-      "Diagnosed and resolved a performance bottleneck causing FPS drops in specific components.",
-    cta: "View PR",
-    video: "./porfolio/react-bits-variable-proximity.gif",
-  },
-
-  {
-    title: "OSS: ffmpeg-mcp-server",
-    tags: ["npm", "Open Source"],
-    url: "https://www.npmjs.com/package/ffmpeg-mcp-server",
-    description: "An MCP server designed for image editing using FFmpeg.",
-    cta: "View on npm",
-    img: "./porfolio/ffmpeg-mcp.png",
-  },
-
-  {
-    title: "OSS: react-page-lite",
-    tags: ["npm", "Open Source"],
-    url: "https://www.npmjs.com/package/react-page-lite",
-    description:
-      "A custom React framework focused on minimal JavaScript, used to power this portfolio.",
-    cta: "View on npm",
-  },
-
-  {
     title: "PR: Add Storybook to react-qrcode-logo",
     tags: [
       "npm",
@@ -96,6 +77,22 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     description:
       "Implemented Storybook for improved component development and documentation after collaborating with the maintainer.",
     cta: "View PR",
+    video: "./porfolio/storybook-react-qrcode-logo.gif",
+  },
+  {
+    title: "OSS: react-page-lite",
+    tags: ["npm", "Open Source"],
+    url: "https://www.npmjs.com/package/react-page-lite",
+    description:
+      "A custom React framework focused on minimal JavaScript, used to power this portfolio.",
+    cta: "View on npm",
+  },
+  {
+    title: "OSS: ffmpeg-mcp-server",
+    tags: ["npm", "Open Source"],
+    url: "https://www.npmjs.com/package/ffmpeg-mcp-server",
+    description: "An MCP server designed for image editing using FFmpeg.",
+    cta: "View on npm",
   },
   {
     title: "PR: React Email Issue Fix",

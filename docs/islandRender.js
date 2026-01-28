@@ -26395,7 +26395,8 @@ function ContentCards({
 // src/components/SearchableContentWithFilter.tsx
 var import_jsx_runtime13 = __toESM(require_jsx_runtime(), 1);
 function SearchableContentWithFilter({
-  items
+  items,
+  isMasonry
 }) {
   const [selectedTags, setSelectedTags] = (0, import_react9.useState)(() => {
     if (typeof window === "undefined") return [];
@@ -26475,7 +26476,7 @@ function SearchableContentWithFilter({
         ")"
       ] })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+    isMasonry ? /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       react_masonry_css_module_default,
       {
         breakpointCols: {
@@ -26498,7 +26499,19 @@ function SearchableContentWithFilter({
           }
         ) }, index))
       }
-    ),
+    ) : /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+      ContentCards,
+      {
+        title: item.title,
+        url: item.url,
+        tags: item.tags,
+        createdAt: item.createdAt,
+        description: item.description,
+        cta: item.cta,
+        img: item.img
+      },
+      index
+    )) }),
     filteredItems.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "text-center py-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("p", { className: "text-gray-400 text-lg mb-4", children: "No items found with the selected filters." }),
       /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(

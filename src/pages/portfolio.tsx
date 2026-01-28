@@ -37,7 +37,7 @@ const PortfolioPage = () => {
 
             {/* Interactive Portfolio with Filter */}
             <Island>
-              <SearchableContentWithFilter items={linkedinPostList} />
+              <SearchableContentWithFilter items={linkedinPostList} isMasonry />
             </Island>
           </div>
         </main>

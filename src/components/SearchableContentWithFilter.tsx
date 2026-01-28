@@ -5,10 +5,12 @@ import { ContentCards } from "@/components/ContentCards";
 
 interface SearchableContentWithFilterProps {
   items: SearchableCardItem[];
+  isMasonry?: true;
 }
 
 export function SearchableContentWithFilter({
   items,
+  isMasonry,
 }: SearchableContentWithFilterProps) {
   // Initialize state from URL query params
   const [selectedTags, setSelectedTags] = useState<string[]>(() => {
@@ -112,19 +114,36 @@ export function SearchableContentWithFilter({
         </p>
       </div>
 
-      {/* Items Masonry Grid */}
-      <Masonry
-        breakpointCols={{
-          default: 3,
-          1024: 2,
-          768: 1,
-        }}
-        className="flex -ml-6 w-auto"
-        columnClassName="pl-6 bg-clip-padding"
-      >
-        {filteredItems.map((item, index) => (
-          <div key={index} className="mb-6">
+      {/* Items Grid */}
+      {isMasonry ? (
+        <Masonry
+          breakpointCols={{
+            default: 3,
+            1024: 2,
+            768: 1,
+          }}
+          className="flex -ml-6 w-auto"
+          columnClassName="pl-6 bg-clip-padding"
+        >
+          {filteredItems.map((item, index) => (
+            <div key={index} className="mb-6">
+              <ContentCards
+                title={item.title}
+                url={item.url}
+                tags={item.tags}
+                createdAt={item.createdAt}
+                description={item.description}
+                cta={item.cta}
+                img={item.img}
+              />
+            </div>
+          ))}
+        </Masonry>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredItems.map((item, index) => (
             <ContentCards
+              key={index}
               title={item.title}
               url={item.url}
               tags={item.tags}
@@ -133,9 +152,9 @@ export function SearchableContentWithFilter({
               cta={item.cta}
               img={item.img}
             />
-          </div>
-        ))}
-      </Masonry>
+          ))}
+        </div>
+      )}
 
       {/* Empty State */}
       {filteredItems.length === 0 && (

@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Drawer } from "vaul";
-import { HomeIcon, LightbulbIcon, DollarSignIcon } from "lucide-react";
+import {
+  HomeIcon,
+  LightbulbIcon,
+  DollarSignIcon,
+  SquareCode,
+} from "lucide-react";
 import { siGithub, siReaddotcv } from "simple-icons";
 import GlareHover from "@/components/reactBits/GlareHover";
 
@@ -17,6 +22,11 @@ export function MenuDrawer() {
       label: "Insights",
       href: "./insights.html",
       icon: <LightbulbIcon />,
+    },
+    {
+      label: "Portfolio",
+      href: "./portfolio.html",
+      icon: <SquareCode />,
     },
   ];
 
@@ -105,7 +115,7 @@ export function MenuDrawer() {
                   </span>
                   {item.label}
                   <span className="ml-auto text-xs font-mono text-gray-600 group-hover/item:text-primary/60">
-                    // {String(index + 1).padStart(2, '0')}
+                    // {String(index + 1).padStart(2, "0")}
                   </span>
                 </a>
               ))}
@@ -116,7 +126,7 @@ export function MenuDrawer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 block animate-in slide-in-from-right fade-in"
-                style={{ animationDelay: '150ms' }}
+                style={{ animationDelay: "150ms" }}
                 onClick={() => setOpen(false)}
               >
                 <GlareHover
@@ -137,11 +147,15 @@ export function MenuDrawer() {
                       <DollarSignIcon />
                     </span>
                     <div className="flex-1">
-                      <div className="text-lg font-medium text-white">Usd Latam Jobs</div>
-                      <div className="text-xs text-gray-500 font-mono">Live Product</div>
+                      <div className="text-lg font-medium text-white">
+                        Usd Latam Jobs
+                      </div>
+                      <div className="text-xs text-gray-500 font-mono">
+                        Live Product
+                      </div>
                     </div>
                     <span className="text-xs font-mono text-secondary/60 group-hover/item:text-secondary/80">
-                      // 03
+                      // 04
                     </span>
                   </div>
                 </GlareHover>

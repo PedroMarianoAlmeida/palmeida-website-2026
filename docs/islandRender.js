@@ -25770,6 +25770,14 @@ var __iconNode3 = [
 ];
 var Lightbulb = createLucideIcon("lightbulb", __iconNode3);
 
+// node_modules/lucide-react/dist/esm/icons/square-code.js
+var __iconNode4 = [
+  ["path", { d: "m10 9-3 3 3 3", key: "1oro0q" }],
+  ["path", { d: "m14 15 3-3-3-3", key: "bz13h7" }],
+  ["rect", { x: "3", y: "3", width: "18", height: "18", rx: "2", key: "h1oib" }]
+];
+var SquareCode = createLucideIcon("square-code", __iconNode4);
+
 // node_modules/simple-icons/index.mjs
 var c = '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>';
 var t = '</title><path d="';
@@ -25882,6 +25890,11 @@ function MenuDrawer() {
       label: "Insights",
       href: "./insights.html",
       icon: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Lightbulb, {})
+    },
+    {
+      label: "Portfolio",
+      href: "./portfolio.html",
+      icon: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(SquareCode, {})
     }
   ];
   return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(Drawer.Root, { open, onOpenChange: setOpen, direction: "right", children: [
@@ -26001,7 +26014,7 @@ function MenuDrawer() {
                       /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "text-lg font-medium text-white", children: "Usd Latam Jobs" }),
                       /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "text-xs text-gray-500 font-mono", children: "Live Product" })
                     ] }),
-                    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("span", { className: "text-xs font-mono text-secondary/60 group-hover/item:text-secondary/80", children: "// 03" })
+                    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("span", { className: "text-xs font-mono text-secondary/60 group-hover/item:text-secondary/80", children: "// 04" })
                   ] })
                 }
               )
@@ -26342,6 +26355,7 @@ lucide-react/dist/esm/createLucideIcon.js:
 lucide-react/dist/esm/icons/dollar-sign.js:
 lucide-react/dist/esm/icons/house.js:
 lucide-react/dist/esm/icons/lightbulb.js:
+lucide-react/dist/esm/icons/square-code.js:
 lucide-react/dist/esm/lucide-react.js:
   (**
    * @license lucide-react v0.563.0 - ISC

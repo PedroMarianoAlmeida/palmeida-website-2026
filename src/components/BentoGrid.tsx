@@ -127,7 +127,7 @@ export function BentoGrid() {
                 stars.
               </p>
               <a
-                href="#"
+                href="./portfolio.html"
                 className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
               >
                 Explore the Portfolio →

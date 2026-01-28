@@ -21,12 +21,12 @@ export function GlassLogo() {
     >
       <a
         href="./index.html"
-        className="group flex flex-col w-fit px-8 pt-1 pb-3 cursor-pointer gap-1"
+        className="group flex flex-col w-fit px-4 sm:px-8 pt-1 pb-3 cursor-pointer gap-1"
       >
-        <span className="text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors">
+        <span className="text-base sm:text-xl font-bold tracking-tighter text-white/90 group-hover:text-primary transition-colors">
           palmeida
         </span>
-        <span className="text-[10px] text-gray-300 uppercase tracking-tight sm:tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors">
+        <span className="text-[9px] sm:text-[10px] text-gray-300 uppercase tracking-tight sm:tracking-[0.2em] font-medium leading-none group-hover:text-primary transition-colors">
           Product Engineer
         </span>
       </a>

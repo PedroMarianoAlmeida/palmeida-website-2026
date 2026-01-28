@@ -26125,7 +26125,7 @@ function ContentCards({
             href: url,
             target: "_blank",
             rel: "noopener noreferrer",
-            className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
+            className: "ml-auto text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
             children: `${cta} \u2192`
           }
         )

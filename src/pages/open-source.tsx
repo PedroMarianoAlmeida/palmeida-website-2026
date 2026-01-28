@@ -13,6 +13,7 @@ const OpenSourcePage = () => {
           content="Explore Pedro Almeida's open source contributions, NPM packages, and technical knowledge base."
         />
         <link rel="stylesheet" href="./styles.css" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
       </head>
       <body>
         <Header />

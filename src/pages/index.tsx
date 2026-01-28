@@ -15,6 +15,7 @@ const HomePage = () => {
           content="7+ years of building at the intersection of AI and Infrastructure. Senior Product Engineer specializing in Growth Engineering, TypeScript, and React. Founder of USD Latam Jobs."
         />
         <link rel="stylesheet" href="./styles.css" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
       </head>
       <body>
         <Header />

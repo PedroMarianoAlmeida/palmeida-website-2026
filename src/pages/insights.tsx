@@ -16,6 +16,7 @@ const InsightsPage = () => {
           content="A searchable knowledge base of professional engineering insights, growth strategies, and career mentorship. Curated from 7+ years of building in the tech industry."
         />
         <link rel="stylesheet" href="./styles.css" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
         <script src="./islandRender.js" defer />
       </head>
       <body>

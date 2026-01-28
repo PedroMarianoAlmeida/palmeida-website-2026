@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { SearchableCardItem } from "@/types/searchableCard";
-import { LinkedinPostCard } from "@/components/LinkedinPostCard";
+import { ContentCards } from "@/components/ContentCards";
 
 interface SearchableContentWithFilterProps {
   items: SearchableCardItem[];
@@ -114,12 +114,13 @@ export function SearchableContentWithFilter({
       {/* Items Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredItems.map((item, index) => (
-          <LinkedinPostCard
+          <ContentCards
             key={index}
             title={item.title}
             url={item.url}
             tags={item.tags}
             createdAt={item.createdAt}
+            cta={item.cta}
           />
         ))}
       </div>

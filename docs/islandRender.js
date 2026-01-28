@@ -26089,19 +26089,20 @@ function MenuDrawer() {
 // src/components/SearchableContentWithFilter.tsx
 var import_react8 = __toESM(require_react(), 1);
 
-// src/components/LinkedinPostCard.tsx
+// src/components/ContentCards.tsx
 var import_jsx_runtime12 = __toESM(require_jsx_runtime(), 1);
-function LinkedinPostCard({
+function ContentCards({
   title,
   url,
   tags,
-  createdAt
+  createdAt,
+  cta
 }) {
-  const formattedDate = new Date(createdAt).toLocaleDateString("en-US", {
+  const formattedDate = createdAt ? new Date(createdAt).toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
     day: "numeric"
-  });
+  }) : null;
   return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("article", { className: "bento-card-neutral group", children: [
     /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
     /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "relative z-10 flex flex-col h-full", children: [
@@ -26117,7 +26118,7 @@ function LinkedinPostCard({
         )) })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "flex items-center justify-between mt-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("time", { className: "text-sm text-gray-500", children: formattedDate }),
+        formattedDate && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("time", { className: "text-sm text-gray-500", children: formattedDate }),
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
           "a",
           {
@@ -26125,7 +26126,7 @@ function LinkedinPostCard({
             target: "_blank",
             rel: "noopener noreferrer",
             className: "text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200",
-            children: "Read on LinkedIn \u2192"
+            children: `${cta} \u2192`
           }
         )
       ] })
@@ -26217,12 +26218,13 @@ function SearchableContentWithFilter({
       ] })
     ] }) }),
     /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: filteredItems.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-      LinkedinPostCard,
+      ContentCards,
       {
         title: item.title,
         url: item.url,
         tags: item.tags,
-        createdAt: item.createdAt
+        createdAt: item.createdAt,
+        cta: item.cta
       },
       index
     )) }),

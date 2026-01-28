@@ -1,18 +1,21 @@
 import { SearchableCardItem } from "@/types/searchableCard";
 
-type LinkedinPostCardProps = SearchableCardItem;
+type ContentCardsProps = SearchableCardItem;
 
-export function LinkedinPostCard({
+export function ContentCards({
   title,
   url,
   tags,
   createdAt,
-}: LinkedinPostCardProps) {
-  const formattedDate = new Date(createdAt).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  cta,
+}: ContentCardsProps) {
+  const formattedDate = createdAt
+    ? new Date(createdAt).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      })
+    : null;
 
   return (
     <article className="bento-card-neutral group">
@@ -34,14 +37,16 @@ export function LinkedinPostCard({
           </div>
         </div>
         <div className="flex items-center justify-between mt-4">
-          <time className="text-sm text-gray-500">{formattedDate}</time>
+          {formattedDate && (
+            <time className="text-sm text-gray-500">{formattedDate}</time>
+          )}
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-emerald-500 hover:text-emerald-400 transition-colors duration-200"
           >
-            Read on LinkedIn →
+            {`${cta} →`}
           </a>
         </div>
       </div>

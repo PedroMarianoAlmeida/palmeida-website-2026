@@ -10,6 +10,7 @@ export function ContentCards({
   description,
   cta,
   img,
+  video,
 }: ContentCardsProps) {
   const formattedDate = createdAt
     ? new Date(createdAt).toLocaleDateString("en-US", {
@@ -30,7 +31,14 @@ export function ContentCards({
           {description && (
             <p className="text-sm text-gray-400 mb-4">{description}</p>
           )}
-          {img && (
+          {video && (
+            <img
+              src={video}
+              alt={title}
+              className="w-full rounded-lg mb-4 border border-gray-700 transition-transform duration-300 hover:scale-105"
+            />
+          )}
+          {!video && img && (
             <img
               src={img}
               alt={title}

@@ -26345,7 +26345,8 @@ function ContentCards({
   createdAt,
   description,
   cta,
-  img
+  img,
+  video
 }) {
   const formattedDate = createdAt ? new Date(createdAt).toLocaleDateString("en-US", {
     year: "numeric",
@@ -26358,7 +26359,15 @@ function ContentCards({
       /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "flex-1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h3", { className: "text-lg lg:text-xl font-bold mb-3 text-white", children: title }),
         description && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { className: "text-sm text-gray-400 mb-4", children: description }),
-        img && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+        video && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+          "img",
+          {
+            src: video,
+            alt: title,
+            className: "w-full rounded-lg mb-4 border border-gray-700 transition-transform duration-300 hover:scale-105"
+          }
+        ),
+        !video && img && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
           "img",
           {
             src: img,
@@ -26495,7 +26504,8 @@ function SearchableContentWithFilter({
             createdAt: item.createdAt,
             description: item.description,
             cta: item.cta,
-            img: item.img
+            img: item.img,
+            video: item.video
           }
         ) }, index))
       }
@@ -26508,7 +26518,8 @@ function SearchableContentWithFilter({
         createdAt: item.createdAt,
         description: item.description,
         cta: item.cta,
-        img: item.img
+        img: item.img,
+        video: item.video
       },
       index
     )) }),

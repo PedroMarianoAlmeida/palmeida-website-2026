@@ -6,4 +6,5 @@ export interface SearchableCardItem<T = string> {
   description?: string;
   cta?: string;
   img?: string;
+  video?: string;
 }

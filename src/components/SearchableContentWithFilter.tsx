@@ -135,6 +135,7 @@ export function SearchableContentWithFilter({
                 description={item.description}
                 cta={item.cta}
                 img={item.img}
+                video={item.video}
               />
             </div>
           ))}
@@ -151,6 +152,7 @@ export function SearchableContentWithFilter({
               description={item.description}
               cta={item.cta}
               img={item.img}
+              video={item.video}
             />
           ))}
         </div>

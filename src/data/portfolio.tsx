@@ -55,12 +55,14 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     cta: "View on npm",
   },
   {
-    title: "PR: React Bits Performance Improvement",
+    title:
+      "PR: React Bits Performance Improvement on VariableProximity comopnent",
     tags: ["npm", "Open Source", "Contributions", "React Bits", "Performance"],
     url: "https://github.com/DavidHDev/react-bits/pull/169",
     description:
       "Diagnosed and resolved a performance bottleneck causing FPS drops in specific components.",
     cta: "View PR",
+    video: "./porfolio/react-bits-variable-proximity.gif",
   },
 
   {

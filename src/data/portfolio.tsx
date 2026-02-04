@@ -57,12 +57,13 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
     img: "./porfolio/better-image.png",
   },
   {
-    title: "OSS: ts-try-async",
-    tags: ["npm", "Open Source"],
-    url: "https://www.npmjs.com/package/ts-try-async",
+    title: "Product: Github Restrospective 2025",
+    tags: ["SaaS", "Open Source"],
+    url: "https://github-retrospective-2025.vercel.app/",
     description:
-      "A lightweight utility to eliminate try/catch boilerplate and improve code readability.",
-    cta: "View on npm",
+      "Small project used by 57 developers, showing a retrospective (repos, contribuitions, languages, etc) - Like a Spotify or Duolingo retrospective",
+    img: "./porfolio/github-retospective-2025.png",
+    cta: "Visit site",
   },
   {
     title: "PR: Add Storybook to react-qrcode-logo",
@@ -78,6 +79,14 @@ export const linkedinPostList: SearchableCardItem<PortfolioTags>[] = [
       "Implemented Storybook for improved component development and documentation after collaborating with the maintainer.",
     cta: "View PR",
     video: "./porfolio/storybook-react-qrcode-logo.gif",
+  },
+  {
+    title: "OSS: ts-try-async",
+    tags: ["npm", "Open Source"],
+    url: "https://www.npmjs.com/package/ts-try-async",
+    description:
+      "A lightweight utility to eliminate try/catch boilerplate and improve code readability.",
+    cta: "View on npm",
   },
   {
     title: "OSS: react-page-lite",

@@ -17,6 +17,13 @@ export type LinkedinPostTags =
 
 export const linkedinPostList: SearchableCardItem<LinkedinPostTags>[] = [
   {
+    title: "+7 years of coding skills in 2 minutues",
+    tags: ["Video", "Career"],
+    createdAt: "2026-01-25",
+    url: "https://www.linkedin.com/posts/palmeida-dev_activity-7423017482212302848-PMwj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAb9HFEBsP2eXbciI3E5LX0tWfvkOT9bo_U",
+    cta: "Check on LinkedIn",
+  },
+  {
     title: "My first open source contibuition of 2026",
     tags: ["Open Source", "Caroussel"],
     createdAt: "2026-01-25",
